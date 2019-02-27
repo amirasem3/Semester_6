@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{xepersian}
+\title{پاسخ تمرین شماره ۱ درس معماری کامپیوتر}
+\author{امیر حسین عاصم یوسفی \\ ۹۶۱۱۰۳۲۳}
+\settextfont{B Nazanin}
+
+
+\begin{document}
+  \maketitle
+  \section*{ سوال ۱  : }
+  با توجه به فرمول محاسبه 
+  $CPU  \ TIME$
+  که برابر است با 
+  $ \frac{CPU \  CLOCK \  CYCLE}{ CLOCK \  RATE} = \frac{(Instruction count *CPI)}{Clock  \  Rate}$
+  
+  برای میتوان تعداد دستورات از هر دو نوع گفته شده را به دست آورد که به شرح زیرمی باشد  : 
+  \begin{center}
+  	$A  \ in  \ processor  \  p1 : \frac{3}{200} = \frac{IC(A) * CPI}{200} \Rightarrow IC(A) = \frac{3}{CPI} $\\
+  	$A  \ in  \ processor  \  p2 : \frac{5}{300} = \frac{IC(A) * CPI}{300} \Rightarrow IC(A) = \frac{5}{CPI} $\\
+  	$ B  \ in  \ processor  \  p1 : \frac{4}{200} = \frac{IC(B) * CPI}{200} \Rightarrow IC(B) = \frac{4}{CPI}$\\
+  	$ B  \ in  \ processor  \  p2 : \frac{3}{300} = \frac{IC(B) * CPI}{300} \Rightarrow IC(B) = \frac{3}{CPI}$
+  \end{center}
+حال با توجه به بالا  می توانیم مجموع دستورات از هرنوع را به دست آوریم  : 
+ \begin{center}
+ 	$Sum \ A \  (p1 \  + \  p2)  = A  \ in  \ processor  \  p1 + A  \ in  \ processor  \  p2 = \frac{8}{CPI}$
+ 	
+ \end{center}
+\begin{center}
+	$ Sum \ B \  (p1 \  + \  p2)  = B  \ in  \ processor  \  p1 + B  \ in  \ processor  \  p2 = \frac{7}{CPI}$
+\end{center}
+و چون طبق صورت سوال زمان اجراي یک برنامه خاص در هر دو پردازنده یکسان می باشد بنابراین هر دو مقدار 
+$CPI$
+با یک دیگر برابرند ، پس داریم : 
+\begin{center}
+	$  \frac{IC(A)}{IC(B)} = \frac{8}{7}$
+\end{center}
+\hrule
+
+\end{document}
