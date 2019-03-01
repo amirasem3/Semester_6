@@ -1,5 +1,9 @@
 \documentclass{article}
+\usepackage{graphicx}
+\usepackage{color}
 \usepackage{xepersian}
+
+
 \title{پاسخ تمرین شماره ۱ درس معماری کامپیوتر}
 \author{امیر حسین عاصم یوسفی \\ ۹۶۱۱۰۳۲۳}
 \settextfont{B Nazanin}
@@ -35,5 +39,219 @@ $CPI$
 	$  \frac{IC(A)}{IC(B)} = \frac{8}{7}$
 \end{center}
 \hrule
+\section*{سوال ۲ : }
+somting
+\hrule
+\section*{سوال ۳ : }
+با توجه  به فرمول 
+$MIPS = Million \ Inst
+ruction \ Per \ Second = \frac{Instruction \  Count}{(Executation  \ time * 10 ^6)}$
+ و با توجه به فرمول به دست آوردن زمان اجرا داریم  : 
+\begin{center}
+	$ Executation  \ Time  = Instruction \ count \times CPI / Clock Rate $
+\end{center}
+از طرفی با توجه به اطلاعات مساله  برای پردازنده اول داریم  :
+برای پردازنده اول با توجه به اطلاعات مساله داریم  : 
+\begin{center}
+	\begin{table}[h]
+		\centering
+		\resizebox{\textwidth}{!}{%
+			\begin{tabular}{ccc}
+			$Product$ 	&$ Value$ & 	$Frequency  \ of \  Instruction$  \\
+				$0.4  $             & $4 $    & $SUM = 10\%  $    \\
+				$ 0.49$              & $7$     & $MULT = 7\%$    \\
+			$0.45	$          & $9 $    & $DIVISION = 5\%  $  
+			\end{tabular}%
+		}
+	\end{table}
+\end{center}
+با توجه به بالا می توان 
+$CPI$
+را محاسبه کرد ، که برابر است با   : 
 
+\begin{center}
+ $ CPI = 0.4 + 0.49 + 0.45 = 1.34$
+\end{center}
+بنابراین زملن اجرا برای پردازنده اول برابر است با   : 
+ \begin{center}
+  $ Execution \ Time  = CPI \times IC / Clock Rate =1.34  \times IC  / Clock Rate $
+ \end{center}
+پس مقدار $MIPS$  آن برابر است با  : 
+\begin{center}
+	$MIPS_{c_1} = \frac{IC}{1.34  \times IC  / (Clock Rate = 600)} = \frac{600}{1.34} $
+\end{center}
+از طرفی با توجه به اطلاعات گفته شده در مساله برای پردازنده دوم داریم  : 
+\begin{center}
+	\begin{table}[h]
+		\centering
+		\resizebox{\textwidth}{!}{%
+			\begin{tabular}{ccc}
+				$Product$ 	&$ Value$ & 	$Frequency  \ of \  Instruction$  \\
+				$2.4  $             & $24$    & $SUM = 10\%  $    \\
+				$ 2.52$              & $ 36$     & $MULT = 7\%$    \\
+				$2.85	$          & $57 $    & $DIVISION = 5\%  $  
+			\end{tabular}%
+		}
+	\end{table}
+\end{center}
+با توجه به بالا می توان 
+$CPI$
+را محاسبه کرد ، که برابر است با   : 
+
+\begin{center}
+	$ CPI = 2.4 + 2.52 + 2.85 = 7.77$
+\end{center}
+بنابراین زملن اجرا برای پردازنده دوم برابر است با   : 
+\begin{center}
+	$ Execution \ Time  = CPI \times IC /  Clock Rate =7.77  \times IC  / Clock Rate $
+\end{center}
+پس مقدار $MIPS$  آن برابر است با  : 
+\begin{center}
+	$MIPS_{c_2} = \frac{IC}{7.77  \times IC  / (Clock Rate = X)} = \frac{X}{7.77} $
+\end{center}
+حال اگر دو مقدار بالا را برابر یک دیگر قرار دهیم داریم : 
+\begin{center}
+	$ MIPS_{c1} = MIPS_{c_2} \Rightarrow \frac{600}{1.34} = \frac{X}{7.77} \Rightarrow X = 600 \times 7.77 / 1.34 \cong 3447  \ MHZ = 3.447 \ GHZ$
+\end{center}
+و این انتظار را داشتیم زیرا تعداد سیکل ها لازم برای انجام هر عملیات ممیز شناور برای پردازنده دوم بیشتر از پردازنده اول است بنابراین باید فرکانس کاری بیشتری نسبت به پردازنده اول داشته باشد تا $MIPS$ آن ها برابر شود . 
+\hrule
+\newpage
+\section*{سوال ۴ : }
+با توجه به این که در هر بار دسترسی به حافظه فقط می توانیم یک عدد را بخوانیم بنابراین می توان گفت برای ضرب هر دو عدد دو بار باید به حافظه دسترسی داشته باشیم  . که تعدادآن ها برابر است با 
+$2n^3$
+\\
+از طرفی بعد از به دست آوردن مقدار یک درایه باید آن را داخل حافظه بنویسیم بنابراین به ازای هر درایه از ماتریس حاصل ضرب باید به حافظه دسترسی یابی و دستور نوشتن آن درایه را بدهیم بنابراین تعداد دستورات خواندن برابر است با 
+$n^2$
+\\
+همچنین برای ضرب دو عدد باید یک دستور ضرب را بدهیم بنابراین برای ضرب دو ماتریس مربعی با اندازه دلخواه به تعداد 
+$n^3$
+دستور ضرب بدهیم و همین تعداد نیز برای عمل جمع باید دستور صادر کنیم  . 
+\\
+بنابراین تعداد کل دستورات برابر است با 
+\begin{center}
+\textcolor{red}{$4n^3+n^2$}
+\end{center}
+
+حال مانند سوال قبل جدول زیر را تشکیل می دهیم  : 
+\begin{center}
+	\begin{table}[h]
+		\centering
+		\resizebox{\textwidth}{!}{%
+			\begin{tabular}{ccc}
+				$Product$ 	&$ Value$ & 	$Frequency  \ of \  Instruction$  \\
+				$15 \times \frac{2n^3+n^2}{4n^3+n^2}  $             & $15 $    & $Read \ or \ Write = \frac{2n^3+n^2}{4n^3+n^2}  $    \\
+				$5 \times  \frac{n^3}{4n^3+n^2} $              & $5$     & $MULT = \frac{n^3}{4n^3+n^2}$    \\
+				$2 \times \frac{n^3}{4n^3+n^2}	$          & $2 $    & $SUM = \frac{n^3}{4n^3+n^2}  $  
+			\end{tabular}%
+		}
+	\end{table}
+\end{center}
+با توجه به بالا می توان 
+$CPI$
+را محاسبه کرد ، که برابر است با   : 
+\begin{center}
+	$ CPI =15 \times \frac{2n^3+n^2}{4n^3+n^2} +5 \times  \frac{n^3}{4n^3+n^2} + 2 \times  \frac{n^3}{4n^3+n^2}  = \frac{1}{4n^3+n^2}(37n^3+15n^2) $
+\end{center}
+و حال با توجه به فرمول زمان اجرا داریم : 
+\begin{center}
+	$ Execution \ Time  = CPI \times IC /  Clock Rate =7.77  \times IC  / Clock Rate \Rightarrow Execution \ Time  =  \frac{1}{4n^3+n^2}(37n^3+15n^2) \times (4n^3+n^2)\times 0.25 \times 10^{-8}$
+\end{center}
+بنابراین زمان اجرا به شکل به صورت زیر می باشد   : 
+\begin{center}
+	\textcolor{red}{$Execution \ Time = (37n^3+15n^2) \times 0.25 \times 10^{-8}$}
+\end{center}
+	\hrule
+	\section*{سوال ۵  : }
+	
+	نتدسیبنتدسب
+	\hrule
+	\section*{سوال ۶ : }
+	الف )‌
+	\\
+	این قانون بیان می کند که بهبود سرعت قسمتی از یک برنامه محدود به همان قسمت و باعث نمی شود که سرعت کل برنامه به همان نسبت بهبود یابد که به شرح زیر است  : 
+	\begin{center}
+		$ Execution \ Time _{new} = Execution \ Time _{old} \times [(1-Frac_{enhanced}) + (Frac_{enhanced}  / Speedup_{enhanced})]$
+	\end{center}
+\begin{center}
+	$ Speedup_{overall} = Exec \ Time_{old} / Exec \ Time _{new}$
+\end{center}
+\\
+ب ) 
+\\
+اگر فرض کنیم اجرای این برنامه ۱۰۰ ثانیه طول می کشد پس می توان گفت ۶۰ ثانیه از آن را برای ضرب و ۴۰ ثانیه از آن را برای دستورات دیگر استفاده می کند  . حال چون گفته شده عملیات ضرب ۴۰ درصد افزایش سرعت داشته بنابراین برنامه عملیات ضرب را در ۳۶ ثانیه انجام میدهم  پس زمان اجرا به ۷۶ ثانیه رسیده است حال  با توجه به فرمول 
+\begin{center}
+$Speedup_{overall} = \frac {Exec \ Time_{old}}{Exec \ Time_{new}}$
+\end{center}
+
+داریم  : 
+\begin{center}
+	$Speedup_{overall}  = \frac{100s}{76s} = 1.31$
+\end{center}
+\\
+پ ) برای این مورد حال از ۱۰۰ ثانیه اجرای برنامه ضرب هیچ سهمی ندارد بنابراین برنامه در زمان ۴۰ ثانیه اجرا می شود که با توجه به فرمول گفته شده در قسمت قبل داریم : 
+\begin{center}
+	$Speedup_{overall}  = \frac{100s}{40s} = 2.5$
+\end{center}
+\\
+ت ) برای این مورد می دانیم از ۱۰۰ ثانیه ، ۱۲/۵ ثانیه برای مقایسه و ۶۰ ثانیه برای ضرب و ۲۷.۵ ثانیه برای دستورات دیگر صرف می شود حال برای دو حالت داریم  : 
+\\ 
+حالت ۱) ۳۶ ثانیه عمل ضرب (۴۰ درصد افزایش سرعت عملیات ضرب ) و ۱۲/۵ ثانیه برای مقایسه و ۲۷.۵ برای دستورات دیگر  بنابراین داریم  : 
+\begin{center}
+  $Speedup_{overall}  = \frac{100s}{36 + 12.5 + 27.5s} = \frac{100s}{76} = 1.31$
+\end{center}
+\\
+حالت ۲ ) ۶۰ ثانیه برای ضرب و ۶/۲۵ ثانیه برای مقایسه و ۲۷/۵ ثانیه برای دستورات دیگر . بنابراین داریم : 
+\begin{center}
+ $Speedup_{overall}  = \frac{100s}{60 + 6.25 + 27.5s} = \frac{100s}{93.75} = 1.06$
+\end{center}
+همان طور که می بینیم با مقایسه مقدار دو حالت در میابیم که حالت ۱ (افزایش ۴۰ درصدی سرعت ضرب) زمان اجرا را کمتر می کند  . 
+\hrule
+\section*{سوال ۷ : }
+سخنتسینتبذسیب
+\hrule
+\section*{سوال ۸  : }
+الف ‌) با توجه به فرمول 
+\begin{center}
+	$ CPU \ Time = CPU \ Clock \ Cycles \times CPU \ Cycle \ Time $
+\end{center}
+و با توجه به این که 
+\begin{center}
+	$ CPU  \ Clock \ Cycles = CPI_{ALU} \times IC_{ALU} + CPI_{Load} \times IC_{Load} + CPI_{Store} \times IC_{Store} + CPI_{Branch \ Jump } \times IC_{Branch \ Jump }$ \\
+	$ CPU \ Clock \ Time  = 0.5 \times 10^{-9}$
+\end{center}
+پس  : 
+\begin{center}
+	$ CPU \ Clock  \ Cycles = 6 \times 10^{9} + 8 \times 2.1 \times 10^8 + 7 \times 1.9 \times 10 ^8 + 5 \times 1.2 \times 10^8 = 60 \times 10 ^8 + 16.8 \times 10^8 + 13.3 \times 10^8 + 6 \times 10^8 = 96.1 \times 10^8$
+\end{center}
+بنابراین 
+\begin{center}
+	$CPU \ Time  = 96.1 \times 10 ^8 \times 0.5 \times 10^{-9} = 4.805s$
+\end{center}
+
+\newpage
+ب ) با توجه به تغییرات انجام شده مقادیر به شکل زیر می باشند  : 
+\begin{center}
+	$IC_{ALU} = 9 \times 10^8 \ , \ 
+	CPI_{ALU} = 6  $\\
+	$ IC_{Load} = 2.1 \times 10^8 \ , \ 
+	CPI_{Load} = 8$\\
+	$ IC_{Store} = 1.9 \times 10^8 \ , \ 
+	CPI_{Store} = 6$\\
+	$IC_{Branch  \ Jump} = 1.2 \times 10^8 \ , \ 
+	CPI_{Branch \ Jump} = 5 $
+\end{center}
+بنابراین  : 
+\begin{center}
+	$ CPU \ Clock \ Cycles = 54 \times 10^8 + 16.8 \times 10^8 + 11.4 \times 10^8  + 6 \times 10^8 = 88.2 \times 10^8$
+\end{center}
+پس  : 
+\begin{center}
+	$ CPU \ Time_{new}  = 88.2 \times 10^8 \times 0.5 \times 10^{-9} = 4.41s$
+\end{center}
+و با توجه به فرمول 
+$SpeedUp$
+داریم  : 
+\begin{center}
+	$Speedup = \frac{Time_{original} }{Time _{improved}} = \frac{4.805}{4.41} \cong 1.09$
+\end{center}
 \end{document}
