@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.9)  1 MAR 2019 14:24
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.9)  5 MAR 2019 17:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -610,27 +610,6 @@ Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
 ;mapping=persian-tex-text;!
 Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
 ;mapping=persian-tex-text;!
-Missing character: There is no s in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no o in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no m in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no t in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no i in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no g in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
 [1
 
 ]
@@ -638,7 +617,11 @@ Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
 ;mapping=persian-tex-text;!
 Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
 ;mapping=persian-tex-text;!
- [2]
+Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
+;mapping=persian-tex-text;!
+Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
+;mapping=persian-tex-text;!
+ [2] [3]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -646,13 +629,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.179 ب
+l.196 ب
         )
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[3]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -660,7 +642,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.191 پ
+l.208 پ
         ) برای این مورد حال از ۱۰۰ ثانیه اجرای برنامه ضرب هیچ سهمی ندارد بنا...
 
 Your command was ignored.
@@ -674,7 +656,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.196 ت
+l.213 ت
         ) برای این مورد می دانیم از ۱۰۰ ثانیه ، ۱۲/۵ ثانیه برای مقایسه و ۶۰ ...
 
 Your command was ignored.
@@ -688,18 +670,33 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.203 ح
+l.220 ح
        الت ۲ ) ۶۰ ثانیه برای ضرب و ۶/۲۵ ثانیه برای مقایسه و ۲۷/۵ ثانیه برای ...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[4] [5] (./document.aux) ) 
+[4]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.237  ب
+         ) با توجه به الف می توان از ۳ باس استفاده کرده که هر کدام از خطوط د...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[5] (./document.aux) ) 
 Here is how much of TeX's memory you used:
  14580 strings out of 492933
  320313 string characters out of 6133146
- 434659 words of memory out of 5000000
+ 435659 words of memory out of 5000000
  18495 multiletter control sequences out of 15000+600000
  535226 words of font info for 52 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191

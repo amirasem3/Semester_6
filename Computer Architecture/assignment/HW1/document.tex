@@ -40,7 +40,25 @@ $CPI$
 \end{center}
 \hrule
 \section*{سوال ۲ : }
-somting
+برای انجام این دستور به ۱۵ کلاک نیاز داریم  که دستورات هر کلاک به شرح زیر می باشد  : 
+\begin{center}
+	$ T_1:AR \leftarrow PC$\\
+	$ T_2 : DR \leftarrow M[AR]$\\
+	$ T_3 : Decode  \ "DR"  \ ,  \ PC \leftarrow PC+1$\\
+	$T_4 : AR \leftarrow PC$\\
+	$T_5 : DR \leftarrow M[AR]  \  , \ PC \leftarrow PC+1$\\
+	$T_6 : AR \leftarrow DR$\\
+	$T_7 : AC \leftarrow M[AR] , PC \leftarrow PC +1$\\
+	$T_8 : AC \leftarrow DR \ , \ AR \leftarrow PC $\\
+	$ T_9 : DR \leftarrow M[AR]$\\
+	$T_{10} : AR \leftarrow DR$\\
+	$T_{11} : DR \leftarrow M[AR] , PC \leftarrow PC+1$\\
+	$T_{12} : AC \leftarrow DR+AC  \  ,  \ AR \leftarrow PC$\\
+	$T_{13} : DR \leftarrow M[AR]$\\
+	$T_{14} : AR \leftarrow DR  \ , \ DR \leftarrow AC $\\
+	$T_{15} : M[AR] \leftarrow DR$
+\end{center}
+
 \hrule
 \section*{سوال ۳ : }
 با توجه  به فرمول 
@@ -115,7 +133,7 @@ $CPI$
 \end{center}
 و این انتظار را داشتیم زیرا تعداد سیکل ها لازم برای انجام هر عملیات ممیز شناور برای پردازنده دوم بیشتر از پردازنده اول است بنابراین باید فرکانس کاری بیشتری نسبت به پردازنده اول داشته باشد تا $MIPS$ آن ها برابر شود . 
 \hrule
-\newpage
+
 \section*{سوال ۴ : }
 با توجه به این که در هر بار دسترسی به حافظه فقط می توانیم یک عدد را بخوانیم بنابراین می توان گفت برای ضرب هر دو عدد دو بار باید به حافظه دسترسی داشته باشیم  . که تعدادآن ها برابر است با 
 $2n^3$
@@ -163,7 +181,6 @@ $CPI$
 	\hrule
 	\section*{سوال ۵  : }
 	
-	نتدسیبنتدسب
 	\hrule
 	\section*{سوال ۶ : }
 	الف )‌
@@ -207,8 +224,17 @@ $Speedup_{overall} = \frac {Exec \ Time_{old}}{Exec \ Time_{new}}$
 همان طور که می بینیم با مقایسه مقدار دو حالت در میابیم که حالت ۱ (افزایش ۴۰ درصدی سرعت ضرب) زمان اجرا را کمتر می کند  . 
 \hrule
 \section*{سوال ۷ : }
-سخنتسینتبذسیب
-\hrule
+الف  ) برای این کار ابتدا باید داده را بر روی 
+$BUS$
+قراردهیم که رجیستر ها از روی آن داده را بردارند که کلاک اضافی نیاز نباشد . بنابراین خط ها به صورت زیر در می آید  : 
+
+\begin{center}
+	$ BUS \   \ <- \  R1  \  ,R2  \ <- \ BUS ,  \ R4  \ <- \ BUS $\\
+	$ BUS \   \ <- \  R5  \  ,R3  \ <- \ BUS ,  \ R1  \ <- \ BUS $\\
+	$ BUS \ <- \ R6 \  , \ R5 <- BUS $
+\end{center}
+ \\
+ ب ) با توجه به الف می توان از ۳ باس استفاده کرده که هر کدام از خطوط دستور بالا بر روی یک باس انجام شود و در مجموع بتوان کل عملیات را بر روی ۳ باس و در یک کلاک انجام داد و با فرض این که در هر رجیستر بلافاصله از روی باس بردارد و بنابراین این کار قابل انجام است  . 
 \section*{سوال ۸  : }
 الف ‌) با توجه به فرمول 
 \begin{center}
@@ -226,9 +252,8 @@ $Speedup_{overall} = \frac {Exec \ Time_{old}}{Exec \ Time_{new}}$
 بنابراین 
 \begin{center}
 	$CPU \ Time  = 96.1 \times 10 ^8 \times 0.5 \times 10^{-9} = 4.805s$
-\end{center}
+ \end{center}
 
-\newpage
 ب ) با توجه به تغییرات انجام شده مقادیر به شکل زیر می باشند  : 
 \begin{center}
 	$IC_{ALU} = 9 \times 10^8 \ , \ 
