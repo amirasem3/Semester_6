@@ -9,6 +9,7 @@
 \settextfont{B Nazanin}
 
 
+
 \begin{document}
   \maketitle
   \section*{ سوال ۱  : }
@@ -180,7 +181,31 @@ $CPI$
 \end{center}
 	\hrule
 	\section*{سوال ۵  : }
-	
+	سیگنال 
+	$hand \ shaking $
+	شامل سه سیگنال 
+	$END  \  , DONE  \  , ERROR$
+	بنابراین می توان 
+	$RTL$
+	رابه صورت زیر نوشت  : 
+	\begin{center}
+		$ start \ \and  \ T_0 : A \leftarrow 0  \  , \ sc \leftarrow n  \ , \ b \leftarrow devisor \ , \ q \leftarrow  dividend  \  , state \leftarrow 1 \ , \ done \leftarrow 0 \ , \ ERR \leftarrow 0 $\\
+		$  T_1 : SHL(a:q)$\\
+		$ T_2 : a \leftarrow a-b$\\
+		$ T_3 \  \&  \ a : q \leftarrow 0 , a \leftarrow a+b , ERR \leftarrow 1$\\
+		$ T_3 \  \& \  (not)a : set \ q_0  \ , \  q_0 \leftarrow 1 $\\
+		$T_4 : sc \leftarrow sc-1$\\
+		$ T_4  \ \& \  sc :q \leftarrow q_0 , reminder \leftarrow a , done \leftarrow 1$\\
+		$ T_4  \ \&  \  (not)sc : state \leftarrow 1$
+		
+	\end{center}
+توضیح این که این برنامه در صورتی که مقدار 
+$sc$
+برابر با صفر باشد باید سیگنال $done$ را یک کنیم و مقدار دو سیگنال دیگر را برابر با صفر قراردهیم ولی در صورتی که $sc$ برابر با یک باشد انگاه باید $state$ را برابر با یک قرار دهیم تا به 
+$T_1$
+برویم و کار خود را باید ادامه دهیم و جایی که سیگنال 
+$ERR$
+را یک می کنیم به این معنا میباشد که با تفریق های متوالی عدد مقسوم منفی می شود که یک خطا محسوب میشود .  
 	\hrule
 	\section*{سوال ۶ : }
 	الف )‌
