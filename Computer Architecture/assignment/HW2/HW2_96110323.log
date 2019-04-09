@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.9)  19 MAR 2019 15:57
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.9)  4 APR 2019 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -592,59 +592,12 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 16.
  [1
 
-]
-Missing character: There is no k in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no j in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no d in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no v in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no k in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no j in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no d in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no f in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no v in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no v in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no k in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no k in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no l in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no d in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no j in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no f in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no n in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no v in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no a in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-Missing character: There is no v in font B Nazanin/OT:script=arab;language=DFLT
-;mapping=persian-tex-text;!
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 185--186
 [][]
  []
 
-[2]
+[3]
 Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
 ;mapping=persian-tex-text;!
 Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
@@ -653,7 +606,6 @@ Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
 ;mapping=persian-tex-text;!
 Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
 ;mapping=persian-tex-text;!
- [3]
 Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
 ;mapping=persian-tex-text;!
 Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
@@ -681,7 +633,7 @@ File: wallace.png Graphic file (type bmp)
 Here is how much of TeX's memory you used:
  14596 strings out of 492933
  320685 string characters out of 6133146
- 435694 words of memory out of 5000000
+ 436694 words of memory out of 5000000
  18500 multiletter control sequences out of 15000+600000
  535242 words of font info for 54 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
