@@ -13,283 +13,91 @@
 \begin{document}
 	\maketitle
 	
-	 \section*{تمرین اول  : }
-	 \begin{center}
-	 	\begin{enumerate}
-	 		\item  	رنگ آبی
-	 		\lr{Underline}
-	 		برای شناسه اول 
-	 		\lr{(Primary Key)}
-	 		\item 	رنگ قهوه ای 
-	 		\lr{Bold}
-	 		برای صفات چند مقداری 
-	 		\item 	رنگ نارنجی 
-	 		\lr{Bold}
-	 		برای صفات مجازی 
-	 		\item 	رنگ سبز- آبی 
-	 		\lr{Underline}
-	 		برای شناسه دوم 
-	 		\lr{(Alternate Key)}
-	 		\item 	رنگ صورتی 
-	 		\lr{Bold}
-	 		برای صفات متمایز کننده (برای موجودیت ضعیف)	
-	 		\item رنگ مشکی 
-	 		\lr{Underline}
-	 		برای کلید خارجی 
-	 		\lr{(Foreign Key)}
-	 	\end{enumerate}
-	
-	 \end{center}
-	 \subsection*{مرکز درمانی  : }
-	 \textcolor{red}{\textbf{موجودیت ها  : }}
-	 \newline
-	 \newline
-	\textcolor{blue}{کارمند  : شماره کارمندی }
+	\section*{تمرین اول : }
+	\subsection*{مرکز درمانی : }
+	برای موجودیت ها جدول ها به شکل زیر می باشد  :‌
 	\begin{center}
-	\begin{enumerate}
-		\item  کارمند پذیرش  : 
-		\textcolor{blue}{\underline{شماره کارمندی} }
-		، ساعت شروع  کار ،‌ ساعت پایان کار ، حقوق دریافتی  ، 
-		\textcolor{orange}{\textbf{ساعات کاری} }
-		\item کارمند بایگانی  : 
-		\textcolor{blue}{\underline{شماره کارمندی} }
-		، شماره اتاق کار 
-		\item مدیر   : 
-		\textcolor{blue}{\underline{شماره کارمندی} }
-		، حقوق دریافتی  ، 
-		\textcolor{brown}{\textbf{شماره دفتر کار}}
-	\end{enumerate}
+		\begin{enumerate}
+			\item بیمار  :  پرونده ، سن ، نام ، نام خانوادگی ، جنسیت ، تاریخ تولد ، 
+			\underline{کد ملی }
+			،شماره بیمه 
+			\item  اقوام بیمار :‌
+			\underline{شماره اقوام }
+			،نام خانوادگی ، تاریخ  ملاقات ، 
+			کلید خارجی (
+	\underline{کد ملی بیمار })
+	
+			\item ویزیت بیمار : تاریخ مراجعه ، 
+			\underline{شماره ویزیت }
+			، نام بیماری ، تاریخ بستری ، 
+			(کلید های خارجی  : \underline{شماره اتاق}  ،\underline{‌کد طبابت}  ، \underline{کد ملی بیمار} ) 
+
+			\item اتاق بستری  : 
+			\underline{شماره اتاق }
+			، 
+		نوع اتاق 
+		\item پرستار : شیفت ، 
+		\underline{کد پرستاری }
+		، جنسیت ، نام خانوادگی ، نام 
+		\item تذکر :
+		\underline{\lr{ID} }
+		، تاریخ ، توضیح ، کلید خارجی (\underline{کد طبابت}  ،\underline{ کد پرستاری})
+		\item دکتر : تخصص ، 
+		\underline{کد طبابت }
+		، جنسیت ، نام ، نام خانوادگی 
+		\item روزهای کاری  : نام ، 
+		\underline{\lr{ID} }
+		\item دارو  : 
+		\lr{\underline{ID}}
+		، نام ، شرکت تولید کننده ، تاریخ انقضاء ، قیمت 
+
+	
+		\end{enumerate}
 	\end{center}
-پرستار  : 
-\textcolor{blue}{\underline{کد پرستاری }}
-، نام ، نام خانوادگی ،‌ساعت شروع شیفت ، ساعت پایان شیفت ، جنسیت ، 
-\textcolor{orange}{\textbf{ساعات شیفت} }
-\newline
-\newline
-\textcolor{blue}{اتاق  : شماره اتاق} 
+جداول مربوط به روابط به صورت زیر می باشد :
 \begin{center}
 	\begin{enumerate}
-		\item \lr{:VIP }
-		\textcolor{blue}{\underline{شماره اتاق }} 
-		، قیمت ، ظرفیت 
-		\item معمولی :‌
-		\textcolor{blue}{\underline{شماره اتاق }} 
-		قیمت ،‌ ظرفیت 
-		
+	
+	\item نظارت 
+	(بین پرستار و اتاق بستری ) :
+	کلید خارجی ( 
+	\underline{کد پرستاری}  ، \underline{شماره اتاق})
+	
+
+\item کار می کند  
+(بین دکتر و روزهای کاری) : 
+کلید خارجی (
+\underline{کد طبابت} ،
+\underline{\lr{ID}
+روزهای کاری })
+\item می خواهد 
+(بین دارو و ویزیت ) : 
+کلید خارجی (
+\underline{\lr{ID}
+دارو  }،
+\underline{\lr{ID}
+ ویزیت })
+
+
+
 	\end{enumerate}
 \end{center}
-دکتر ‌: 
-\textcolor{blue}{\underline{کد طبابت }}
-، نام ،‌نام خانوادگی ، جنسیت ، 
-\textcolor{brown}{\textbf{روزهای کاری}}
+\subsection*{سیستم رزرو اتاق خانه معلم گیلان : }
+جداول به شرح زیر می باشند  : 
 \begin{center}
 	\begin{enumerate}
-		\item \lr{Ph.D}
-		\item \lr{General}
-		\item \lr{Specialist}
+		\item اتاق  : 
+		\underline{شماره اتاق }
+		، ظرفیت اتاق ، مبلغ 
+		\item درخواست رزرو  : 
+		\underline{شماره درخواست }
+		، وضعیت ، تاریخ ثبت ، کلید خارجی (\underline{کد کارمندی} ، \underline{شماره اتاق} ، \underline{شماره پرسشنامه})
+		\item پرسشنامه : 
+		\underline{شماره پرسشنامه }
+		، امتیاز 
+		\item معلم : 
+		‌\underline{کد کارمندی }
+		، نوع استخدام ، نام ، نام خانوادگی ، سن ، سال تولد ، میزان حقوق ، سابقه تدریس ، سال استخدام 
 	\end{enumerate}
-
 \end{center}
- که تمام سه مورد بالا صفات مشترک با نوع موجودیت دکتر دارند  . 
- \newline
-  بیمار   : 
-  \textcolor{blue}{\underline{کد بیمار }}
-  \newline 
-  \newline
- دفترچه بیمه  : 
- \textcolor{blue}{\underline{شماره بیمه }}
- ، 
- \textcolor{cyan}{\underline{شماره ملی} }
- ،‌
- تاریخ تولد  ،‌نام ،‌نام خانوادگی  ،‌ جنسیت ، 
- \textcolor{orange}{\textbf{سن} }
- ،
- \underline{کد بیمار }
- \newline
- \newline
- پرونده  ‌:‌
- \textcolor{blue}{\underline{کد پرونده }}
- ،
- نام بیماری ، تاریخ مراجعه  ،‌ نام دکتر ویزیت کننده ،
- \underline{کد بیمار }
- \newline 
- \newline
- ملاقاتی  (اقوام بیمار) : 
- \textcolor{magenta}{\textbf{نام خانوادگی }}
- ، 
-  \textcolor{magenta}{\textbf{نام بیمار }}
-  ،‌
-  تاریخ ملاقات  ،‌ 
-  \underline{کد بیمار }
-  \newline
-  \newline
-  دارو : 
-   \textcolor{blue}{\underline{نام دارو  }}
-   ،
-    \textcolor{blue}{\underline{شرکت تولید کننده  }}
-    ، 
-    قیمت 
-\newline
-\newline
-    \textcolor{red}{\textbf{روابط : }}
- \newline
- \newline
- 	\lr{ : MN} 
- \underline{کد کارمندی (مدیر)}
- ، 
- \underline{کد پرستاری }
- \newline
- \newline
-\lr{:MD}
-\underline{کد کارمندی (مدیر)}
-، 
-\underline{کد طبابت  }
-\newline
-\newline
-\lr{:NR}
-\underline{شماره اتاق}
-، 
-\underline{کد پرستاری }
-\newline
-\newline
-\lr{:PD}
-\underline{کد بیمار}
-، 
-\underline{کد طبابت }
-، نتیجه 
-\newline
-\newline
-\lr{:PMD}
-\underline{کد بیمار}
-، 
-\underline{کد طبابت }
-،
-\underline{نام دارو ، شرکت  تولید کننده }
-\newline
-\newline
-\lr{:PR}
-\underline{کد بیمار}
-، 
-\underline{شماره اتاق  }
-، 
-نوع بیماری  ،‌ مقدار مراقبت مورد نیاز 
-\newline
-\newline
-\lr{:DA}
-\underline{کدپرونده}
-، 
-\underline{کد کارمندی (کارمند بایگانی) }
-\newline
-\newline
-\lr{:DR}
-\underline{کدپرونده}
-، 
-\underline{کد کارمندی (کارمند پذیرش) }
-\subsection*{سیستم رزرو اتاق خانه معلم گیلان  : }
- \textcolor{red}{\textbf{موجودیت ها  : }}
- \newline
- \newline
- معلم  : 
- \textcolor{blue}{\underline{شماره کارمندی }}
- ،
- نام ، نام خانوادگی ،‌سال های خدمت ، سن 
- \newline
-\newline
-اتاق : 
-\textcolor{blue}{\underline{شماره اتاق  }}
-،‌ ظرفیت 
-\newline
-\newline
-پرسشنامه : 
-\textcolor{blue}{\underline{شماره پرسشنامه}}
-،
-\textcolor{brown}{\textbf{جواب ها }}
-،
-\textcolor{brown}{\textbf{انتقادات }}
-،
-\textcolor{brown}{\textbf{پیشنهادات }}
-،
-\textcolor{brown}{\textbf{نظرات }}
-\newline
-\newline
-درخواست   : تاریخ ورود ، تاریخ خروج ،‌ تعداد نفرات ،‌ وضعیت ،‌
-\underline{شماره کارمندی (معلم)}
-\newline
-\newline
-کارمند پذیرش  : 
-\textcolor{blue}{\underline{شماره کارمندی }}
-، 
-جنسیت ، میزان حقوق دریافتی ، 
-\textcolor{brown}{\textbf{روزهای کاری  }}
-\newline
-\newline
-صورت حساب  : 
-\textcolor{blue}{\underline{شماره صورت حساب}}
-،
-مقدارقابل پرداخت ،‌ تاریخ صدور ، نام پرداخت کننده 
-\newline
-\newline
-مدیر : 
-\textcolor{blue}{\underline{شماره کارمندی}}
-، 
- \textcolor{cyan}{\underline{نام خانوادگی } }
- \newline
- \newline
- مسئول مالی : 
- \textcolor{blue}{\underline{شماره کارمندی}}
- ،
- نام ، نام خانوادگی ،‌
- \textcolor{brown}{\textbf{روزهای کاری  }}
- \newline
- \newline
- \textcolor{red}{\textbf{روابط : }}
- \newline
- \newline
- \lr{:TQ}
-  \underline{شماره کارمندی (معلم)}
- ، 
- \underline{شماره پرسشنامه }
-\newline
-\newline
-\lr{:TR}
- \underline{شماره کارمندی (معلم )}
-، 
-\underline{شماره اتاق  }
-\newline
-\newline
-\lr{:TB}
- \underline{شماره کارمندی (معلم )}
-، 
-\underline{شماره صورت حساب }
-\newline
-\newline
-\lr{:BA}
- \underline{شماره صورت حساب }
-، 
-\underline{شماره کارمندی (مسئول مالی ) }
-\newline
-\newline
-\lr{:BR}
- \underline{شماره کارمندی (کارمند پذیرش)}
-، 
-\underline{کد پرستاری }
-\newline
-\newline
-\lr{:RR}
- \underline{شماره کارمندی (کارمند پذیرش)}
-، 
-\underline{شماره درخواست  }
-\newline
-\newline
-\lr{:MQ}
- \underline{شماره کارمندی (مدیر)}
-، 
-\underline{شماره پرسشنامه }
-\newline
-\newline
-\lr{:MB}
- \underline{شماره کارمندی (مدیر)}
-، 
-\underline{شماره صورت حساب  }
-
 \end{document}
