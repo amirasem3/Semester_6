@@ -2,3 +2,19 @@ Performance Assignment :
 https://www.d.umn.edu/~gshute/arch/performance-equation.xhtml
 https://www.cise.ufl.edu/~mssz/CompOrg/CDA-proc.html
 https://slideplayer.com/slide/12933975/
+
+
+
+create view night_rooms as select room_number,date from supervision where supervision.nurse_id in
+ (select id from nurse where shift  = 2 );
+ 
+ select lname , patient_id from relative where patient_id in (select patient_id from relative where date in (select date from night_rooms));
+rel
+
+
+
+
+test2 : 
+
+ create view night_rooms as select date, room_number,nurse_id  from supervision where nurse_id in 
+(select id from nurse where shift =2); 
