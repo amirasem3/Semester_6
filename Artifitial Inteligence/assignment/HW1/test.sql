@@ -1,0 +1,1 @@
+create view temp as select datediff(finishing_date , starting_date) as 'days' , room_number from reserve where state = 'Finished' or state = 'Pending';
