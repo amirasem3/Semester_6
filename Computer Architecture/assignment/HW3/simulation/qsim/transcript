@@ -1,0 +1,29 @@
+# do Q1.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:34:45 on May 06,2019
+# vlog -work work Q1.vo 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 23:34:46 on May 06,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.4b Compiler 2015.05 May 27 2015
+# Start time: 23:34:46 on May 06,2019
+# vlog -work work ALU.vwf.vt 
+# -- Compiling module ALU_vlg_vec_tst
+# 
+# Top level modules:
+# 	ALU_vlg_vec_tst
+# End time: 23:34:46 on May 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ALU_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 23:34:46 on May 06,2019
+# Loading work.ALU_vlg_vec_tst
+# Loading work.ALU
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 100 ns.
+# 
+# End time: 23:34:47 on May 06,2019, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

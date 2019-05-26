@@ -1,0 +1,836 @@
+Analysis & Synthesis report for Q1
+Mon May 06 23:31:54 2019
+Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Logic Cells Representing Combinational Loops
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon May 06 23:31:54 2019       ;
+; Quartus Prime Version           ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
+; Revision Name                   ; Q1                                          ;
+; Top-level Entity Name           ; ALU                                         ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 142                                         ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGTFD9E5F35I7     ;                    ;
+; Top-level entity name                                                           ; ALU                ; Q1                 ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                 ;
++----------------------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                         ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                               ; Library ;
++----------------------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+; ../HW2/HW2_96110323/Universal Shift Register/my21mux.bdf ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW2/HW2_96110323/Universal Shift Register/my21mux.bdf ;         ;
+; Q1.bdf                                                   ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/Q1.bdf                                            ;         ;
+; FA.bdf                                                   ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/FA.bdf                                            ;         ;
+; adder_4bit.bdf                                           ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/adder_4bit.bdf                                    ;         ;
+; adder_8bit.bdf                                           ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/adder_8bit.bdf                                    ;         ;
+; Adder_32bit.bdf                                          ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/Adder_32bit.bdf                                   ;         ;
+; Nand_32bit.bdf                                           ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/Nand_32bit.bdf                                    ;         ;
+; HS.bdf                                                   ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/HS.bdf                                            ;         ;
+; FS.bdf                                                   ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/FS.bdf                                            ;         ;
+; FS_4bit.bdf                                              ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/FS_4bit.bdf                                       ;         ;
+; FS_8bit.bdf                                              ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/FS_8bit.bdf                                       ;         ;
+; FS_32bit.bdf                                             ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/FS_32bit.bdf                                      ;         ;
+; CMP_1bit_alter.bdf                                       ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/CMP_1bit_alter.bdf                                ;         ;
+; cmp_4bit.bdf                                             ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/cmp_4bit.bdf                                      ;         ;
+; cmp_8bit.bdf                                             ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/cmp_8bit.bdf                                      ;         ;
+; cmp_16bit.bdf                                            ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/cmp_16bit.bdf                                     ;         ;
+; cmp_32bit.bdf                                            ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/cmp_32bit.bdf                                     ;         ;
+; tw0_complement_32bit.bdf                                 ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/tw0_complement_32bit.bdf                          ;         ;
+; ALU.bdf                                                  ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/ALU.bdf                                           ;         ;
+; mux2_1.bdf                                               ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/mux2_1.bdf                                        ;         ;
+; mux8_1.bdf                                               ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/mux8_1.bdf                                        ;         ;
++----------------------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimate of Logic utilization (ALMs needed) ; 274         ;
+;                                             ;             ;
+; Combinational ALUT usage for logic          ; 401         ;
+;     -- 7 input functions                    ; 12          ;
+;     -- 6 input functions                    ; 134         ;
+;     -- 5 input functions                    ; 78          ;
+;     -- 4 input functions                    ; 62          ;
+;     -- <=3 input functions                  ; 115         ;
+;                                             ;             ;
+; Dedicated logic registers                   ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 142         ;
+;                                             ;             ;
+; Total DSP Blocks                            ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; OP[0]~input ;
+; Maximum fan-out                             ; 79          ;
+; Total fan-out                               ; 2029        ;
+; Average fan-out                             ; 2.96        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
++---------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node            ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Library Name ;
++---------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
+; |ALU                                  ; 401 (0)           ; 0 (0)        ; 0                 ; 0          ; 142  ; 0            ; |ALU                                                                                               ; work         ;
+;    |Adder_32bit:inst|                 ; 55 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst                                                                              ; work         ;
+;       |adder_8bit:inst1|              ; 20 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1                                                             ; work         ;
+;          |adder_4bit:inst1|           ; 10 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1                                            ; work         ;
+;             |FA:Bit0|                 ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0                                    ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0|Q1:inst                            ; work         ;
+;             |FA:Bit1|                 ; 3 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit1                                    ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit1|Q1:inst1                           ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit1|Q1:inst                            ; work         ;
+;             |FA:Bit2|                 ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2                                    ; work         ;
+;                |Q1:inst1|             ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2|Q1:inst1                           ; work         ;
+;                |Q1:inst|              ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2|Q1:inst                            ; work         ;
+;             |FA:Bit3|                 ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit3                                    ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit3|Q1:inst1                           ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit3|Q1:inst                            ; work         ;
+;          |adder_4bit:inst|            ; 10 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst                                             ; work         ;
+;             |FA:Bit0|                 ; 3 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit0                                     ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit0|Q1:inst1                            ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit0|Q1:inst                             ; work         ;
+;             |FA:Bit1|                 ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1                                     ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1|Q1:inst                             ; work         ;
+;             |FA:Bit2|                 ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit2                                     ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit2|Q1:inst1                            ; work         ;
+;             |FA:Bit3|                 ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3                                     ; work         ;
+;                |Q1:inst1|             ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3|Q1:inst1                            ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3|Q1:inst                             ; work         ;
+;       |adder_8bit:inst2|              ; 15 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2                                                             ; work         ;
+;          |adder_4bit:inst1|           ; 9 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1                                            ; work         ;
+;             |FA:Bit0|                 ; 3 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0                                    ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0|Q1:inst1                           ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0|Q1:inst                            ; work         ;
+;             |FA:Bit2|                 ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2                                    ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2|Q1:inst1                           ; work         ;
+;             |FA:Bit3|                 ; 4 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3                                    ; work         ;
+;                |Q1:inst1|             ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3|Q1:inst1                           ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3|Q1:inst                            ; work         ;
+;          |adder_4bit:inst|            ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst                                             ; work         ;
+;             |FA:Bit0|                 ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit0                                     ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit0|Q1:inst1                            ; work         ;
+;             |FA:Bit1|                 ; 3 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1                                     ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1|Q1:inst1                            ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1|Q1:inst                             ; work         ;
+;             |FA:Bit3|                 ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3                                     ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3|Q1:inst1                            ; work         ;
+;       |adder_8bit:inst3|              ; 10 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3                                                             ; work         ;
+;          |adder_4bit:inst1|           ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1                                            ; work         ;
+;             |FA:Bit1|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit1                                    ; work         ;
+;             |FA:Bit2|                 ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit2                                    ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit2|Q1:inst1                           ; work         ;
+;             |FA:Bit3|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit3                                    ; work         ;
+;          |adder_4bit:inst|            ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst                                             ; work         ;
+;             |FA:Bit1|                 ; 3 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit1                                     ; work         ;
+;                |Q1:inst1|             ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit1|Q1:inst1                            ; work         ;
+;             |FA:Bit2|                 ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit2                                     ; work         ;
+;                |Q1:inst1|             ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit2|Q1:inst1                            ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit2|Q1:inst                             ; work         ;
+;             |FA:Bit3|                 ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3                                     ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3|Q1:inst1                            ; work         ;
+;       |adder_8bit:inst|               ; 10 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst                                                              ; work         ;
+;          |adder_4bit:inst1|           ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1                                             ; work         ;
+;             |FA:Bit0|                 ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit0                                     ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit0|Q1:inst                             ; work         ;
+;             |FA:Bit1|                 ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit1                                     ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit1|Q1:inst                             ; work         ;
+;             |FA:Bit2|                 ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2                                     ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2|Q1:inst1                            ; work         ;
+;             |FA:Bit3|                 ; 3 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit3                                     ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit3|Q1:inst1                            ; work         ;
+;                |Q1:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit3|Q1:inst                             ; work         ;
+;          |adder_4bit:inst|            ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst                                              ; work         ;
+;             |FA:Bit1|                 ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1                                      ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1|Q1:inst1                             ; work         ;
+;             |FA:Bit2|                 ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit2                                      ; work         ;
+;                |Q1:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit2|Q1:inst1                             ; work         ;
+;    |FS_32bit:inst2|                   ; 35 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2                                                                                ; work         ;
+;       |FS_8bit:inst1|                 ; 10 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1                                                                  ; work         ;
+;          |FS_4bit:inst1|              ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst1                                                    ; work         ;
+;             |FS:inst1|                ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst1|FS:inst1                                           ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst1|FS:inst1|HS:inst                                   ; work         ;
+;             |FS:inst2|                ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst1|FS:inst2                                           ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst1|FS:inst2|HS:inst                                   ; work         ;
+;             |FS:inst3|                ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst1|FS:inst3                                           ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst1|FS:inst3|HS:inst                                   ; work         ;
+;             |FS:inst|                 ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst1|FS:inst                                            ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst1|FS:inst|HS:inst                                    ; work         ;
+;          |FS_4bit:inst|               ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst                                                     ; work         ;
+;             |FS:inst1|                ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst|FS:inst1                                            ; work         ;
+;                |HS:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst|FS:inst1|HS:inst1                                   ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst|FS:inst1|HS:inst                                    ; work         ;
+;             |FS:inst2|                ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst|FS:inst2                                            ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst1|FS_4bit:inst|FS:inst2|HS:inst                                    ; work         ;
+;       |FS_8bit:inst2|                 ; 9 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2                                                                  ; work         ;
+;          |FS_4bit:inst1|              ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst1                                                    ; work         ;
+;             |FS:inst2|                ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst1|FS:inst2                                           ; work         ;
+;             |FS:inst3|                ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst1|FS:inst3                                           ; work         ;
+;             |FS:inst|                 ; 3 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst1|FS:inst                                            ; work         ;
+;                |HS:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst1|FS:inst|HS:inst1                                   ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst1|FS:inst|HS:inst                                    ; work         ;
+;          |FS_4bit:inst|               ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst                                                     ; work         ;
+;             |FS:inst1|                ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst|FS:inst1                                            ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst|FS:inst1|HS:inst                                    ; work         ;
+;             |FS:inst2|                ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst|FS:inst2                                            ; work         ;
+;             |FS:inst|                 ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst|FS:inst                                             ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst2|FS_4bit:inst|FS:inst|HS:inst                                     ; work         ;
+;       |FS_8bit:inst3|                 ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3                                                                  ; work         ;
+;          |FS_4bit:inst1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst1                                                    ; work         ;
+;             |FS:inst2|                ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst1|FS:inst2                                           ; work         ;
+;             |FS:inst|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst1|FS:inst                                            ; work         ;
+;          |FS_4bit:inst|               ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst                                                     ; work         ;
+;             |FS:inst1|                ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst|FS:inst1                                            ; work         ;
+;                |HS:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst|FS:inst1|HS:inst1                                   ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst|FS:inst1|HS:inst                                    ; work         ;
+;             |FS:inst2|                ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst|FS:inst2                                            ; work         ;
+;                |HS:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst|FS:inst2|HS:inst1                                   ; work         ;
+;             |FS:inst|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst3|FS_4bit:inst|FS:inst                                             ; work         ;
+;       |FS_8bit:inst|                  ; 9 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst                                                                   ; work         ;
+;          |FS_4bit:inst1|              ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst1                                                     ; work         ;
+;             |FS:inst3|                ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst1|FS:inst3                                            ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst1|FS:inst3|HS:inst                                    ; work         ;
+;             |FS:inst|                 ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst1|FS:inst                                             ; work         ;
+;                |HS:inst1|             ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst1|FS:inst|HS:inst1                                    ; work         ;
+;                |HS:inst|              ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst1|FS:inst|HS:inst                                     ; work         ;
+;          |FS_4bit:inst|               ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst                                                      ; work         ;
+;             |FS:inst1|                ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst1                                             ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst1|HS:inst                                     ; work         ;
+;             |FS:inst2|                ; 2 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst2                                             ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst2|HS:inst                                     ; work         ;
+;             |FS:inst3|                ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst3                                             ; work         ;
+;                |HS:inst|              ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst3|HS:inst                                     ; work         ;
+;    |cmp_32bit:inst8|                  ; 33 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8                                                                               ; work         ;
+;       |cmp_16bit:inst1|               ; 24 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst1                                                               ; work         ;
+;          |cmp_8bit:inst1|             ; 20 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1                                                ; work         ;
+;             |cmp_4bit:inst1|          ; 20 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1                                 ; work         ;
+;                |CMP_1bit_alter:inst3| ; 17 (17)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst3            ; work         ;
+;                |CMP_1bit_alter:inst|  ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst             ; work         ;
+;          |cmp_8bit:inst|              ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst                                                 ; work         ;
+;             |cmp_4bit:inst1|          ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1                                  ; work         ;
+;                |CMP_1bit_alter:inst1| ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst1             ; work         ;
+;       |cmp_16bit:inst|                ; 9 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst                                                                ; work         ;
+;          |cmp_8bit:inst1|             ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1                                                 ; work         ;
+;             |cmp_4bit:inst1|          ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1                                  ; work         ;
+;                |CMP_1bit_alter:inst2| ; 3 (3)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst2             ; work         ;
+;             |cmp_4bit:inst|           ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst                                   ; work         ;
+;                |CMP_1bit_alter:inst|  ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst               ; work         ;
+;          |cmp_8bit:inst|              ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst                                                  ; work         ;
+;             |cmp_4bit:inst1|          ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1                                   ; work         ;
+;                |CMP_1bit_alter:inst3| ; 4 (4)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst3              ; work         ;
+;             |cmp_4bit:inst|           ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst                                    ; work         ;
+;                |CMP_1bit_alter:inst|  ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst                ; work         ;
+;    |mux2_1:inst21|                    ; 32 (32)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux2_1:inst21                                                                                 ; work         ;
+;    |mux8_1:inst24|                    ; 115 (0)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux8_1:inst24                                                                                 ; work         ;
+;       |mux2_1:inst7|                  ; 115 (115)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|mux8_1:inst24|mux2_1:inst7                                                                    ; work         ;
+;    |tw0_complement_32bit:inst4|       ; 37 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4                                                                    ; work         ;
+;       |Adder_32bit:inst|              ; 37 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst                                                   ; work         ;
+;          |adder_8bit:inst1|           ; 11 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1                                  ; work         ;
+;             |adder_4bit:inst1|        ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit0|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0|Q1:inst ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit1         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit1|Q1:inst ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst                  ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit2|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst2|           ; 10 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2                                  ; work         ;
+;             |adder_4bit:inst1|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0|Q1:inst ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit1         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit1|Q1:inst ; work         ;
+;                |FA:Bit2|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst                  ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit2|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst3|           ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3                                  ; work         ;
+;             |adder_4bit:inst1|        ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst                  ; work         ;
+;                |FA:Bit0|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit2|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst|            ; 9 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst                                   ; work         ;
+;             |adder_4bit:inst1|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1                  ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit3|Q1:inst  ; work         ;
+;             |adder_4bit:inst|         ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst                   ; work         ;
+;                |FA:Bit0|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit0           ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit0|Q1:inst   ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1           ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1|Q1:inst   ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit2           ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst4|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit2|Q1:inst   ; work         ;
+;    |tw0_complement_32bit:inst5|       ; 38 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5                                                                    ; work         ;
+;       |Adder_32bit:inst|              ; 38 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst                                                   ; work         ;
+;          |adder_8bit:inst1|           ; 11 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1                                  ; work         ;
+;             |adder_4bit:inst1|        ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit0|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0|Q1:inst ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit1         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit1|Q1:inst ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst                  ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit2|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst2|           ; 10 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2                                  ; work         ;
+;             |adder_4bit:inst1|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0|Q1:inst ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit1         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit1|Q1:inst ; work         ;
+;                |FA:Bit2|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst                  ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit2|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst3|           ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3                                  ; work         ;
+;             |adder_4bit:inst1|        ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst                  ; work         ;
+;                |FA:Bit0|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit2|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst|            ; 10 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst                                   ; work         ;
+;             |adder_4bit:inst1|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1                  ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit3|Q1:inst  ; work         ;
+;             |adder_4bit:inst|         ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst                   ; work         ;
+;                |FA:Bit0|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit0           ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit0|Q1:inst   ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1           ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1|Q1:inst   ; work         ;
+;                |FA:Bit2|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit2           ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst5|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit2|Q1:inst   ; work         ;
+;    |tw0_complement_32bit:inst6|       ; 28 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6                                                                    ; work         ;
+;       |Adder_32bit:inst|              ; 28 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst                                                   ; work         ;
+;          |adder_8bit:inst1|           ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1                                  ; work         ;
+;             |adder_4bit:inst1|        ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit1         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit1|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst                  ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit2|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst2|           ; 9 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2                                  ; work         ;
+;             |adder_4bit:inst1|        ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0|Q1:inst ; work         ;
+;                |FA:Bit2|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst                  ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst3|           ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3                                  ; work         ;
+;             |adder_4bit:inst1|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit1         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit1|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst                  ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst|            ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst                                   ; work         ;
+;             |adder_4bit:inst1|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1                  ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2|Q1:inst  ; work         ;
+;             |adder_4bit:inst|         ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst                   ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit0           ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit0|Q1:inst   ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1           ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1|Q1:inst   ; work         ;
+;    |tw0_complement_32bit:inst7|       ; 28 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7                                                                    ; work         ;
+;       |Adder_32bit:inst|              ; 28 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst                                                   ; work         ;
+;          |adder_8bit:inst1|           ; 8 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1                                  ; work         ;
+;             |adder_4bit:inst1|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit0|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0|Q1:inst ; work         ;
+;                |FA:Bit2|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 5 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst                  ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit0          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst1|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst2|           ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2                                  ; work         ;
+;             |adder_4bit:inst1|        ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit0|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit0|Q1:inst ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit1         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit1|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst                  ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst2|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst3|           ; 7 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3                                  ; work         ;
+;             |adder_4bit:inst1|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1                 ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit1         ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit1|Q1:inst ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;             |adder_4bit:inst|         ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst                  ; work         ;
+;                |FA:Bit1|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst3|adder_4bit:inst|FA:Bit3|Q1:inst  ; work         ;
+;          |adder_8bit:inst|            ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst                                   ; work         ;
+;             |adder_4bit:inst1|        ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1                  ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit1          ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit1|Q1:inst  ; work         ;
+;                |FA:Bit2|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2          ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst1|FA:Bit2|Q1:inst  ; work         ;
+;             |adder_4bit:inst|         ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst                   ; work         ;
+;                |FA:Bit1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1           ; work         ;
+;                   |Q1:inst|           ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit1|Q1:inst   ; work         ;
+;                |FA:Bit3|              ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit3           ; work         ;
+;                   |Q1:inst|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |ALU|tw0_complement_32bit:inst7|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit3|Q1:inst   ; work         ;
++---------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                ;
++--------------------------------------------------------+----+
+; Logic Cell Name                                        ;    ;
++--------------------------------------------------------+----+
+; mux8_1:inst24|mux2_1:inst7|O1[31]~0                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[30]~1                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[29]~2                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[28]~3                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[27]~4                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[26]~5                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[25]~6                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[24]~7                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[23]~8                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[22]~9                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[21]~10                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[20]~11                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[19]~12                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[18]~13                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[17]~14                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[16]~15                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[15]~16                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[14]~17                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[13]~18                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[12]~19                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[11]~20                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[10]~21                   ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[9]~22                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[8]~23                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[7]~24                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[6]~25                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[5]~26                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[4]~27                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[3]~28                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[2]~29                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[1]~30                    ;    ;
+; mux8_1:inst24|mux2_1:inst7|O1[0]~31                    ;    ;
+; Number of logic cells representing combinational loops ; 32 ;
++--------------------------------------------------------+----+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |ALU|mux8_1:inst24|mux2_1:inst4|O1[31] ;
+; 5:1                ; 31 bits   ; 93 LEs        ; 93 LEs               ; 0 LEs                  ; No         ; |ALU|mux8_1:inst24|mux2_1:inst7|O1[31] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 403                         ;
+;     extend            ; 12                          ;
+;         7 data inputs ; 12                          ;
+;     normal            ; 391                         ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 50                          ;
+;         3 data inputs ; 65                          ;
+;         4 data inputs ; 62                          ;
+;         5 data inputs ; 78                          ;
+;         6 data inputs ; 134                         ;
+; boundary_port         ; 142                         ;
+;                       ;                             ;
+; Max LUT depth         ; 16.00                       ;
+; Average LUT depth     ; 10.85                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+    Info: Processing started: Mon May 06 23:31:38 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Q1 -c Q1
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /term6/semester_6/computer architecture/assignment/hw2/hw2_96110323/universal shift register/my21mux.bdf
+    Info (12023): Found entity 1: my21mux
+Info (12021): Found 1 design units, including 1 entities, in source file q1.bdf
+    Info (12023): Found entity 1: Q1
+Info (12021): Found 1 design units, including 1 entities, in source file fa.bdf
+    Info (12023): Found entity 1: FA
+Info (12021): Found 1 design units, including 1 entities, in source file adder_4bit.bdf
+    Info (12023): Found entity 1: adder_4bit
+Info (12021): Found 1 design units, including 1 entities, in source file adder_8bit.bdf
+    Info (12023): Found entity 1: adder_8bit
+Info (12021): Found 1 design units, including 1 entities, in source file adder_32bit.bdf
+    Info (12023): Found entity 1: Adder_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file nand_32bit.bdf
+    Info (12023): Found entity 1: Nand_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file hs.bdf
+    Info (12023): Found entity 1: HS
+Info (12021): Found 1 design units, including 1 entities, in source file fs.bdf
+    Info (12023): Found entity 1: FS
+Info (12021): Found 1 design units, including 1 entities, in source file fs_4bit.bdf
+    Info (12023): Found entity 1: FS_4bit
+Info (12021): Found 1 design units, including 1 entities, in source file fs_8bit.bdf
+    Info (12023): Found entity 1: FS_8bit
+Info (12021): Found 1 design units, including 1 entities, in source file fs_32bit.bdf
+    Info (12023): Found entity 1: FS_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file cmp_1bit.bdf
+    Info (12023): Found entity 1: cmp_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file cmp_1bit_alter.bdf
+    Info (12023): Found entity 1: CMP_1bit_alter
+Info (12021): Found 1 design units, including 1 entities, in source file cmp_8bit_test.bdf
+    Info (12023): Found entity 1: cmp_8bit_test
+Info (12021): Found 1 design units, including 1 entities, in source file cmp_4bit.bdf
+    Info (12023): Found entity 1: cmp_4bit
+Info (12021): Found 1 design units, including 1 entities, in source file cmp_8bit.bdf
+    Info (12023): Found entity 1: cmp_8bit
+Info (12021): Found 1 design units, including 1 entities, in source file cmp_16bit.bdf
+    Info (12023): Found entity 1: cmp_16bit
+Info (12021): Found 1 design units, including 1 entities, in source file cmp_32bit.bdf
+    Info (12023): Found entity 1: cmp_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file tw0_complement_32bit.bdf
+    Info (12023): Found entity 1: tw0_complement_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file alu.bdf
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 1 design units, including 1 entities, in source file mux2_1.bdf
+    Info (12023): Found entity 1: mux2_1
+Info (12021): Found 1 design units, including 1 entities, in source file mux8_1.bdf
+    Info (12023): Found entity 1: mux8_1
+Info (12127): Elaborating entity "ALU" for the top level hierarchy
+Warning (275043): Pin "ZERO" is missing source
+Warning (275043): Pin "SIGN" is missing source
+Warning (275043): Pin "OVERFLOW" is missing source
+Warning (275009): Pin "SHAMT" not connected
+Warning (275008): Primitive "GND" of instance "inst17" not used
+Warning (275008): Primitive "NOT" of instance "inst19" not used
+Warning (275008): Primitive "NOT" of instance "inst20" not used
+Info (12128): Elaborating entity "my21mux" for hierarchy "my21mux:inst16"
+Info (12128): Elaborating entity "cmp_32bit" for hierarchy "cmp_32bit:inst8"
+Info (12128): Elaborating entity "cmp_16bit" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1"
+Info (12128): Elaborating entity "cmp_8bit" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1"
+Info (12128): Elaborating entity "cmp_4bit" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1"
+Info (12128): Elaborating entity "CMP_1bit_alter" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst3"
+Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:inst21"
+Info (12128): Elaborating entity "mux8_1" for hierarchy "mux8_1:inst24"
+Info (12128): Elaborating entity "tw0_complement_32bit" for hierarchy "tw0_complement_32bit:inst6"
+Info (12128): Elaborating entity "Adder_32bit" for hierarchy "tw0_complement_32bit:inst6|Adder_32bit:inst"
+Info (12128): Elaborating entity "adder_8bit" for hierarchy "tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst"
+Info (12128): Elaborating entity "adder_4bit" for hierarchy "tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst"
+Info (12128): Elaborating entity "FA" for hierarchy "tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit3"
+Info (12128): Elaborating entity "Q1" for hierarchy "tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst|adder_4bit:inst|FA:Bit3|Q1:inst"
+Info (12128): Elaborating entity "FS_32bit" for hierarchy "FS_32bit:inst2"
+Info (12128): Elaborating entity "FS_8bit" for hierarchy "FS_32bit:inst2|FS_8bit:inst"
+Info (12128): Elaborating entity "FS_4bit" for hierarchy "FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst"
+Info (12128): Elaborating entity "FS" for hierarchy "FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst"
+Info (12128): Elaborating entity "HS" for hierarchy "FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst|HS:inst"
+Info (12128): Elaborating entity "Nand_32bit" for hierarchy "Nand_32bit:inst3"
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "ZERO" is stuck at GND
+    Warning (13410): Pin "SIGN" is stuck at GND
+    Warning (13410): Pin "OVERFLOW" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SHAMT[4]"
+    Warning (15610): No output dependent on input pin "SHAMT[3]"
+    Warning (15610): No output dependent on input pin "SHAMT[2]"
+    Warning (15610): No output dependent on input pin "SHAMT[1]"
+    Warning (15610): No output dependent on input pin "SHAMT[0]"
+Info (21057): Implemented 543 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 73 input pins
+    Info (21059): Implemented 69 output pins
+    Info (21061): Implemented 401 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 5003 megabytes
+    Info: Processing ended: Mon May 06 23:31:54 2019
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:22
+
+

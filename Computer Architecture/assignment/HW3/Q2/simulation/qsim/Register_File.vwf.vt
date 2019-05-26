@@ -1,0 +1,317 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/08/2019 01:03:59"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          Register_File
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module Register_File_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Clear;
+reg Clock;
+reg [4:0] Read_Reg_Num_1;
+reg [4:0] Read_Reg_Num_2;
+reg Reg_Write;
+reg [31:0] Write_Data;
+reg [4:0] Write_Reg_Num;
+// wires                                               
+wire [31:0] Read_Data1;
+wire [31:0] Read_Data2;
+
+// assign statements (if any)                          
+Register_File i1 (
+// port map - connection between master ports and signals/registers   
+	.Clear(Clear),
+	.Clock(Clock),
+	.Read_Data1(Read_Data1),
+	.Read_Data2(Read_Data2),
+	.Read_Reg_Num_1(Read_Reg_Num_1),
+	.Read_Reg_Num_2(Read_Reg_Num_2),
+	.Reg_Write(Reg_Write),
+	.Write_Data(Write_Data),
+	.Write_Reg_Num(Write_Reg_Num)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// Clear
+initial
+begin
+	Clear = 1'b0;
+end 
+
+// Clock
+always
+begin
+	Clock = 1'b0;
+	Clock = #5000 1'b1;
+	#5000;
+end 
+// Read_Reg_Num_1[ 4 ]
+initial
+begin
+	Read_Reg_Num_1[4] = 1'b0;
+end 
+// Read_Reg_Num_1[ 3 ]
+initial
+begin
+	Read_Reg_Num_1[3] = 1'b1;
+end 
+// Read_Reg_Num_1[ 2 ]
+initial
+begin
+	Read_Reg_Num_1[2] = 1'b0;
+end 
+// Read_Reg_Num_1[ 1 ]
+initial
+begin
+	Read_Reg_Num_1[1] = 1'b1;
+end 
+// Read_Reg_Num_1[ 0 ]
+initial
+begin
+	Read_Reg_Num_1[0] = 1'b0;
+end 
+// Read_Reg_Num_2[ 4 ]
+initial
+begin
+	Read_Reg_Num_2[4] = 1'b0;
+end 
+// Read_Reg_Num_2[ 3 ]
+initial
+begin
+	Read_Reg_Num_2[3] = 1'b0;
+end 
+// Read_Reg_Num_2[ 2 ]
+initial
+begin
+	Read_Reg_Num_2[2] = 1'b0;
+end 
+// Read_Reg_Num_2[ 1 ]
+initial
+begin
+	Read_Reg_Num_2[1] = 1'b0;
+end 
+// Read_Reg_Num_2[ 0 ]
+initial
+begin
+	Read_Reg_Num_2[0] = 1'b0;
+end 
+
+// Reg_Write
+initial
+begin
+	Reg_Write = 1'b1;
+end 
+// Write_Data[ 31 ]
+initial
+begin
+	Write_Data[31] = 1'b0;
+end 
+// Write_Data[ 30 ]
+initial
+begin
+	Write_Data[30] = 1'b0;
+end 
+// Write_Data[ 29 ]
+initial
+begin
+	Write_Data[29] = 1'b0;
+end 
+// Write_Data[ 28 ]
+initial
+begin
+	Write_Data[28] = 1'b0;
+end 
+// Write_Data[ 27 ]
+initial
+begin
+	Write_Data[27] = 1'b0;
+end 
+// Write_Data[ 26 ]
+initial
+begin
+	Write_Data[26] = 1'b0;
+end 
+// Write_Data[ 25 ]
+initial
+begin
+	Write_Data[25] = 1'b0;
+end 
+// Write_Data[ 24 ]
+initial
+begin
+	Write_Data[24] = 1'b0;
+end 
+// Write_Data[ 23 ]
+initial
+begin
+	Write_Data[23] = 1'b0;
+end 
+// Write_Data[ 22 ]
+initial
+begin
+	Write_Data[22] = 1'b0;
+end 
+// Write_Data[ 21 ]
+initial
+begin
+	Write_Data[21] = 1'b0;
+end 
+// Write_Data[ 20 ]
+initial
+begin
+	Write_Data[20] = 1'b0;
+end 
+// Write_Data[ 19 ]
+initial
+begin
+	Write_Data[19] = 1'b0;
+end 
+// Write_Data[ 18 ]
+initial
+begin
+	Write_Data[18] = 1'b0;
+end 
+// Write_Data[ 17 ]
+initial
+begin
+	Write_Data[17] = 1'b0;
+end 
+// Write_Data[ 16 ]
+initial
+begin
+	Write_Data[16] = 1'b0;
+end 
+// Write_Data[ 15 ]
+initial
+begin
+	Write_Data[15] = 1'b0;
+end 
+// Write_Data[ 14 ]
+initial
+begin
+	Write_Data[14] = 1'b0;
+end 
+// Write_Data[ 13 ]
+initial
+begin
+	Write_Data[13] = 1'b0;
+end 
+// Write_Data[ 12 ]
+initial
+begin
+	Write_Data[12] = 1'b0;
+end 
+// Write_Data[ 11 ]
+initial
+begin
+	Write_Data[11] = 1'b0;
+end 
+// Write_Data[ 10 ]
+initial
+begin
+	Write_Data[10] = 1'b0;
+end 
+// Write_Data[ 9 ]
+initial
+begin
+	Write_Data[9] = 1'b0;
+end 
+// Write_Data[ 8 ]
+initial
+begin
+	Write_Data[8] = 1'b0;
+end 
+// Write_Data[ 7 ]
+initial
+begin
+	Write_Data[7] = 1'b0;
+end 
+// Write_Data[ 6 ]
+initial
+begin
+	Write_Data[6] = 1'b0;
+end 
+// Write_Data[ 5 ]
+initial
+begin
+	Write_Data[5] = 1'b0;
+end 
+// Write_Data[ 4 ]
+initial
+begin
+	Write_Data[4] = 1'b1;
+end 
+// Write_Data[ 3 ]
+initial
+begin
+	Write_Data[3] = 1'b0;
+end 
+// Write_Data[ 2 ]
+initial
+begin
+	Write_Data[2] = 1'b1;
+end 
+// Write_Data[ 1 ]
+initial
+begin
+	Write_Data[1] = 1'b1;
+end 
+// Write_Data[ 0 ]
+initial
+begin
+	Write_Data[0] = 1'b1;
+end 
+// Write_Reg_Num[ 4 ]
+initial
+begin
+	Write_Reg_Num[4] = 1'b0;
+end 
+// Write_Reg_Num[ 3 ]
+initial
+begin
+	Write_Reg_Num[3] = 1'b1;
+end 
+// Write_Reg_Num[ 2 ]
+initial
+begin
+	Write_Reg_Num[2] = 1'b0;
+end 
+// Write_Reg_Num[ 1 ]
+initial
+begin
+	Write_Reg_Num[1] = 1'b1;
+end 
+// Write_Reg_Num[ 0 ]
+initial
+begin
+	Write_Reg_Num[0] = 1'b0;
+end 
+endmodule
+
