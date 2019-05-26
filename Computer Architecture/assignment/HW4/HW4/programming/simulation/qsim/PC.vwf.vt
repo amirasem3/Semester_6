@@ -1,0 +1,301 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/12/2019 21:34:21"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          PC
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module PC_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Branch;
+reg [15:0] BranchOffset;
+reg CLK;
+reg Jump;
+reg [25:0] JumpAdderess;
+reg Reset;
+// wires                                               
+wire [31:0] PC;
+
+// assign statements (if any)                          
+PC i1 (
+// port map - connection between master ports and signals/registers   
+	.Branch(Branch),
+	.BranchOffset(BranchOffset),
+	.CLK(CLK),
+	.Jump(Jump),
+	.JumpAdderess(JumpAdderess),
+	.PC(PC),
+	.Reset(Reset)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// Branch
+initial
+begin
+	Branch = 1'b0;
+	Branch = #10000 1'b1;
+	Branch = #10000 1'b0;
+	Branch = #10000 1'b1;
+	Branch = #10000 1'b0;
+end 
+// BranchOffset[ 15 ]
+initial
+begin
+	BranchOffset[15] = 1'b0;
+end 
+// BranchOffset[ 14 ]
+initial
+begin
+	BranchOffset[14] = 1'b0;
+end 
+// BranchOffset[ 13 ]
+initial
+begin
+	BranchOffset[13] = 1'b0;
+end 
+// BranchOffset[ 12 ]
+initial
+begin
+	BranchOffset[12] = 1'b0;
+end 
+// BranchOffset[ 11 ]
+initial
+begin
+	BranchOffset[11] = 1'b0;
+end 
+// BranchOffset[ 10 ]
+initial
+begin
+	BranchOffset[10] = 1'b0;
+end 
+// BranchOffset[ 9 ]
+initial
+begin
+	BranchOffset[9] = 1'b0;
+end 
+// BranchOffset[ 8 ]
+initial
+begin
+	BranchOffset[8] = 1'b0;
+end 
+// BranchOffset[ 7 ]
+initial
+begin
+	BranchOffset[7] = 1'b0;
+end 
+// BranchOffset[ 6 ]
+initial
+begin
+	BranchOffset[6] = 1'b0;
+end 
+// BranchOffset[ 5 ]
+initial
+begin
+	BranchOffset[5] = 1'b0;
+end 
+// BranchOffset[ 4 ]
+initial
+begin
+	BranchOffset[4] = 1'b0;
+end 
+// BranchOffset[ 3 ]
+initial
+begin
+	BranchOffset[3] = 1'b0;
+end 
+// BranchOffset[ 2 ]
+initial
+begin
+	BranchOffset[2] = 1'b0;
+end 
+// BranchOffset[ 1 ]
+initial
+begin
+	BranchOffset[1] = 1'b0;
+end 
+// BranchOffset[ 0 ]
+initial
+begin
+	BranchOffset[0] = 1'b1;
+end 
+
+// CLK
+always
+begin
+	CLK = 1'b0;
+	CLK = #5000 1'b1;
+	#5000;
+end 
+
+// Jump
+initial
+begin
+	Jump = 1'b1;
+	Jump = #10000 1'b0;
+	Jump = #20000 1'b1;
+	Jump = #10000 1'b0;
+end 
+// JumpAdderess[ 25 ]
+initial
+begin
+	JumpAdderess[25] = 1'b0;
+end 
+// JumpAdderess[ 24 ]
+initial
+begin
+	JumpAdderess[24] = 1'b0;
+end 
+// JumpAdderess[ 23 ]
+initial
+begin
+	JumpAdderess[23] = 1'b0;
+end 
+// JumpAdderess[ 22 ]
+initial
+begin
+	JumpAdderess[22] = 1'b0;
+end 
+// JumpAdderess[ 21 ]
+initial
+begin
+	JumpAdderess[21] = 1'b0;
+end 
+// JumpAdderess[ 20 ]
+initial
+begin
+	JumpAdderess[20] = 1'b0;
+end 
+// JumpAdderess[ 19 ]
+initial
+begin
+	JumpAdderess[19] = 1'b0;
+end 
+// JumpAdderess[ 18 ]
+initial
+begin
+	JumpAdderess[18] = 1'b1;
+end 
+// JumpAdderess[ 17 ]
+initial
+begin
+	JumpAdderess[17] = 1'b0;
+end 
+// JumpAdderess[ 16 ]
+initial
+begin
+	JumpAdderess[16] = 1'b0;
+end 
+// JumpAdderess[ 15 ]
+initial
+begin
+	JumpAdderess[15] = 1'b0;
+end 
+// JumpAdderess[ 14 ]
+initial
+begin
+	JumpAdderess[14] = 1'b0;
+end 
+// JumpAdderess[ 13 ]
+initial
+begin
+	JumpAdderess[13] = 1'b0;
+end 
+// JumpAdderess[ 12 ]
+initial
+begin
+	JumpAdderess[12] = 1'b0;
+end 
+// JumpAdderess[ 11 ]
+initial
+begin
+	JumpAdderess[11] = 1'b0;
+end 
+// JumpAdderess[ 10 ]
+initial
+begin
+	JumpAdderess[10] = 1'b0;
+end 
+// JumpAdderess[ 9 ]
+initial
+begin
+	JumpAdderess[9] = 1'b0;
+end 
+// JumpAdderess[ 8 ]
+initial
+begin
+	JumpAdderess[8] = 1'b0;
+end 
+// JumpAdderess[ 7 ]
+initial
+begin
+	JumpAdderess[7] = 1'b0;
+end 
+// JumpAdderess[ 6 ]
+initial
+begin
+	JumpAdderess[6] = 1'b0;
+end 
+// JumpAdderess[ 5 ]
+initial
+begin
+	JumpAdderess[5] = 1'b0;
+end 
+// JumpAdderess[ 4 ]
+initial
+begin
+	JumpAdderess[4] = 1'b0;
+end 
+// JumpAdderess[ 3 ]
+initial
+begin
+	JumpAdderess[3] = 1'b0;
+end 
+// JumpAdderess[ 2 ]
+initial
+begin
+	JumpAdderess[2] = 1'b0;
+end 
+// JumpAdderess[ 1 ]
+initial
+begin
+	JumpAdderess[1] = 1'b1;
+end 
+// JumpAdderess[ 0 ]
+initial
+begin
+	JumpAdderess[0] = 1'b0;
+end 
+
+// Reset
+initial
+begin
+	Reset = 1'b1;
+end 
+endmodule
+
