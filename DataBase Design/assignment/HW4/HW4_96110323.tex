@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\graphicspath{ {/asay/Desktop/images/} }
+\usepackage{xepersian}
+
+
+
+
+\title{پاسخ تمرین شماره ۵ درس طراحی پایگاه داده }
+
+
+\author{امیر حسین عاصم یوسفی \\ ۹۶۱۱۰۳۲۳}
+\settextfont{B Nazanin}
+
+\begin{document}
+	\maketitle
+	\section*{سوال ۱}
+	برای این سوال ابتدا درصد اتاق های 
+	\lr{VIP}
+را به دست می آوریم و بعد بر روی آن یک 
+\lr{Assertion}
+می زنیم  . که به صورت زیر می باشد : 
+
+\begin{center}
+	\lr{create assertion check (30 >=(select count(room\_number) / (select count(room\_number) from room where type =1 or type =2 )*100 from room where type = 2);}
+\end{center}
+\hrule
+\section*{سوال ۲ }
+برای این سوال باید طوری 
+\lr{Trigger }
+را بنویسیم که بعد از هر بروزرسانی اجرا شود که به صورت زیر می باشد : 
+\begin{flushleft}
+	\lr{create trigger teacher-room  \\
+		after update of state\\
+		on reserve\\
+		referencing old as ostate, new as nstate\\
+		for each row \\
+		(when state = 'finished' \\
+		insert to POLL value (reserve.teacher\_id , reserve.room\_number)}
+\end{flushleft}
+\hrule
+\section*{سوال ۳}
+\textcolor{red}{شماره ۱ }
+\\
+با توجه به جداول داده شده اگر بر روی دو جدول عملگر 
+\lr{Join}
+را اجرا کنیم 
+\lr{P1}
+به دلیل این که هیچ محصولی تولید نکرده حذف می شود  . 
+\\
+\textcolor{red}{شماره ۲  }
+\\
+برای سازنده 
+\lr{P4}
+هیچ اسمی در نظر گرفته نشده است 
+\\
+\textcolor{red}{شماره ۳}
+\\
+برای محصولات 
+\lr{P2}
+هیج اسمی در نظر گرفته نشده است  . 
+\hrule
+
+\section*{سوال ۴ }
+	
+\end{document}

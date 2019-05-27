@@ -1,0 +1,7 @@
+create trigger teacher-room 
+after update of state
+on reserve
+referencing old as ostate, new as nstate
+for each row 
+(when state = 'finished' 
+		insert to POLL value (reserve.teacher_id , reserve.room_number)
