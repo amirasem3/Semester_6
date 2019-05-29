@@ -11,10 +11,10 @@ select teacher_id , rejected from max_reject where rejected in
 select avg(salary) as 'salary average' from teacher where teacher_id  in
 (select  distinct teacher_id from reserve where room_number in 
 (select room_number from room where price in 
-(select max(price) from room))); 
+(select max(price) from room))) ; 
 /*third question Query */
 
-create view mrc as select room_number, count(room_number) as 'RN' from reserve where (teacher_id = 1 and state = 'Approved') group by room_number
+create view mrc as select room_number, count(room_number) as 'RN' from reserve where (teacher_id = 1 ) group by room_number
 order by 'RN';
 select capacity as 'max_repeated_capacity' from room where room_number in (select room_number from mrc where RN in (select max(RN) from mrc));
 

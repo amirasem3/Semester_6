@@ -6,13 +6,16 @@ select  max(price) from medicine where  id in
 (visit_id = 
 (select id from visit where (doctor_id = '1' and patient_id = '2'))));
 /*second question query*/
-create view max_profession as select profession,count(profession)  as 'cnt' from doctor  where doctor.id in (select doctor_id from visit
- where visit.id in 
- (select id from visit where room_number in
- (select room_number from room where type ='2')))
- group by profession order by 'cnt' limit 3;
  
+
+ 
+ create view max_profession as select profession ,count(profession) as 'cnt' from doctor where doctor.id in 
+(select doctor_id  from visit where room_number is not  null)
+group by profession
+order by 'cnt';
+
  select profession,cnt from max_profession where cnt in (select max(cnt) from max_profession);
+ 
  
  /*third question query*/
  select room_number from room where room_number not in (select room_number from supervision where supervision.nurse_id = '1');
