@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{hyperref}
+\graphicspath{ {/asay/Desktop/images/} }
+\usepackage{xepersian}
+
+
+
+
+\title{پاسخ تمرین شماره ۵ درس معماری کامپیوتر }
+
+
+\author{امیر حسین عاصم یوسفی \\ ۹۶۱۱۰۳۲۳}
+\settextfont{B Nazanin}
+
+\begin{document}
+	\maketitle
+	
+\section*{سوال ۱}
+با توجه به این طولانی ترین تاخیر مربوط به 
+\lr{Mem}
+می باشد که برابر با ۲ نانوثانیه می باشد و این که تاخیر رجیستر های میانی ۰/۱ نانوثانبه هستند پس برای 
+\lr{Clock Time}
+جدید داریم  : 
+\begin{center}
+	\lr{Clock Time new = 2ns + 0.1ns = 2.1ns}
+\end{center}
+برای این که تاثیر
+\lr{stall}
+را در نظر بگیریم باید 
+\lr{CPI}
+را برای زمانی که 
+\lr{stall}
+داریم طبق فرمول زیر به دست آوریم : 
+\begin{center}
+	\lr{CPI = IdealCPI + stall cycles}
+\end{center}
+در این جا 
+\lr{IdealCPI = 1}
+در نظر می گیریم و چون به ازای هر ۴ دستور یک 
+\lr{stall}
+داریم پس 
+\begin{center}
+	\lr{stall cycles  = 1/4 = 0.25ns}
+\end{center}
+بنابراین طبق فرمول گفته شده 
+\textcolor{red}{\lr{new CPI (with Stall)  = 1 + 0.25 = 1.25ns}}\\
+تا به حال مقادیر 
+\lr{CT}
+و 
+\lr{CPI}
+را برای معماری 
+\lr{Pipeline}
+به دست آوردیم حال  
+\lr{Speedup}
+راطبق فرمول زیر به دست می آوریم  : 
+\begin{center}
+ \lr{SpeedUp = $ \frac{Single  \  cycle \  EXE  \ time}{Pipeline \  EXE  \ time }$}\\
+ \lr{Execution TIme  = CPI . IC  . Cycle time}
+\end{center}
+حال با توجه به بالا داریم  : 
+\begin{center}
+	\lr{SpeedUp = $\frac{IC \times 1 \times 7}{IC \times 1.25 \times 2.1} = \frac{7}{2.625}$ = 2.67 ns}
+\end{center}
+\hrule
+\section*{سوال ۲}
+برای این سوال با توجه به قانون 
+\lr{Amdahl}
+داریم  : 
+\begin{center}
+	\lr{SpeedUp = $\frac{1}{\frac{P}{N} + S}$}
+\end{center}
+که در این جا 
+\lr{P}
+نشان دهنده بخشی است که به صورت 
+\lr{Parallel}
+نوشته شده و 
+\lr{N}
+نشان دهنده تعداد پردازنده ها و 
+\lr{S}
+بیانگر بخشی است که به صورت موازی نوشته نشده است . پس داریم  : 
+\begin{center}
+	\lr{SpeedUp = $\frac{1}{\frac{x}{4}+(1-x)} = 2 \rightarrow x = \frac{2}{3}$ $\Rightarrow$ x = 66\%}
+\end{center}
+بنابراین باید ۶۶ درصد از برنامه را به صورت موازی نوشت تا اجرای برنامه بر روی این ۴ پردازنده ۲ برابر سریع تر شود  . 
+\hrule
+\section*{سوال ۳ }
+
+
+\end{document}
