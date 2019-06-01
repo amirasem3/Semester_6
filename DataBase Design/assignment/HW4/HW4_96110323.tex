@@ -65,5 +65,16 @@
 \hrule
 
 \section*{سوال ۴ }
+\subsection*{سیستم مدیریت مرگز درمانی}
+\subsubsection*{\textcolor{red}{الف}}
+برای این مورد از یک عملگر 
+\lr{join}
+استفاده می کنیم . که دستور آن به صورت زیر می باشد : 
+\begin{center}
+	\lr{select distinct (nurse.fname) from nurse \textcolor{red}{\lr{JOIN}} 
+		 supervision where (supervision.nurse\_id = nurse.id and supervision.room\_number !=2);}
+\end{center}
+	\subsubsection*{\textcolor{red}{ب}}
 	
+
 \end{document}
