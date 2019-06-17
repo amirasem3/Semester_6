@@ -1,0 +1,217 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+7
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+register_32_bit
+# storage
+db|Register_File.(0).cnf
+db|Register_File.(0).cnf
+# case_insensitive
+# source_file
+register_32_bit.bdf
+531074d29661f17126f61190e5a3962b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# macro_sequence
+
+# end
+# entity
+adder_32_bit
+# storage
+db|Register_File.(1).cnf
+db|Register_File.(1).cnf
+# case_insensitive
+# source_file
+|sharif|term 4|architecture|hw|hw3|designs|q1|adder_32_bit.bdf
+76068bdbcd778b8efd9c336868790cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+adder_8_bit
+# storage
+db|Register_File.(2).cnf
+db|Register_File.(2).cnf
+# case_insensitive
+# source_file
+|sharif|term 4|architecture|hw|hw3|designs|q1|adder_8_bit.bdf
+a45bcfede8a2a18e53492bfce1e0d6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder_8_bit:inst6
+adder_8_bit:inst5
+adder_8_bit:inst4
+adder_8_bit:inst
+}
+# macro_sequence
+
+# end
+# entity
+full_adder
+# storage
+db|Register_File.(3).cnf
+db|Register_File.(3).cnf
+# case_insensitive
+# source_file
+|sharif|term 4|architecture|hw|hw3|designs|q1|full_adder.bdf
+21d179ba2091dab5a4e8e618cae0f196
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder_8_bit:inst6|full_adder:inst15
+adder_8_bit:inst6|full_adder:inst14
+adder_8_bit:inst6|full_adder:inst13
+adder_8_bit:inst6|full_adder:inst12
+adder_8_bit:inst6|full_adder:inst11
+adder_8_bit:inst6|full_adder:inst10
+adder_8_bit:inst6|full_adder:inst9
+adder_8_bit:inst6|full_adder:inst
+adder_8_bit:inst5|full_adder:inst15
+adder_8_bit:inst5|full_adder:inst14
+adder_8_bit:inst5|full_adder:inst13
+adder_8_bit:inst5|full_adder:inst12
+adder_8_bit:inst5|full_adder:inst11
+adder_8_bit:inst5|full_adder:inst10
+adder_8_bit:inst5|full_adder:inst9
+adder_8_bit:inst5|full_adder:inst
+adder_8_bit:inst4|full_adder:inst15
+adder_8_bit:inst4|full_adder:inst14
+adder_8_bit:inst4|full_adder:inst13
+adder_8_bit:inst4|full_adder:inst12
+adder_8_bit:inst4|full_adder:inst11
+adder_8_bit:inst4|full_adder:inst10
+adder_8_bit:inst4|full_adder:inst9
+adder_8_bit:inst4|full_adder:inst
+adder_8_bit:inst|full_adder:inst15
+adder_8_bit:inst|full_adder:inst14
+adder_8_bit:inst|full_adder:inst13
+adder_8_bit:inst|full_adder:inst12
+adder_8_bit:inst|full_adder:inst11
+adder_8_bit:inst|full_adder:inst10
+adder_8_bit:inst|full_adder:inst9
+adder_8_bit:inst|full_adder:inst
+}
+# macro_sequence
+
+# end
+# entity
+half_adder
+# storage
+db|Register_File.(4).cnf
+db|Register_File.(4).cnf
+# case_insensitive
+# source_file
+|sharif|term 4|architecture|hw|hw3|designs|q1|half_adder.bdf
+b61076ddcbe136f8b74c742f937e7e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+adder_8_bit:inst6|full_adder:inst15|half_adder:inst1
+adder_8_bit:inst6|full_adder:inst15|half_adder:inst
+adder_8_bit:inst6|full_adder:inst14|half_adder:inst1
+adder_8_bit:inst6|full_adder:inst14|half_adder:inst
+adder_8_bit:inst6|full_adder:inst13|half_adder:inst1
+adder_8_bit:inst6|full_adder:inst13|half_adder:inst
+adder_8_bit:inst6|full_adder:inst12|half_adder:inst1
+adder_8_bit:inst6|full_adder:inst12|half_adder:inst
+adder_8_bit:inst6|full_adder:inst11|half_adder:inst1
+adder_8_bit:inst6|full_adder:inst11|half_adder:inst
+adder_8_bit:inst6|full_adder:inst10|half_adder:inst1
+adder_8_bit:inst6|full_adder:inst10|half_adder:inst
+adder_8_bit:inst6|full_adder:inst9|half_adder:inst1
+adder_8_bit:inst6|full_adder:inst9|half_adder:inst
+adder_8_bit:inst6|full_adder:inst|half_adder:inst1
+adder_8_bit:inst6|full_adder:inst|half_adder:inst
+adder_8_bit:inst5|full_adder:inst15|half_adder:inst1
+adder_8_bit:inst5|full_adder:inst15|half_adder:inst
+adder_8_bit:inst5|full_adder:inst14|half_adder:inst1
+adder_8_bit:inst5|full_adder:inst14|half_adder:inst
+adder_8_bit:inst5|full_adder:inst13|half_adder:inst1
+adder_8_bit:inst5|full_adder:inst13|half_adder:inst
+adder_8_bit:inst5|full_adder:inst12|half_adder:inst1
+adder_8_bit:inst5|full_adder:inst12|half_adder:inst
+adder_8_bit:inst5|full_adder:inst11|half_adder:inst1
+adder_8_bit:inst5|full_adder:inst11|half_adder:inst
+adder_8_bit:inst5|full_adder:inst10|half_adder:inst1
+adder_8_bit:inst5|full_adder:inst10|half_adder:inst
+adder_8_bit:inst5|full_adder:inst9|half_adder:inst1
+adder_8_bit:inst5|full_adder:inst9|half_adder:inst
+adder_8_bit:inst5|full_adder:inst|half_adder:inst1
+adder_8_bit:inst5|full_adder:inst|half_adder:inst
+adder_8_bit:inst4|full_adder:inst15|half_adder:inst1
+adder_8_bit:inst4|full_adder:inst15|half_adder:inst
+adder_8_bit:inst4|full_adder:inst14|half_adder:inst1
+adder_8_bit:inst4|full_adder:inst14|half_adder:inst
+adder_8_bit:inst4|full_adder:inst13|half_adder:inst1
+adder_8_bit:inst4|full_adder:inst13|half_adder:inst
+adder_8_bit:inst4|full_adder:inst12|half_adder:inst1
+adder_8_bit:inst4|full_adder:inst12|half_adder:inst
+adder_8_bit:inst4|full_adder:inst11|half_adder:inst1
+adder_8_bit:inst4|full_adder:inst11|half_adder:inst
+adder_8_bit:inst4|full_adder:inst10|half_adder:inst1
+adder_8_bit:inst4|full_adder:inst10|half_adder:inst
+adder_8_bit:inst4|full_adder:inst9|half_adder:inst1
+adder_8_bit:inst4|full_adder:inst9|half_adder:inst
+adder_8_bit:inst4|full_adder:inst|half_adder:inst1
+adder_8_bit:inst4|full_adder:inst|half_adder:inst
+adder_8_bit:inst|full_adder:inst15|half_adder:inst1
+adder_8_bit:inst|full_adder:inst15|half_adder:inst
+adder_8_bit:inst|full_adder:inst14|half_adder:inst1
+adder_8_bit:inst|full_adder:inst14|half_adder:inst
+adder_8_bit:inst|full_adder:inst13|half_adder:inst1
+adder_8_bit:inst|full_adder:inst13|half_adder:inst
+adder_8_bit:inst|full_adder:inst12|half_adder:inst1
+adder_8_bit:inst|full_adder:inst12|half_adder:inst
+adder_8_bit:inst|full_adder:inst11|half_adder:inst1
+adder_8_bit:inst|full_adder:inst11|half_adder:inst
+adder_8_bit:inst|full_adder:inst10|half_adder:inst1
+adder_8_bit:inst|full_adder:inst10|half_adder:inst
+adder_8_bit:inst|full_adder:inst9|half_adder:inst1
+adder_8_bit:inst|full_adder:inst9|half_adder:inst
+adder_8_bit:inst|full_adder:inst|half_adder:inst1
+adder_8_bit:inst|full_adder:inst|half_adder:inst
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,104 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+# Date created = 14:29:45  March 27, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		DesignCPU_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CGXFC7C7F23C8
+set_global_assignment -name TOP_LEVEL_ENTITY DesignCPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:29:45  MARCH 27, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.1.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name QIP_FILE mux2_4_32bit.qip
+set_global_assignment -name BDF_FILE T3/REG_32bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/WaveformREG_32bit.vwf
+set_global_assignment -name QIP_FILE mux1_2_32bit.qip
+set_global_assignment -name QIP_FILE adder_sub.qip
+set_global_assignment -name BDF_FILE Block2.bdf
+set_global_assignment -name BDF_FILE T3/SP_REG_32bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/WaveformSP_REG_32bit.vwf
+set_global_assignment -name BDF_FILE T3/REG_8bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/REG_8bit.vwf
+set_global_assignment -name BDF_FILE T3/REG_16bit.bdf
+set_global_assignment -name QIP_FILE mux2_4_16bit.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/WaveformREG_16bit.vwf
+set_global_assignment -name QIP_FILE mux2_3_8bit.qip
+set_global_assignment -name QIP_FILE mux1_2_8bit.qip
+set_global_assignment -name QIP_FILE mux2to4_32bit.qip
+set_global_assignment -name VERILOG_FILE "F:/university/memari/assignment/CA_Assignment3/ALU.v"
+set_global_assignment -name BDF_FILE T3/DataPath.bdf
+set_global_assignment -name QIP_FILE mux3to8_32bit.qip
+set_global_assignment -name VERILOG_FILE "F:/university/memari/assignment/CA_Assignment3/memory.v"
+set_global_assignment -name BDF_FILE T3/SCounter.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/WaveformSC.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/WaveformDFF.vwf
+set_global_assignment -name BDF_FILE T3/DFF_OK.bdf
+set_global_assignment -name BDF_FILE T3/DFFwithCLR.bdf
+set_global_assignment -name BDF_FILE T3/TFFwithCLR.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE WaveformTFF.vwf
+set_global_assignment -name QIP_FILE decoder4to16.qip
+set_global_assignment -name BDF_FILE T3/CU.bdf
+set_global_assignment -name BDF_FILE T3/Encoder4to2.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/WaveformENCODER.vwf
+set_global_assignment -name BDF_FILE T3/Encoder8to3.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/WaveformEncoder8to3.vwf
+set_global_assignment -name QIP_FILE Adder32bit.qip
+set_global_assignment -name BDF_FILE T3/PC.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/PC.vwf
+set_global_assignment -name BDF_FILE T3/DesignCPU.bdf
+set_global_assignment -name QIP_FILE mux2_1_32bit.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/CPUdesign.vwf
+set_global_assignment -name BDF_FILE T3/TEST.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/TEST.vwf
+set_global_assignment -name BDF_FILE T3/DFFwithSET.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/DFFwith???.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/DFFwithSET.vwf
+set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name BDF_FILE T3/REG_32withLD.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/REG_32withLD.vwf
+set_global_assignment -name BDF_FILE T3/REG_8withLD.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/REG_8withLD.vwf
+set_global_assignment -name BDF_FILE T3/PCwithoutCLR.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE T3/PCwithoutCLR.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

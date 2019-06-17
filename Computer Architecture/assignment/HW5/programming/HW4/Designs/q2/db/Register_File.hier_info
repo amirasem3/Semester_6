@@ -1,0 +1,1049 @@
+|adder_32_bit
+cout <= adder_8_bit:inst6.cout
+cin => adder_8_bit:inst.cin
+A[0] => adder_8_bit:inst.A[0]
+A[1] => adder_8_bit:inst.A[1]
+A[2] => adder_8_bit:inst.A[2]
+A[3] => adder_8_bit:inst.A[3]
+A[4] => adder_8_bit:inst.A[4]
+A[5] => adder_8_bit:inst.A[5]
+A[6] => adder_8_bit:inst.A[6]
+A[7] => adder_8_bit:inst.A[7]
+A[8] => adder_8_bit:inst4.A[0]
+A[9] => adder_8_bit:inst4.A[1]
+A[10] => adder_8_bit:inst4.A[2]
+A[11] => adder_8_bit:inst4.A[3]
+A[12] => adder_8_bit:inst4.A[4]
+A[13] => adder_8_bit:inst4.A[5]
+A[14] => adder_8_bit:inst4.A[6]
+A[15] => adder_8_bit:inst4.A[7]
+A[16] => adder_8_bit:inst5.A[0]
+A[17] => adder_8_bit:inst5.A[1]
+A[18] => adder_8_bit:inst5.A[2]
+A[19] => adder_8_bit:inst5.A[3]
+A[20] => adder_8_bit:inst5.A[4]
+A[21] => adder_8_bit:inst5.A[5]
+A[22] => adder_8_bit:inst5.A[6]
+A[23] => adder_8_bit:inst5.A[7]
+A[24] => adder_8_bit:inst6.A[0]
+A[25] => adder_8_bit:inst6.A[1]
+A[26] => adder_8_bit:inst6.A[2]
+A[27] => adder_8_bit:inst6.A[3]
+A[28] => adder_8_bit:inst6.A[4]
+A[29] => adder_8_bit:inst6.A[5]
+A[30] => adder_8_bit:inst6.A[6]
+A[31] => adder_8_bit:inst6.A[7]
+B[0] => adder_8_bit:inst.B[0]
+B[1] => adder_8_bit:inst.B[1]
+B[2] => adder_8_bit:inst.B[2]
+B[3] => adder_8_bit:inst.B[3]
+B[4] => adder_8_bit:inst.B[4]
+B[5] => adder_8_bit:inst.B[5]
+B[6] => adder_8_bit:inst.B[6]
+B[7] => adder_8_bit:inst.B[7]
+B[8] => adder_8_bit:inst4.B[0]
+B[9] => adder_8_bit:inst4.B[1]
+B[10] => adder_8_bit:inst4.B[2]
+B[11] => adder_8_bit:inst4.B[3]
+B[12] => adder_8_bit:inst4.B[4]
+B[13] => adder_8_bit:inst4.B[5]
+B[14] => adder_8_bit:inst4.B[6]
+B[15] => adder_8_bit:inst4.B[7]
+B[16] => adder_8_bit:inst5.B[0]
+B[17] => adder_8_bit:inst5.B[1]
+B[18] => adder_8_bit:inst5.B[2]
+B[19] => adder_8_bit:inst5.B[3]
+B[20] => adder_8_bit:inst5.B[4]
+B[21] => adder_8_bit:inst5.B[5]
+B[22] => adder_8_bit:inst5.B[6]
+B[23] => adder_8_bit:inst5.B[7]
+B[24] => adder_8_bit:inst6.B[0]
+B[25] => adder_8_bit:inst6.B[1]
+B[26] => adder_8_bit:inst6.B[2]
+B[27] => adder_8_bit:inst6.B[3]
+B[28] => adder_8_bit:inst6.B[4]
+B[29] => adder_8_bit:inst6.B[5]
+B[30] => adder_8_bit:inst6.B[6]
+B[31] => adder_8_bit:inst6.B[7]
+out[0] <= adder_8_bit:inst.S[0]
+out[1] <= adder_8_bit:inst.S[1]
+out[2] <= adder_8_bit:inst.S[2]
+out[3] <= adder_8_bit:inst.S[3]
+out[4] <= adder_8_bit:inst.S[4]
+out[5] <= adder_8_bit:inst.S[5]
+out[6] <= adder_8_bit:inst.S[6]
+out[7] <= adder_8_bit:inst.S[7]
+out[8] <= adder_8_bit:inst4.S[0]
+out[9] <= adder_8_bit:inst4.S[1]
+out[10] <= adder_8_bit:inst4.S[2]
+out[11] <= adder_8_bit:inst4.S[3]
+out[12] <= adder_8_bit:inst4.S[4]
+out[13] <= adder_8_bit:inst4.S[5]
+out[14] <= adder_8_bit:inst4.S[6]
+out[15] <= adder_8_bit:inst4.S[7]
+out[16] <= adder_8_bit:inst5.S[0]
+out[17] <= adder_8_bit:inst5.S[1]
+out[18] <= adder_8_bit:inst5.S[2]
+out[19] <= adder_8_bit:inst5.S[3]
+out[20] <= adder_8_bit:inst5.S[4]
+out[21] <= adder_8_bit:inst5.S[5]
+out[22] <= adder_8_bit:inst5.S[6]
+out[23] <= adder_8_bit:inst5.S[7]
+out[24] <= adder_8_bit:inst6.S[0]
+out[25] <= adder_8_bit:inst6.S[1]
+out[26] <= adder_8_bit:inst6.S[2]
+out[27] <= adder_8_bit:inst6.S[3]
+out[28] <= adder_8_bit:inst6.S[4]
+out[29] <= adder_8_bit:inst6.S[5]
+out[30] <= adder_8_bit:inst6.S[6]
+out[31] <= adder_8_bit:inst6.S[7]
+
+
+|adder_32_bit|adder_8_bit:inst6
+cout <= full_adder:inst15.cout
+cin => full_adder:inst.cin
+A[0] => full_adder:inst.a
+A[1] => full_adder:inst9.a
+A[2] => full_adder:inst10.a
+A[3] => full_adder:inst11.a
+A[4] => full_adder:inst12.a
+A[5] => full_adder:inst13.a
+A[6] => full_adder:inst14.a
+A[7] => full_adder:inst15.a
+B[0] => full_adder:inst.b
+B[1] => full_adder:inst9.b
+B[2] => full_adder:inst10.b
+B[3] => full_adder:inst11.b
+B[4] => full_adder:inst12.b
+B[5] => full_adder:inst13.b
+B[6] => full_adder:inst14.b
+B[7] => full_adder:inst15.b
+S[0] <= full_adder:inst.s
+S[1] <= full_adder:inst9.s
+S[2] <= full_adder:inst10.s
+S[3] <= full_adder:inst11.s
+S[4] <= full_adder:inst12.s
+S[5] <= full_adder:inst13.s
+S[6] <= full_adder:inst14.s
+S[7] <= full_adder:inst15.s
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst15
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst15|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst15|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst14
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst14|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst14|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst13
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst13|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst13|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst12
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst12|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst12|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst11
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst11|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst11|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst10
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst10|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst10|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst9
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst9|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst9|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst6|full_adder:inst|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5
+cout <= full_adder:inst15.cout
+cin => full_adder:inst.cin
+A[0] => full_adder:inst.a
+A[1] => full_adder:inst9.a
+A[2] => full_adder:inst10.a
+A[3] => full_adder:inst11.a
+A[4] => full_adder:inst12.a
+A[5] => full_adder:inst13.a
+A[6] => full_adder:inst14.a
+A[7] => full_adder:inst15.a
+B[0] => full_adder:inst.b
+B[1] => full_adder:inst9.b
+B[2] => full_adder:inst10.b
+B[3] => full_adder:inst11.b
+B[4] => full_adder:inst12.b
+B[5] => full_adder:inst13.b
+B[6] => full_adder:inst14.b
+B[7] => full_adder:inst15.b
+S[0] <= full_adder:inst.s
+S[1] <= full_adder:inst9.s
+S[2] <= full_adder:inst10.s
+S[3] <= full_adder:inst11.s
+S[4] <= full_adder:inst12.s
+S[5] <= full_adder:inst13.s
+S[6] <= full_adder:inst14.s
+S[7] <= full_adder:inst15.s
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst15
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst15|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst15|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst14
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst14|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst14|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst13
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst13|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst13|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst12
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst12|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst12|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst11
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst11|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst11|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst10
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst10|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst10|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst9
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst9|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst9|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst5|full_adder:inst|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4
+cout <= full_adder:inst15.cout
+cin => full_adder:inst.cin
+A[0] => full_adder:inst.a
+A[1] => full_adder:inst9.a
+A[2] => full_adder:inst10.a
+A[3] => full_adder:inst11.a
+A[4] => full_adder:inst12.a
+A[5] => full_adder:inst13.a
+A[6] => full_adder:inst14.a
+A[7] => full_adder:inst15.a
+B[0] => full_adder:inst.b
+B[1] => full_adder:inst9.b
+B[2] => full_adder:inst10.b
+B[3] => full_adder:inst11.b
+B[4] => full_adder:inst12.b
+B[5] => full_adder:inst13.b
+B[6] => full_adder:inst14.b
+B[7] => full_adder:inst15.b
+S[0] <= full_adder:inst.s
+S[1] <= full_adder:inst9.s
+S[2] <= full_adder:inst10.s
+S[3] <= full_adder:inst11.s
+S[4] <= full_adder:inst12.s
+S[5] <= full_adder:inst13.s
+S[6] <= full_adder:inst14.s
+S[7] <= full_adder:inst15.s
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst15
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst15|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst15|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst14
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst14|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst14|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst13
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst13|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst13|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst12
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst12|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst12|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst11
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst11|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst11|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst10
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst10|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst10|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst9
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst9|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst9|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst4|full_adder:inst|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst
+cout <= full_adder:inst15.cout
+cin => full_adder:inst.cin
+A[0] => full_adder:inst.a
+A[1] => full_adder:inst9.a
+A[2] => full_adder:inst10.a
+A[3] => full_adder:inst11.a
+A[4] => full_adder:inst12.a
+A[5] => full_adder:inst13.a
+A[6] => full_adder:inst14.a
+A[7] => full_adder:inst15.a
+B[0] => full_adder:inst.b
+B[1] => full_adder:inst9.b
+B[2] => full_adder:inst10.b
+B[3] => full_adder:inst11.b
+B[4] => full_adder:inst12.b
+B[5] => full_adder:inst13.b
+B[6] => full_adder:inst14.b
+B[7] => full_adder:inst15.b
+S[0] <= full_adder:inst.s
+S[1] <= full_adder:inst9.s
+S[2] <= full_adder:inst10.s
+S[3] <= full_adder:inst11.s
+S[4] <= full_adder:inst12.s
+S[5] <= full_adder:inst13.s
+S[6] <= full_adder:inst14.s
+S[7] <= full_adder:inst15.s
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst15
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst15|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst15|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst14
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst14|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst14|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst13
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst13|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst13|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst12
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst12|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst12|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst11
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst11|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst11|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst10
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst10|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst10|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst9
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst9|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst9|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst
+s <= half_adder:inst1.s
+cin => half_adder:inst1.a
+a => half_adder:inst.a
+b => half_adder:inst.b
+cout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst|half_adder:inst1
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_32_bit|adder_8_bit:inst|full_adder:inst|half_adder:inst
+s <= inst.DB_MAX_OUTPUT_PORT_TYPE
+a => inst.IN0
+a => inst1.IN0
+b => inst.IN1
+b => inst1.IN1
+c <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+
+

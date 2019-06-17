@@ -1,0 +1,204 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/07/2019 20:11:21"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          testing_CU
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module testing_CU_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg equal;
+reg [15:0] op;
+reg Ready;
+// wires                                               
+wire CLEAR;
+wire en_A;
+wire en_ALUOut;
+wire en_B;
+wire en_HIGH;
+wire en_IR_h;
+wire en_IR_l;
+wire en_LOW;
+wire en_MDR_h;
+wire en_MDR_l;
+wire [1:0] Extension_Mode;
+wire mem_rwn;
+wire mem_start;
+wire [2:0] OpCode_ALU;
+wire PC_increase;
+wire PC_jmp;
+wire reg_write;
+wire sel_ALUin1;
+wire [1:0] sel_ALUin2;
+wire sel_inA;
+wire sel_inB;
+wire sel_jmp;
+wire [1:0] sel_mem_address;
+wire sel_memWrite_data;
+wire sel_regWrite;
+wire [2:0] sel_regWrite_data;
+
+// assign statements (if any)                          
+testing_CU i1 (
+// port map - connection between master ports and signals/registers   
+	.CLEAR(CLEAR),
+	.clk(clk),
+	.en_A(en_A),
+	.en_ALUOut(en_ALUOut),
+	.en_B(en_B),
+	.en_HIGH(en_HIGH),
+	.en_IR_h(en_IR_h),
+	.en_IR_l(en_IR_l),
+	.en_LOW(en_LOW),
+	.en_MDR_h(en_MDR_h),
+	.en_MDR_l(en_MDR_l),
+	.equal(equal),
+	.Extension_Mode(Extension_Mode),
+	.mem_rwn(mem_rwn),
+	.mem_start(mem_start),
+	.op(op),
+	.OpCode_ALU(OpCode_ALU),
+	.PC_increase(PC_increase),
+	.PC_jmp(PC_jmp),
+	.Ready(Ready),
+	.reg_write(reg_write),
+	.sel_ALUin1(sel_ALUin1),
+	.sel_ALUin2(sel_ALUin2),
+	.sel_inA(sel_inA),
+	.sel_inB(sel_inB),
+	.sel_jmp(sel_jmp),
+	.sel_mem_address(sel_mem_address),
+	.sel_memWrite_data(sel_memWrite_data),
+	.sel_regWrite(sel_regWrite),
+	.sel_regWrite_data(sel_regWrite_data)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #5000 1'b1;
+	#5000;
+end 
+
+// equal
+initial
+begin
+	equal = 1'b0;
+end 
+// op[ 15 ]
+initial
+begin
+	op[15] = 1'b0;
+end 
+// op[ 14 ]
+initial
+begin
+	op[14] = 1'b1;
+end 
+// op[ 13 ]
+initial
+begin
+	op[13] = 1'b1;
+end 
+// op[ 12 ]
+initial
+begin
+	op[12] = 1'b0;
+end 
+// op[ 11 ]
+initial
+begin
+	op[11] = 1'b0;
+end 
+// op[ 10 ]
+initial
+begin
+	op[10] = 1'b0;
+end 
+// op[ 9 ]
+initial
+begin
+	op[9] = 1'b0;
+end 
+// op[ 8 ]
+initial
+begin
+	op[8] = 1'b0;
+end 
+// op[ 7 ]
+initial
+begin
+	op[7] = 1'b0;
+end 
+// op[ 6 ]
+initial
+begin
+	op[6] = 1'b0;
+end 
+// op[ 5 ]
+initial
+begin
+	op[5] = 1'b0;
+end 
+// op[ 4 ]
+initial
+begin
+	op[4] = 1'b0;
+end 
+// op[ 3 ]
+initial
+begin
+	op[3] = 1'b0;
+end 
+// op[ 2 ]
+initial
+begin
+	op[2] = 1'b0;
+end 
+// op[ 1 ]
+initial
+begin
+	op[1] = 1'b0;
+end 
+// op[ 0 ]
+initial
+begin
+	op[0] = 1'b0;
+end 
+
+// Ready
+initial
+begin
+	Ready = 1'b0;
+end 
+endmodule
+

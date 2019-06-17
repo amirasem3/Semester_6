@@ -1,0 +1,343 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 320 384 488 400)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "clk" (rect 5 0 30 14)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 320 464 488 480)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "clr" (rect 5 0 30 14)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 312 536 480 552)
+	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
+	(text "INC" (rect 5 0 30 14)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 152 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 304 624 480 640)
+	(text "INPUT" (rect 133 0 174 11)(font "Arial" (font_size 6)))
+	(text "OP[15..0]" (rect 5 0 80 14)(font "Arial" ))
+	(pt 176 8)
+	(drawing
+		(line (pt 92 12)(pt 117 12))
+		(line (pt 92 4)(pt 117 4))
+		(line (pt 121 8)(pt 176 8))
+		(line (pt 92 12)(pt 92 4))
+		(line (pt 117 4)(pt 121 8))
+		(line (pt 117 12)(pt 121 8))
+	)
+	(text "VCC" (rect 136 7 160 18)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 1880 296 2056 312)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "D[31..0]" (rect 90 0 156 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 1888 480 2064 496)
+	(text "OUTPUT" (rect 1 0 50 11)(font "Arial" (font_size 6)))
+	(text "T[15..0]" (rect 90 0 156 14)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 872 816 1056 912)
+	(text "Counter" (rect 5 0 71 16)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 78 41 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 28 16)(font "Arial" (font_size 8)))
+		(text "clk" (rect 21 27 49 43)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clr" (rect 0 0 28 16)(font "Arial" (font_size 8)))
+		(text "clr" (rect 21 43 49 59)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "INC" (rect 0 0 28 16)(font "Arial" (font_size 8)))
+		(text "INC" (rect 21 59 49 75)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "State[3..0]" (rect 0 0 103 16)(font "Arial" (font_size 8)))
+		(text "State[3..0]" (rect 60 27 163 43)(font "Arial" (font_size 8)))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
+	)
+)
+(symbol
+	(rect 1256 592 1376 704)
+	(text "LPM_DECODE" (rect 16 0 145 18)(font "Arial" (font_size 10)))
+	(text "State_decoder" (rect 3 100 110 114)(font "Arial" ))
+	(port
+		(pt 0 88)
+		(input)
+		(text "enable" (rect 20 79 76 95)(font "Arial" (font_size 8)))
+		(text "enable" (rect 20 79 76 95)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "data[LPM_WIDTH-1..0]" (rect 20 63 208 79)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 20 63 76 79)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 3))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "clken" (rect 20 15 67 31)(font "Arial" (font_size 8)))
+		(text "clken" (rect 20 15 67 31)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "clock" (rect 20 31 67 47)(font "Arial" (font_size 8)))
+		(text "clock" (rect 20 31 67 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "aclr" (rect 20 47 57 63)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 20 47 57 63)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 120 88)
+		(output)
+		(text "eq[LPM_DECODES-1..0]" (rect 83 79 271 95)(font "Arial" (font_size 8)))
+		(text "eq[]" (rect 83 79 120 95)(font "Arial" (font_size 8)))
+		(line (pt 104 88)(pt 120 88)(line_width 3))
+	)
+	(parameter
+		"LPM_DECODES"
+		"2^LPM_WIDTH"
+		"Number of decoded outputs"
+		"2^LPM_WIDTH" 
+	)
+	(parameter
+		"LPM_PIPELINE"
+		""
+		"Output latency in clock cycles - requires use of optional clock"
+		"0" "1" "2" "3" 
+	)
+	(parameter
+		"LPM_WIDTH"
+		"4"
+		"Width of input, any integer > 0"
+		"1" "2" "3" "4" "5" "6" "7" "8" 
+	)
+	(drawing
+		(line (pt 16 102)(pt 104 102))
+		(line (pt 16 16)(pt 104 16))
+		(line (pt 16 102)(pt 16 16))
+		(line (pt 104 102)(pt 104 16))
+	)
+	(annotation_block (parameter)(rect 1376 504 1658 588))
+)
+(symbol
+	(rect 952 264 1072 376)
+	(text "LPM_DECODE" (rect 16 0 145 18)(font "Arial" (font_size 10)))
+	(text "inst3" (rect 3 100 44 114)(font "Arial" ))
+	(port
+		(pt 0 88)
+		(input)
+		(text "enable" (rect 20 79 76 95)(font "Arial" (font_size 8)))
+		(text "enable" (rect 20 79 76 95)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 16 88))
+	)
+	(port
+		(pt 0 72)
+		(input)
+		(text "data[LPM_WIDTH-1..0]" (rect 20 63 208 79)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 20 63 76 79)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 16 72)(line_width 3))
+	)
+	(port
+		(pt 0 24)
+		(input)
+		(text "clken" (rect 20 15 67 31)(font "Arial" (font_size 8)))
+		(text "clken" (rect 20 15 67 31)(font "Arial" (font_size 8)))
+		(line (pt 0 24)(pt 16 24))
+	)
+	(port
+		(pt 0 40)
+		(input)
+		(text "clock" (rect 20 31 67 47)(font "Arial" (font_size 8)))
+		(text "clock" (rect 20 31 67 47)(font "Arial" (font_size 8)))
+		(line (pt 0 40)(pt 16 40))
+	)
+	(port
+		(pt 0 56)
+		(input)
+		(text "aclr" (rect 20 47 57 63)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 20 47 57 63)(font "Arial" (font_size 8)))
+		(line (pt 0 56)(pt 16 56))
+	)
+	(port
+		(pt 120 88)
+		(output)
+		(text "eq[LPM_DECODES-1..0]" (rect 83 79 271 95)(font "Arial" (font_size 8)))
+		(text "eq[]" (rect 83 79 120 95)(font "Arial" (font_size 8)))
+		(line (pt 104 88)(pt 120 88)(line_width 3))
+	)
+	(parameter
+		"LPM_DECODES"
+		"2^LPM_WIDTH"
+		"Number of decoded outputs"
+		"2^LPM_WIDTH" 
+	)
+	(parameter
+		"LPM_PIPELINE"
+		""
+		"Output latency in clock cycles - requires use of optional clock"
+		"0" "1" "2" "3" 
+	)
+	(parameter
+		"LPM_WIDTH"
+		"5"
+		"Width of input, any integer > 0"
+		"1" "2" "3" "4" "5" "6" "7" "8" 
+	)
+	(drawing
+		(line (pt 16 102)(pt 104 102))
+		(line (pt 16 16)(pt 104 16))
+		(line (pt 16 102)(pt 16 16))
+		(line (pt 104 102)(pt 104 16))
+	)
+	(annotation_block (parameter)(rect 1072 176 1354 260))
+)
+(connector
+	(text "clk" (rect 849 832 873 846)(font "Arial" ))
+	(pt 816 848)
+	(pt 872 848)
+)
+(connector
+	(text "clr" (rect 833 848 857 862)(font "Arial" ))
+	(pt 816 864)
+	(pt 872 864)
+)
+(connector
+	(text "INC" (rect 836 864 860 878)(font "Arial" ))
+	(pt 816 880)
+	(pt 872 880)
+)
+(connector
+	(text "seq[3..0]" (rect 1064 832 1138 846)(font "Arial" ))
+	(pt 1136 848)
+	(pt 1056 848)
+	(bus)
+)
+(connector
+	(text "seq[3..0]" (rect 1192 648 1266 662)(font "Arial" ))
+	(pt 1184 664)
+	(pt 1256 664)
+	(bus)
+)
+(connector
+	(text "T[15..0]" (rect 1384 664 1450 678)(font "Arial" ))
+	(pt 1440 680)
+	(pt 1376 680)
+	(bus)
+)
+(connector
+	(text "OP[15..11]" (rect 904 320 986 334)(font "Arial" ))
+	(pt 896 336)
+	(pt 952 336)
+	(bus)
+)
+(connector
+	(text "D[31..0]" (rect 1080 336 1146 350)(font "Arial" ))
+	(pt 1144 352)
+	(pt 1072 352)
+	(bus)
+)

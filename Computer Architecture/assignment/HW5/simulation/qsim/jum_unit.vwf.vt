@@ -1,0 +1,200 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "05/31/2019 22:39:55"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          JumpAddr
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module JumpAddr_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg [25:0] Instruct;
+reg [3:0] PC_IN;
+// wires                                               
+wire [31:0] JMP;
+
+// assign statements (if any)                          
+JumpAddr i1 (
+// port map - connection between master ports and signals/registers   
+	.Instruct(Instruct),
+	.JMP(JMP),
+	.PC_IN(PC_IN)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+// Instruct[ 25 ]
+initial
+begin
+	Instruct[25] = 1'b0;
+end 
+// Instruct[ 24 ]
+initial
+begin
+	Instruct[24] = 1'b0;
+end 
+// Instruct[ 23 ]
+initial
+begin
+	Instruct[23] = 1'b0;
+end 
+// Instruct[ 22 ]
+initial
+begin
+	Instruct[22] = 1'b0;
+end 
+// Instruct[ 21 ]
+initial
+begin
+	Instruct[21] = 1'b0;
+end 
+// Instruct[ 20 ]
+initial
+begin
+	Instruct[20] = 1'b0;
+end 
+// Instruct[ 19 ]
+initial
+begin
+	Instruct[19] = 1'b0;
+end 
+// Instruct[ 18 ]
+initial
+begin
+	Instruct[18] = 1'b0;
+end 
+// Instruct[ 17 ]
+initial
+begin
+	Instruct[17] = 1'b0;
+end 
+// Instruct[ 16 ]
+initial
+begin
+	Instruct[16] = 1'b0;
+end 
+// Instruct[ 15 ]
+initial
+begin
+	Instruct[15] = 1'b0;
+end 
+// Instruct[ 14 ]
+initial
+begin
+	Instruct[14] = 1'b0;
+end 
+// Instruct[ 13 ]
+initial
+begin
+	Instruct[13] = 1'b0;
+end 
+// Instruct[ 12 ]
+initial
+begin
+	Instruct[12] = 1'b0;
+end 
+// Instruct[ 11 ]
+initial
+begin
+	Instruct[11] = 1'b0;
+end 
+// Instruct[ 10 ]
+initial
+begin
+	Instruct[10] = 1'b0;
+end 
+// Instruct[ 9 ]
+initial
+begin
+	Instruct[9] = 1'b0;
+end 
+// Instruct[ 8 ]
+initial
+begin
+	Instruct[8] = 1'b0;
+end 
+// Instruct[ 7 ]
+initial
+begin
+	Instruct[7] = 1'b0;
+end 
+// Instruct[ 6 ]
+initial
+begin
+	Instruct[6] = 1'b0;
+end 
+// Instruct[ 5 ]
+initial
+begin
+	Instruct[5] = 1'b0;
+end 
+// Instruct[ 4 ]
+initial
+begin
+	Instruct[4] = 1'b0;
+end 
+// Instruct[ 3 ]
+initial
+begin
+	Instruct[3] = 1'b1;
+end 
+// Instruct[ 2 ]
+initial
+begin
+	Instruct[2] = 1'b0;
+end 
+// Instruct[ 1 ]
+initial
+begin
+	Instruct[1] = 1'b1;
+end 
+// Instruct[ 0 ]
+initial
+begin
+	Instruct[0] = 1'b0;
+end 
+// PC_IN[ 3 ]
+initial
+begin
+	PC_IN[3] = 1'b1;
+end 
+// PC_IN[ 2 ]
+initial
+begin
+	PC_IN[2] = 1'b1;
+end 
+// PC_IN[ 1 ]
+initial
+begin
+	PC_IN[1] = 1'b1;
+end 
+// PC_IN[ 0 ]
+initial
+begin
+	PC_IN[0] = 1'b1;
+end 
+endmodule
+

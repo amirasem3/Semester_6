@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="PC">
+		<CBX_INST_ENTRY INSTANCE_NAME="|PC|BUSMUX:inst13|lpm_mux:$00000" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PC|BUSMUX:inst14|lpm_mux:$00000" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PC|BUSMUX:inst15|lpm_mux:$00000" CBX_FILE_NAME="mux_bpc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|PC|BUSMUX:inst|lpm_mux:$00000" CBX_FILE_NAME="mux_bpc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

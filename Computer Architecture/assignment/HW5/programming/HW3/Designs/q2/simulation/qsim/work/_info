@@ -1,0 +1,50 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dY:/Term6/Semester_6/Computer Architecture/assignment/HW5/programming/HW3/Designs/q2/simulation/qsim
+vregister_32_bit
+!s110 1559193765
+!i10b 1
+!s100 VL2XcRcC:<1:EY[WdHZ>U2
+IbhHBg^j<N2dZFCZn]o0eC1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1559193764
+8Register_File.vo
+FRegister_File.vo
+L0 32
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1559193765.000000
+!s107 Register_File.vo|
+!s90 -work|work|Register_File.vo|
+!i113 1
+Z3 o-work work
+vregister_32_bit_vlg_vec_tst
+!s110 1559193766
+!i10b 1
+!s100 Gb28l@_>:Ank209CLmRhL1
+I6cXkIOmgXjKhoUkd67;K]2
+R1
+R0
+w1559193761
+8reg_32.vwf.vt
+Freg_32.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1559193766.000000
+!s107 reg_32.vwf.vt|
+!s90 -work|work|reg_32.vwf.vt|
+!i113 1
+R3

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at memory.v(22): always construct contains both blocking and non-blocking assignments File: //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW5/memory/memory.v Line: 22

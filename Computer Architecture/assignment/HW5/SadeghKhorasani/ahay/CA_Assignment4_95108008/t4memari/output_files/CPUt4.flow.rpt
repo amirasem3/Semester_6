@@ -1,0 +1,362 @@
+Flow report for CPUt4
+Mon May 28 18:43:01 2018
+Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Mon May 28 18:43:01 2018       ;
+; Quartus Prime Version              ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
+; Revision Name                      ; CPUt4                                       ;
+; Top-level Entity Name              ; TOT                                         ;
+; Family                             ; Cyclone IV GX                               ;
+; Total logic elements               ; 10,279                                      ;
+;     Total combinational functions  ; 10,147                                      ;
+;     Dedicated logic registers      ; 1,561                                       ;
+; Total registers                    ; 1561                                        ;
+; Total pins                         ; 430                                         ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total GXB Receiver Channel PCS     ; 0                                           ;
+; Total GXB Receiver Channel PMA     ; 0                                           ;
+; Total GXB Transmitter Channel PCS  ; 0                                           ;
+; Total GXB Transmitter Channel PMA  ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 05/28/2018 18:23:55 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; CPUt4               ;
++-------------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 123745742470860.152751563415392 ; --            ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_7BIT.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_7BIT_inst.vhd            ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_7BIT.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_7BIT.cmp                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_1bit.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_1bit_inst.vhd            ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_1bit.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_1bit.cmp                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; adder_sub.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; adder_sub_inst.vhd              ; --            ; --          ; --             ;
+; MISC_FILE                           ; adder_sub.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; adder_sub.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; Adder32bit.bsf                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; Adder32bit_inst.vhd             ; --            ; --          ; --             ;
+; MISC_FILE                           ; Adder32bit.inc                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; Adder32bit.cmp                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_4_32bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_4_32bit_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_4_32bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_4_32bit.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_4_16bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_4_16bit_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_4_16bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_4_16bit.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_3_8bit.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_3_8bit_inst.vhd            ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_3_8bit.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_3_8bit.cmp                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_1_32bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_1_32bit_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_1_32bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2_1_32bit.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2to4_32bit.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2to4_32bit_inst.vhd          ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2to4_32bit.inc               ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux2to4_32bit.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_8bit.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_8bit_inst.vhd            ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_8bit.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_8bit.cmp                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_32bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_32bit_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_32bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_32bit.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_1bit.bsf                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_1bit_inst.vhd            ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_1bit.inc                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux1_2_1bit.cmp                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1_2_16bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1_2_16bit_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1_2_16bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1_2_16bit.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; fourBit2_1MUX.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                           ; fourBit2_1MUX_inst.vhd          ; --            ; --          ; --             ;
+; MISC_FILE                           ; fourBit2_1MUX.inc               ; --            ; --          ; --             ;
+; MISC_FILE                           ; fourBit2_1MUX.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                           ; decoder4to16.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; decoder4to16_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; decoder4to16.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; decoder4to16.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux3_8_32bit.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux3_8_32bit_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux3_8_32bit.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux3_8_32bit.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux3to8_32bit.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux3to8_32bit_inst.vhd          ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux3to8_32bit.inc               ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux3to8_32bit.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux4to9_32bit.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux4to9_32bit_inst.vhd          ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux4to9_32bit.inc               ; --            ; --          ; --             ;
+; MISC_FILE                           ; mux4to9_32bit.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                           ; dec4to16.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; dec4to16_inst.vhd               ; --            ; --          ; --             ;
+; MISC_FILE                           ; dec4to16.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; dec4to16.cmp                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; dec5to32.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; dec5to32_inst.vhd               ; --            ; --          ; --             ;
+; MISC_FILE                           ; dec5to32.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; dec5to32.cmp                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; TESTCONSTANT.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; TESTCONSTANT_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; TESTCONSTANT.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; TESTCONSTANT.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; NOP.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; NOP_inst.vhd                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; NOP.inc                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; NOP.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; FETCH.bsf                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; FETCH_inst.vhd                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; FETCH.inc                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; FETCH.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; pushbyte.bsf                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; pushbyte_inst.vhd               ; --            ; --          ; --             ;
+; MISC_FILE                           ; pushbyte.inc                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; pushbyte.cmp                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; lADD.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; lADD_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; lADD.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; lADD.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; GOTO.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; GOTO_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; GOTO.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; GOTO.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; IFEQ.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; IFEQ_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; IFEQ.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; IFEQ.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; IF_ICM.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; IF_ICM_inst.vhd                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; IF_ICM.inc                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; IF_ICM.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; IINC.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; IINC_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; IINC.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; IINC.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ILOAD.bsf                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; ILOAD_inst.vhd                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; ILOAD.inc                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; ILOAD.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; ISTORE.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; ISTORE_inst.vhd                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; ISTORE.inc                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; ISTORE.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; ISUB.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ISUB_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; ISUB.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ISUB.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; DUP.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; DUP_inst.vhd                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; DUP.inc                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; DUP.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; LAND.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; LAND_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; LAND.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; LAND.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; SWAP.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; SWAP_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; SWAP.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; SWAP.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; WIDE.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; WIDE_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; WIDE.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; WIDE.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; IOR.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; IOR_inst.vhd                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; IOR.inc                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; IOR.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; LDC_W.bsf                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; LDC_W_inst.vhd                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; LDC_W.inc                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; LDC_W.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; POP.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; POP_inst.vhd                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; POP.inc                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; POP.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; LDASP.bsf                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; LDASP_inst.vhd                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; LDASP.inc                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; LDASP.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; ENVOKE.bsf                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; ENVOKE_inst.vhd                 ; --            ; --          ; --             ;
+; MISC_FILE                           ; ENVOKE.inc                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; ENVOKE.cmp                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; retn.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; retn_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; retn.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; retn.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1_2_14BIT.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1_2_14BIT_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1_2_14BIT.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1_2_14BIT.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_14BIT.bsf                ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_14BIT_inst.vhd           ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_14BIT.inc                ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX2_4_14BIT.cmp                ; --            ; --          ; --             ;
+; MISC_FILE                           ; ZERO.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ZERO_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; ZERO.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; ZERO.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; BMA.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; BMA_inst.vhd                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; BMA.inc                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; BMA.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; BPA.bsf                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; BPA_inst.vhd                    ; --            ; --          ; --             ;
+; MISC_FILE                           ; BPA.inc                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; BPA.cmp                         ; --            ; --          ; --             ;
+; MISC_FILE                           ; SHIFT4L.bsf                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; SHIFT4L_inst.vhd                ; --            ; --          ; --             ;
+; MISC_FILE                           ; SHIFT4L.inc                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; SHIFT4L.cmp                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; B.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; B_inst.vhd                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; B.inc                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; B.cmp                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; AANDB.bsf                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; AANDB_inst.vhd                  ; --            ; --          ; --             ;
+; MISC_FILE                           ; AANDB.inc                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; AANDB.cmp                       ; --            ; --          ; --             ;
+; MISC_FILE                           ; AORB.bsf                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; AORB_inst.vhd                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; AORB.inc                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; AORB.cmp                        ; --            ; --          ; --             ;
+; MISC_FILE                           ; A.bsf                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; A_inst.vhd                      ; --            ; --          ; --             ;
+; MISC_FILE                           ; A.inc                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; A.cmp                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; ZERO19BIT.bsf                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; ZERO19BIT_inst.vhd              ; --            ; --          ; --             ;
+; MISC_FILE                           ; ZERO19BIT.inc                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; ZERO19BIT.cmp                   ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1TO2_29BIT.bsf               ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1TO2_29BIT_inst.vhd          ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1TO2_29BIT.inc               ; --            ; --          ; --             ;
+; MISC_FILE                           ; MUX1TO2_29BIT.cmp               ; --            ; --          ; --             ;
+; MISC_FILE                           ; AN.bsf                          ; --            ; --          ; --             ;
+; MISC_FILE                           ; AN_inst.vhd                     ; --            ; --          ; --             ;
+; MISC_FILE                           ; AN.inc                          ; --            ; --          ; --             ;
+; MISC_FILE                           ; AN.cmp                          ; --            ; --          ; --             ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; TOT         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; TOT         ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; TOT         ; Top            ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; TOT                             ; CPUt4         ; --          ; --             ;
+; VERILOG_CONSTANT_LOOP_LIMIT         ; 8000                            ; 5000          ; --          ; --             ;
++-------------------------------------+---------------------------------+---------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:01:09     ; 1.0                     ; 5128 MB             ; 00:01:45                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4930 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4948 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4938 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4948 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4938 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4948 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4938 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4948 MB             ; 00:00:04                           ;
+; Total                ; 00:01:31     ; --                      ; --                  ; 00:02:09                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Flow OS Summary                                                                   ;
++----------------------+------------------+-----------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++----------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-8U0OPG8  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-8U0OPG8  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-8U0OPG8  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-8U0OPG8  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-8U0OPG8  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-8U0OPG8  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-8U0OPG8  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-8U0OPG8  ; Windows 8 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-8U0OPG8  ; Windows 8 ; 6.2        ; x86_64         ;
++----------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off CPUt4 -c CPUt4
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPUt4 -c CPUt4 --vector_source=F:/university/memari/CA_Assignment4_95108008/t4memari/designToT.vwf --testbench_file=F:/university/memari/CA_Assignment4_95108008/t4memari/simulation/qsim/designToT.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/university/memari/CA_Assignment4_95108008/t4memari/simulation/qsim/ CPUt4 -c CPUt4
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPUt4 -c CPUt4 --vector_source=F:/university/memari/CA_Assignment4_95108008/t4memari/designToT.vwf --testbench_file=F:/university/memari/CA_Assignment4_95108008/t4memari/simulation/qsim/designToT.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/university/memari/CA_Assignment4_95108008/t4memari/simulation/qsim/ CPUt4 -c CPUt4
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPUt4 -c CPUt4 --vector_source=F:/university/memari/CA_Assignment4_95108008/t4memari/designToT.vwf --testbench_file=F:/university/memari/CA_Assignment4_95108008/t4memari/simulation/qsim/designToT.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/university/memari/CA_Assignment4_95108008/t4memari/simulation/qsim/ CPUt4 -c CPUt4
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPUt4 -c CPUt4 --vector_source=F:/university/memari/CA_Assignment4_95108008/t4memari/designToT.vwf --testbench_file=F:/university/memari/CA_Assignment4_95108008/t4memari/simulation/qsim/designToT.vwf.vt
+quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=F:/university/memari/CA_Assignment4_95108008/t4memari/simulation/qsim/ CPUt4 -c CPUt4
+
+
+

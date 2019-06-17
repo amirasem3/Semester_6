@@ -1,0 +1,181 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
+# Date created = 11:39:22  May 05, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CPUt4_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE AUTO
+set_global_assignment -name TOP_LEVEL_ENTITY TOT
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:39:22  MAY 05, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 15.1.1
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name SOURCE_FILE mux4to9_32bit.cmp
+set_global_assignment -name SOURCE_FILE mux3_8_32bit.cmp
+set_global_assignment -name SOURCE_FILE mux3to8_32bit.cmp
+set_global_assignment -name SOURCE_FILE MUX2_4_7BIT.cmp
+set_global_assignment -name SOURCE_FILE MUX2_4_1bit.cmp
+set_global_assignment -name QIP_FILE MUX2_4_7BIT.qip
+set_global_assignment -name QIP_FILE MUX2_4_1bit.qip
+set_global_assignment -name BDF_FILE INCRIMENTOR.bdf
+set_global_assignment -name VERILOG_FILE rom.v
+set_global_assignment -name VHDL_FILE MUX2_4_7BIT.vhd
+set_global_assignment -name VHDL_FILE MUX2_4_1bit.vhd
+set_global_assignment -name SOURCE_FILE adder_sub.cmp
+set_global_assignment -name QIP_FILE adder_sub.qip
+set_global_assignment -name VHDL_FILE adder_sub.vhd
+set_global_assignment -name SOURCE_FILE Adder32bit.cmp
+set_global_assignment -name QIP_FILE Adder32bit.qip
+set_global_assignment -name VHDL_FILE Adder32bit.vhd
+set_global_assignment -name BDF_FILE inputlogic.bdf
+set_global_assignment -name SOURCE_FILE mux2_4_32bit.cmp
+set_global_assignment -name SOURCE_FILE mux2_4_16bit.cmp
+set_global_assignment -name SOURCE_FILE mux2_3_8bit.cmp
+set_global_assignment -name SOURCE_FILE mux2_1_32bit.cmp
+set_global_assignment -name SOURCE_FILE mux2to4_32bit.cmp
+set_global_assignment -name SOURCE_FILE mux1_2_8bit.cmp
+set_global_assignment -name SOURCE_FILE mux1_2_32bit.cmp
+set_global_assignment -name SOURCE_FILE mux1_2_1bit.cmp
+set_global_assignment -name SOURCE_FILE MUX1_2_16bit.cmp
+set_global_assignment -name SOURCE_FILE fourBit2_1MUX.cmp
+set_global_assignment -name SOURCE_FILE decoder4to16.cmp
+set_global_assignment -name QIP_FILE mux2_4_32bit.qip
+set_global_assignment -name QIP_FILE mux2_4_16bit.qip
+set_global_assignment -name QIP_FILE mux2_3_8bit.qip
+set_global_assignment -name QIP_FILE mux2_1_32bit.qip
+set_global_assignment -name QIP_FILE mux2to4_32bit.qip
+set_global_assignment -name QIP_FILE mux1_2_8bit.qip
+set_global_assignment -name QIP_FILE mux1_2_32bit.qip
+set_global_assignment -name QIP_FILE mux1_2_1bit.qip
+set_global_assignment -name QIP_FILE MUX1_2_16bit.qip
+set_global_assignment -name QIP_FILE fourBit2_1MUX.qip
+set_global_assignment -name QIP_FILE decoder4to16.qip
+set_global_assignment -name BDF_FILE TFFwithCLR.bdf
+set_global_assignment -name BDF_FILE TEST.bdf
+set_global_assignment -name BDF_FILE SP_REG_32bit.bdf
+set_global_assignment -name BDF_FILE SCounter.bdf
+set_global_assignment -name BDF_FILE REG_8withLD.bdf
+set_global_assignment -name BDF_FILE REG_8bit.bdf
+set_global_assignment -name BDF_FILE REG_32withLD.bdf
+set_global_assignment -name BDF_FILE REG_32bit.bdf
+set_global_assignment -name BDF_FILE REG_16bit.bdf
+set_global_assignment -name BDF_FILE PCwithoutCLR.bdf
+set_global_assignment -name BDF_FILE PC.bdf
+set_global_assignment -name BDF_FILE Encoder8to3.bdf
+set_global_assignment -name BDF_FILE Encoder4to2.bdf
+set_global_assignment -name BDF_FILE DFF_OK.bdf
+set_global_assignment -name BDF_FILE DFFwithSET.bdf
+set_global_assignment -name BDF_FILE DFFwithCLR.bdf
+set_global_assignment -name BDF_FILE DFF.bdf
+set_global_assignment -name BDF_FILE "DFF-HTR.bdf"
+set_global_assignment -name BDF_FILE DesignCPU.bdf
+set_global_assignment -name BDF_FILE DataPath.bdf
+set_global_assignment -name VHDL_FILE mux2_4_32bit.vhd
+set_global_assignment -name VHDL_FILE mux2_4_16bit.vhd
+set_global_assignment -name VHDL_FILE mux2_3_8bit.vhd
+set_global_assignment -name VHDL_FILE mux2_1_32bit.vhd
+set_global_assignment -name VHDL_FILE mux1_2_8bit.vhd
+set_global_assignment -name VHDL_FILE mux1_2_32bit.vhd
+set_global_assignment -name VHDL_FILE mux1_2_1bit.vhd
+set_global_assignment -name VHDL_FILE MUX1_2_16bit.vhd
+set_global_assignment -name VHDL_FILE fourBit2_1MUX.vhd
+set_global_assignment -name VHDL_FILE decoder4to16.vhd
+set_global_assignment -name QIP_FILE mux3_8_32bit.qip
+set_global_assignment -name QIP_FILE mux3to8_32bit.qip
+set_global_assignment -name VERILOG_FILE ALU.v
+set_global_assignment -name QIP_FILE mux4to9_32bit.qip
+set_global_assignment -name QIP_FILE dec4to16.qip
+set_global_assignment -name QIP_FILE dec5to32.qip
+set_global_assignment -name BDF_FILE GenSignals.bdf
+set_global_assignment -name QIP_FILE TESTCONSTANT.qip
+set_global_assignment -name QIP_FILE NOP.qip
+set_global_assignment -name QIP_FILE FETCH.qip
+set_global_assignment -name BDF_FILE TriBus_7bit.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE triBus_7bit.vwf
+set_global_assignment -name QIP_FILE pushbyte.qip
+set_global_assignment -name QIP_FILE lADD.qip
+set_global_assignment -name QIP_FILE GOTO.qip
+set_global_assignment -name QIP_FILE IFEQ.qip
+set_global_assignment -name QIP_FILE IFLT.qip
+set_global_assignment -name QIP_FILE IF_ICM.qip
+set_global_assignment -name QIP_FILE IINC.qip
+set_global_assignment -name QIP_FILE ILOAD.qip
+set_global_assignment -name QIP_FILE ISTORE.qip
+set_global_assignment -name QIP_FILE ISUB.qip
+set_global_assignment -name QIP_FILE DUP.qip
+set_global_assignment -name QIP_FILE LAND.qip
+set_global_assignment -name QIP_FILE SWAP.qip
+set_global_assignment -name QIP_FILE WIDE.qip
+set_global_assignment -name QIP_FILE IOR.qip
+set_global_assignment -name QIP_FILE LDC_W.qip
+set_global_assignment -name QIP_FILE POP.qip
+set_global_assignment -name QIP_FILE LDASP.qip
+set_global_assignment -name QIP_FILE ENVOKE.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE tri.vwf
+set_global_assignment -name QIP_FILE retn.qip
+set_global_assignment -name BDF_FILE Mapper.bdf
+set_global_assignment -name QIP_FILE MUX1_2_14BIT.qip
+set_global_assignment -name QIP_FILE MUX2_4_14BIT.qip
+set_global_assignment -name BDF_FILE REG_14BIT.bdf
+set_global_assignment -name BDF_FILE LV.bdf
+set_global_assignment -name QIP_FILE ZERO.qip
+set_global_assignment -name BDF_FILE triBus_6bit.bdf
+set_global_assignment -name QIP_FILE BMA.qip
+set_global_assignment -name QIP_FILE BPA.qip
+set_global_assignment -name QIP_FILE SHIFT4L.qip
+set_global_assignment -name QIP_FILE B.qip
+set_global_assignment -name QIP_FILE AANDB.qip
+set_global_assignment -name QIP_FILE AORB.qip
+set_global_assignment -name QIP_FILE A.qip
+set_global_assignment -name BDF_FILE TOT.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE "TOTAL simulation.vwf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE designToT.vwf
+set_global_assignment -name BDF_FILE CPP.bdf
+set_global_assignment -name QIP_FILE ZERO19BIT.qip
+set_global_assignment -name QIP_FILE MUX1TO2_29BIT.qip
+set_global_assignment -name VECTOR_WAVEFORM_FILE inputlogic.vwf
+set_global_assignment -name BDF_FILE CAD.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CAD.vwf
+set_global_assignment -name VERILOG_FILE memory.v
+set_global_assignment -name QIP_FILE AN.qip
+set_global_assignment -name VERILOG_CONSTANT_LOOP_LIMIT 8000
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

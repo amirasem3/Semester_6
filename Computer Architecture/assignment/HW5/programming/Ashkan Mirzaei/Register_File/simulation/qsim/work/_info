@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera_lite/15.1/Register_File/simulation/qsim
+vRegister_File
+!s110 1557248994
+!i10b 1
+!s100 ^`QW=lYj<KMXYYcljiSk82
+IW4RV_WOZBL[dOb3G9RLaC3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1557248993
+8Register_File.vo
+FRegister_File.vo
+L0 32
+Z2 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z3 !s108 1557248994.000000
+!s107 Register_File.vo|
+!s90 -work|work|Register_File.vo|
+!i113 1
+Z4 o-work work
+n@register_@file
+vRegister_File_vlg_vec_tst
+!s110 1557248995
+!i10b 1
+!s100 9:7GD_i3C<dNaIL7NGNZR1
+I1^Hn9]zc6llg`gdHNT1=;3
+R1
+R0
+w1557248984
+8Register_File_WF.vwf.vt
+FRegister_File_WF.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+R3
+!s107 Register_File_WF.vwf.vt|
+!s90 -work|work|Register_File_WF.vwf.vt|
+!i113 1
+R4
+n@register_@file_vlg_vec_tst
