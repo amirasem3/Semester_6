@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/07/2019 21:04:26"
+// Generated on "05/30/2019 11:51:07"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          reg_32bit
 // 
@@ -32,7 +32,7 @@ module reg_32bit_vlg_vec_tst();
 // general purpose registers
 reg Clear;
 reg CLK;
-reg [31:0] D;
+reg [31:0] Data;
 reg Write;
 // wires                                               
 wire [31:0] OUT;
@@ -42,7 +42,7 @@ reg_32bit i1 (
 // port map - connection between master ports and signals/registers   
 	.Clear(Clear),
 	.CLK(CLK),
-	.D(D),
+	.Data(Data),
 	.OUT(OUT),
 	.Write(Write)
 );
@@ -64,172 +64,11 @@ begin
 	CLK = #5000 1'b1;
 	#5000;
 end 
-// D[ 31 ]
-initial
-begin
-	D[31] = 1'b0;
-end 
-// D[ 30 ]
-initial
-begin
-	D[30] = 1'b0;
-end 
-// D[ 29 ]
-initial
-begin
-	D[29] = 1'b0;
-end 
-// D[ 28 ]
-initial
-begin
-	D[28] = 1'b0;
-end 
-// D[ 27 ]
-initial
-begin
-	D[27] = 1'b0;
-end 
-// D[ 26 ]
-initial
-begin
-	D[26] = 1'b0;
-end 
-// D[ 25 ]
-initial
-begin
-	D[25] = 1'b0;
-end 
-// D[ 24 ]
-initial
-begin
-	D[24] = 1'b0;
-end 
-// D[ 23 ]
-initial
-begin
-	D[23] = 1'b0;
-end 
-// D[ 22 ]
-initial
-begin
-	D[22] = 1'b0;
-end 
-// D[ 21 ]
-initial
-begin
-	D[21] = 1'b0;
-end 
-// D[ 20 ]
-initial
-begin
-	D[20] = 1'b0;
-end 
-// D[ 19 ]
-initial
-begin
-	D[19] = 1'b0;
-end 
-// D[ 18 ]
-initial
-begin
-	D[18] = 1'b0;
-end 
-// D[ 17 ]
-initial
-begin
-	D[17] = 1'b0;
-end 
-// D[ 16 ]
-initial
-begin
-	D[16] = 1'b0;
-end 
-// D[ 15 ]
-initial
-begin
-	D[15] = 1'b0;
-end 
-// D[ 14 ]
-initial
-begin
-	D[14] = 1'b0;
-end 
-// D[ 13 ]
-initial
-begin
-	D[13] = 1'b0;
-end 
-// D[ 12 ]
-initial
-begin
-	D[12] = 1'b0;
-end 
-// D[ 11 ]
-initial
-begin
-	D[11] = 1'b0;
-end 
-// D[ 10 ]
-initial
-begin
-	D[10] = 1'b1;
-end 
-// D[ 9 ]
-initial
-begin
-	D[9] = 1'b0;
-end 
-// D[ 8 ]
-initial
-begin
-	D[8] = 1'b0;
-end 
-// D[ 7 ]
-initial
-begin
-	D[7] = 1'b1;
-end 
-// D[ 6 ]
-initial
-begin
-	D[6] = 1'b0;
-end 
-// D[ 5 ]
-initial
-begin
-	D[5] = 1'b1;
-end 
-// D[ 4 ]
-initial
-begin
-	D[4] = 1'b1;
-end 
-// D[ 3 ]
-initial
-begin
-	D[3] = 1'b0;
-end 
-// D[ 2 ]
-initial
-begin
-	D[2] = 1'b0;
-end 
-// D[ 1 ]
-initial
-begin
-	D[1] = 1'b0;
-end 
-// D[ 0 ]
-initial
-begin
-	D[0] = 1'b0;
-end 
 
 // Write
 initial
 begin
 	Write = 1'b1;
-	Write = #20000 1'b0;
 end 
 endmodule
 

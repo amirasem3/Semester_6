@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for Q1
-Mon May 06 23:34:12 2019
+Mon Jun 17 14:05:54 2019
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -1089,7 +1089,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Mon May 06 23:34:03 2019
+    Info: Processing started: Mon Jun 17 14:05:42 2019
 Info: Command: quartus_sta Q1 -c Q1
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1257,8 +1257,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 113 warnings
     Info: Peak virtual memory: 5448 megabytes
-    Info: Processing ended: Mon May 06 23:34:12 2019
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:08
+    Info: Processing ended: Mon Jun 17 14:05:54 2019
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:09
 
 

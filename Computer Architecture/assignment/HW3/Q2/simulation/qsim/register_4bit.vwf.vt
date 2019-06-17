@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "05/07/2019 20:26:27"
+// Generated on "05/30/2019 11:38:25"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          register_4bit
 // 
@@ -54,7 +54,7 @@ end
 // Clear
 initial
 begin
-	Clear = 1'b0;
+	Clear = 1'b1;
 end 
 
 // clk
