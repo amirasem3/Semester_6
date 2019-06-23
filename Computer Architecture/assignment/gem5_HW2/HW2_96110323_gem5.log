@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.9)  14 JUN 2019 22:40
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.2.9)  21 JUN 2019 19:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -738,15 +738,15 @@ LaTeX Font Info:    ... okay on input line 22.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* h-part:(L,W,R)=(21.68121pt, 570.93257pt, 21.68121pt)
+* v-part:(T,H,B)=(21.68121pt, 751.60756pt, 21.68121pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=650.43001pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* \textwidth=570.93257pt
+* \textheight=751.60756pt
+* \oddsidemargin=-50.58878pt
+* \evensidemargin=-50.58878pt
+* \topmargin=-87.58878pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -822,7 +822,7 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 )
 [1
 
-]
+] [2] [3]
 Missing character: There is no ٍ in font [lmroman10-regular]/OT:script=latn;lan
 guage=DFLT;mapping=tex-text;!
 Missing character: There is no   in font B Nazanin/OT:script=arab;language=DFLT
@@ -831,24 +831,24 @@ File: q2p1.png Graphic file (type bmp)
 <q2p1.png>
 File: q3p1.png Graphic file (type bmp)
 <q3p1.png>
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 96.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 96.
+ [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
  (./HW2_96110323_gem5.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 96.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 110.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
 Package rerunfilecheck Info: File `HW2_96110323_gem5.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 96.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
  22994 strings out of 492933
  445649 string characters out of 6133146
- 586200 words of memory out of 5000000
+ 588204 words of memory out of 5000000
  26828 multiletter control sequences out of 15000+600000
  535602 words of font info for 55 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  46i,8n,69p,1303b,446s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on HW2_96110323_gem5.pdf (3 pages).
+Output written on HW2_96110323_gem5.pdf (5 pages).
