@@ -1,18 +1,23 @@
 \documentclass{article}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{color}
-\usepackage{hyperref}
+\usepackage{xcolor}
 \graphicspath{ {/asay/Desktop/images/} }
 \usepackage{xepersian}
 
 
 
 
-\title{پاسخ تمرین شماره ۵ درس طراحی پایگاه داده }
+\title{پاسخ تمرین شماره ۴ درس طراحی پایگاه داده }
 
-
-\author{امیر حسین عاصم یوسفی \\ ۹۶۱۱۰۳۲۳}
+\author{
+	امیر حسین عاصم یوسفی \\ 
+	۹۶۱۱۰۳۲۳\\
+	علیرضا وفایی \\ 
+	۹۵۱۰۵۲۹۵\\
+	}
 \settextfont{B Nazanin}
 
 \begin{document}
@@ -65,16 +70,141 @@
 \hrule
 
 \section*{سوال ۴ }
-\subsection*{سیستم مدیریت مرگز درمانی}
+دو رابطه 
+\lr{R(A,B)}
+و 
+\lr{S(B)}
+را در نظر بگیرید . حاصل عملیات
+\lr{$R \div S$}
+برابر است با تمام مقادیر ستون 
+\lr{A}
+در 
+\lr{R}
+که با تمام مقادیر ستون 
+\lr{B}
+در 
+\lr{S}
+، در ارتباط هستند  . ادعا می کنیم  : 
+\begin{center}
+	\lr{$ \prod \ _{<A>}(R) \ - \ \prod \ _{<A>}(\prod \ _{<A>}(R) \ \times   \ S  \ - \ R)$}
+\end{center}
+دلیل : عبارت 
+\lr{$ \prod \ _{<A>}(R) \times S $}
+شامل تمام جفت های ممکن از مقادیر 
+\lr{A}
+و 
+\lr{B}
+به صورت 
+\lr{(A , B)}
+می باشد   . \\
+عبارت 
+\lr{$ \prod \ _{<A>}(R) \times S \ - \ R$}
+شامل همه جفت های 
+\lr{(A, B)}
+است که در رابطه 
+\lr{R}
+نیستند . بنابراین اعمال عملگر پرتو 
+\lr{$\prod \ _{<A>}$}
+روی این عبارت ، مقادیر 
+\lr{A}
+را می دهد که با تمام مقادیر 
+\lr{B}
+در ارتباط نیستند  . 
+\\
+بنابراین 
+\lr{$ \prod \ _{<A>}(R) \ - \ \prod \ _{<A>}(\prod \ _{<A>}(R) \ \times   \ S  \ - \ R)$}
+مقادیر 
+\lr{A}
+را که با تمام مقادیر 
+\lr{B}
+در ارتباط هستند به دست می دهد  . 
+\hrule
+\section*{سوال ۵}
+\subsection*{سیستم مدیریت مرکز درمانی}
 \subsubsection*{\textcolor{red}{الف}}
 برای این مورد از یک عملگر 
 \lr{join}
 استفاده می کنیم . که دستور آن به صورت زیر می باشد : 
 \begin{center}
-	\lr{select distinct (nurse.fname) from nurse \textcolor{red}{\lr{JOIN}} 
-		 supervision where (supervision.nurse\_id = nurse.id and supervision.room\_number !=2);}
+\lr{$\prod \ _{<fname>} (nurse \bowtie _{(supervision.nurse
+		\_id = nurse.id \  \wedge \ supervision.room \_number!=2) }supervision)$}
 \end{center}
-	\subsubsection*{\textcolor{red}{ب}}
-	
+\subsubsection*{\textcolor{red}{ب}}
+	\begin{center}
+		\lr{$\prod \ _{<doctor\_id \ , \ room\_number>} (visit) = R_1$}\\
+		\lr{$\prod \ _{room\_number} (room)  = R_2 $}\\
+		\lr{$R_3 = R_1 \div R_2 $}\\
+		\lr{$\prod \ _{<fname>} (R_3 \bowtie _{(R_3.doctor\_id = doctor.id)} doctor) $}
+	\end{center}
 
+\subsubsection*{\textcolor{red}{پ}}
+\begin{center}
+	\lr{$ \prod \ _{< nurse\_id \ , \ room\_number>} (supervision) = R_1$}\\
+		\lr{$\prod \ _{room\_number} (room)  = R_2 $}\\
+	\lr{$R_3 = R_1 \div R_2 $}\\
+		\lr{$\prod \ _{<fname>} (R_3 \bowtie _{(R_3.nurse\_id = nurse.id)} nurse) $}
+\end{center}
+\subsubsection*{\textcolor{red}{ت}}
+\begin{center}
+	\lr{$\prod \ _{< nurse\_id \ , \ \textcolor{blue}{COUNT}(room\_number) \ as  \ \textcolor{red}{'rn'}>} (supervision) = R_1$}\\
+	\lr{$\prod \ _{<fname>} (R_1 \bowtie _{(R_1.nurse\_id = nurse.id \  \wedge \ R_1 .rn \ \geq 2 )} nurse)$}
+\end{center}
+\subsection*{سیستم رزرو اتاق}
+\subsubsection*{\textcolor{cyan}{الف}}
+\begin{center}
+	\lr{$\prod \ _{<teacher\_id \ , \textcolor{blue}{datediff}(\textcolor{blue}{Getdate()} \ , \ birthday) \ as \textcolor{red}{'Age'}>}(teacher) = R_1$}\\
+	\lr{$\prod \ _{<\textcolor{blue}{MAX}(Age) \ as \ \textcolor{red}{'Age'}>} (R_1) = R_2$}
+		\lr{$R_3 = R_1 \div R_2 $}\\
+		\lr{$\prod \ _{
+			<firest\_name>} (R_3 \ \bowtie \ _{(R_3.teacher\_id = teacher.teacher\_id)} \  teacher )$}
+\end{center}
+\subsubsection*{\textcolor{cyan}{ب}}
+\begin{center}
+	\lr{$\sigma _{<last\_name \ = \ \textcolor{red}{'Karami'}>} \ (tearcher) = R_1$}\\
+	\lr{$\prod \ _{<first\_name>}(R_1 \ \bowtie  \ _{(R_1.salary  \  = \ teacher.salary)} teacher)$}
+\end{center}
+\subsubsection*{\textcolor{cyan}{پ}}
+\begin{center}
+	\lr{$ \prod \ _{<room\_number>} (reserve) = R_1$}\\
+	\lr{$ \prod \  _{<room\_number>}(room) = R_2$}\\
+	\lr{$ \prod \ _{<room\_number>}(R_2  \ SEMIMINUS \ R_1)$}
+\end{center}
+\subsubsection*{\textcolor{cyan}{ت}}
+\begin{center}
+	\lr{$ \sigma _{<state \ = \ \textcolor{red}{'Finished'} \  \vee \ state \ = \ \textcolor{red}{'Approved'} \vee \ state \ = \ \textcolor{red}{'Rejected'}\vee \ state \ = \ \textcolor{red}{'New'}\vee \ state \ = \ \textcolor{red}{'Pending'}>} \ (reserve) = R_1$}\\
+	\lr{$ \prod \ _{<room\_number \ , \ \textcolor{blue}{COUNT}(room\_number) \ as \ \textcolor{red}{'rn'}>}R_1 = R_2$}\\
+	\lr{$\prod \ _{<room\_number \ , \ \textcolor{blue}{MAX}(rn) \ as \ \textcolor{red}{'rn'}>}R_2 = R_3$}\\
+	\lr{$ \prod \ _{<room\_number>}(R_3 \ \bowtie\ _{(R_3.rn  \ = \ R_2.rn) } R_2)$}
+\end{center}
+\hrule
+\section*{سوال ۶}
+برای مثال رابطه 
+\lr{R}
+را به صورت زیر تعریف می کنیم  : 
+\begin{center}
+	\lr{$ \prod \ _{<state \  , \ teacher\_id>} (reserve) = R$}
+\end{center}
+و رابطه 
+\lr{S}
+را به صورت زیر تعریف کنیم  : 
+\begin{center}
+	\lr{$ \prod \ _{<teacher\_id \ , \ first\_name>} (teacher) = S$}
+\end{center}
+بنابراین قسمت الف به صورت زیر می باشد : 
+\begin{center}
+	\lr{$\prod \ _{<state \ , \ teacher\_id>} (R \bowtie S) = A$}
+\end{center}
+که رابطه 
+\lr{A}
+شامل دو ستون به نام های 
+\lr{teacher\_id  , state}
+می باشد . 
+\\
+اگر همین تبدیلات را برای قسمت ب انجام دهیم به رابطه 
+\lr{B}
+می رسیم که شامل ستون های 
+\lr{state , teacher\_id , state , teacher\_id}
+می باشد  . 
+\\
+بنابراین می توان نتیجه گرفت که پاسخ قسمت الف یک زیر مجموعه افقی از پاسخ قسمت ب می باشد  . 
 \end{document}
