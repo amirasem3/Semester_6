@@ -24,7 +24,7 @@ agreement for further details.
 	(input)
 	(rect 288 432 544 448)
 	(text "INPUT" (rect 213 0 254 11)(font "Arial" (font_size 6)))
-	(text "JumpAdderess[25..0]" (rect 5 0 162 14)(font "Arial" ))
+	(text "JumpAdderess[25..0]" (rect 5 0 161 14)(font "Arial" ))
 	(pt 256 8)
 	(drawing
 		(line (pt 172 12)(pt 197 12))
@@ -40,7 +40,7 @@ agreement for further details.
 	(input)
 	(rect 288 504 544 520)
 	(text "INPUT" (rect 213 0 254 11)(font "Arial" (font_size 6)))
-	(text "BranchOffset[15..0]" (rect 5 0 162 14)(font "Arial" ))
+	(text "BranchOffset[15..0]" (rect 5 0 161 14)(font "Arial" ))
 	(pt 256 8)
 	(drawing
 		(line (pt 172 12)(pt 197 12))
@@ -56,7 +56,7 @@ agreement for further details.
 	(input)
 	(rect 392 608 560 624)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "Branch" (rect 5 0 55 14)(font "Arial" ))
+	(text "Branch" (rect 5 0 54 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -72,7 +72,7 @@ agreement for further details.
 	(input)
 	(rect 392 736 560 752)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "Jump" (rect 5 0 39 14)(font "Arial" ))
+	(text "Jump" (rect 5 0 38 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -88,7 +88,7 @@ agreement for further details.
 	(input)
 	(rect 392 840 560 856)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "CLK" (rect 5 0 30 14)(font "Arial" ))
+	(text "CLK" (rect 5 0 29 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -104,7 +104,7 @@ agreement for further details.
 	(input)
 	(rect 392 912 560 928)
 	(text "INPUT" (rect 125 0 166 11)(font "Arial" (font_size 6)))
-	(text "Reset" (rect 5 0 47 14)(font "Arial" ))
+	(text "Reset" (rect 5 0 46 14)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -508,6 +508,84 @@ agreement for further details.
 		(rectangle (rect 16 16 328 80))
 	)
 )
+(symbol
+	(rect 2456 704 2568 800)
+	(text "LPM_MUX" (rect 23 0 113 18)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 3 84 44 98)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "data[LPM_SIZE-1..0][LPM_WIDTH-1..0]" (rect 6 33 336 49)(font "Arial" (font_size 8)))
+		(text "data[][]" (rect 6 33 81 49)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 44 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clock" (rect 6 51 53 67)(font "Arial" (font_size 8)))
+		(text "clock" (rect 6 51 53 67)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 44 64))
+	)
+	(port
+		(pt 0 32)
+		(input)
+		(text "aclr" (rect 6 19 43 35)(font "Arial" (font_size 8)))
+		(text "aclr" (rect 6 19 43 35)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 44 32))
+	)
+	(port
+		(pt 56 96)
+		(input)
+		(text "sel[LPM_WIDTHS-1..0]" (rect 59 80 247 96)(font "Arial" (font_size 8)))
+		(text "sel[]" (rect 59 80 106 96)(font "Arial" (font_size 8)))
+		(line (pt 56 96)(pt 56 80)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "clken" (rect 6 67 53 83)(font "Arial" (font_size 8)))
+		(text "clken" (rect 6 67 53 83)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 44 80))
+	)
+	(port
+		(pt 112 56)
+		(output)
+		(text "result[LPM_WIDTH-1..0]" (rect 75 41 282 57)(font "Arial" (font_size 8)))
+		(text "result[]" (rect 75 41 150 57)(font "Arial" (font_size 8)))
+		(line (pt 68 56)(pt 112 56)(line_width 3))
+	)
+	(parameter
+		"LPM_PIPELINE"
+		""
+		"Output latency in clock cycles - requires use of optional clock"
+		"0" "1" "2" "3" "4" 
+	)
+	(parameter
+		"LPM_SIZE"
+		"2"
+		"Number of inputs per MUX, any integer > 1"
+		" 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"LPM_WIDTH"
+		"32"
+		"Number of MUXes, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"LPM_WIDTHS"
+		"CEIL(LOG2(LPM_SIZE))"
+		"Width of sel[] port"
+		"CEIL(LOG2(LPM_SIZE))" 
+	)
+	(drawing
+		(line (pt 44 88)(pt 44 16))
+		(line (pt 68 72)(pt 68 32))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 88)(pt 68 72))
+	)
+	(annotation_block (parameter)(rect 2568 592 2940 697))
+)
 (connector
 	(text "jaddr[25..0]" (rect 558 424 657 438)(font "Arial" ))
 	(pt 584 440)
@@ -553,12 +631,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "pc_plus_4[31..0]" (rect 1166 648 1298 662)(font "Arial" ))
-	(pt 1192 664)
-	(pt 1144 664)
-	(bus)
-)
-(connector
 	(text "jaddr[25..0]" (rect 913 912 1012 926)(font "Arial" ))
 	(pt 888 928)
 	(pt 944 928)
@@ -592,12 +664,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "pc_plus_4[31..0]" (rect 1220 464 1352 478)(font "Arial" ))
-	(pt 1208 480)
-	(pt 1256 480)
-	(bus)
-)
-(connector
 	(text "0" (rect 1234 480 1242 494)(font "Arial" ))
 	(pt 1216 496)
 	(pt 1256 496)
@@ -617,18 +683,6 @@ agreement for further details.
 	(text "gnd[31..0]" (rect 1624 642 1638 724)(font "Arial" )(vertical))
 	(pt 1640 680)
 	(pt 1640 728)
-	(bus)
-)
-(connector
-	(text "pc_plus_4[31..28]" (rect 1575 832 1715 846)(font "Arial" ))
-	(pt 1696 848)
-	(pt 1736 848)
-	(bus)
-)
-(connector
-	(text "temp[3..0]" (rect 1801 832 1883 846)(font "Arial" ))
-	(pt 1824 848)
-	(pt 1784 848)
 	(bus)
 )
 (connector
@@ -667,18 +721,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "final_pc[31..0]" (rect 2121 592 2244 606)(font "Arial" ))
-	(pt 2144 608)
-	(pt 2080 608)
-	(bus)
-)
-(connector
-	(text "out_pc[31..0]" (rect 2339 392 2446 406)(font "Arial" ))
-	(pt 2360 432)
-	(pt 2416 432)
-	(bus)
-)
-(connector
 	(text "jaddr_shifted[27..0]" (rect 1555 952 1720 966)(font "Arial" ))
 	(pt 1720 968)
 	(pt 1536 968)
@@ -693,12 +735,6 @@ agreement for further details.
 	(text "gnd[31..0]" (rect 881 648 963 662)(font "Arial" ))
 	(pt 856 664)
 	(pt 904 664)
-	(bus)
-)
-(connector
-	(text "final_pc[31..0]" (rect 1941 344 2064 358)(font "Arial" ))
-	(pt 2056 360)
-	(pt 1912 360)
 	(bus)
 )
 (connector
@@ -776,12 +812,6 @@ agreement for further details.
 	(bus)
 )
 (connector
-	(text "final_pc[31..0]" (rect 2264 576 2387 590)(font "Arial" ))
-	(pt 2360 592)
-	(pt 2256 592)
-	(bus)
-)
-(connector
 	(text "boff_extend[31..0]" (rect 1208 792 1356 806)(font "Arial" ))
 	(pt 1184 808)
 	(pt 1240 808)
@@ -791,5 +821,64 @@ agreement for further details.
 	(text "boff[15..0]" (rect 813 792 903 806)(font "Arial" ))
 	(pt 784 808)
 	(pt 840 808)
+	(bus)
+)
+(connector
+	(text "Result[31..0]" (rect 2617 744 2724 758)(font "Arial" ))
+	(pt 2640 760)
+	(pt 2568 760)
+	(bus)
+)
+(connector
+	(text "d[1..0][31..0]" (rect 2425 736 2540 750)(font "Arial" ))
+	(pt 2392 752)
+	(pt 2456 752)
+	(bus)
+)
+(connector
+	(text "reset" (rect 2496 797 2510 838)(font "Arial" )(vertical))
+	(pt 2512 848)
+	(pt 2512 800)
+)
+(connector
+	(text "Result[31..0]" (rect 2339 392 2446 406)(font "Arial" ))
+	(pt 2360 432)
+	(pt 2416 432)
+	(bus)
+)
+(connector
+	(text "d[1][31..0]" (rect 2264 576 2354 590)(font "Arial" ))
+	(pt 2256 592)
+	(pt 2464 592)
+	(bus)
+)
+(connector
+	(text "d[1][31..0]" (rect 1941 344 2031 358)(font "Arial" ))
+	(pt 2056 360)
+	(pt 1912 360)
+	(bus)
+)
+(connector
+	(text "d[0][31..0]" (rect 1220 464 1310 478)(font "Arial" ))
+	(pt 1208 480)
+	(pt 1256 480)
+	(bus)
+)
+(connector
+	(text "temp[31..0]" (rect 1801 832 1891 846)(font "Arial" ))
+	(pt 1824 848)
+	(pt 1784 848)
+	(bus)
+)
+(connector
+	(text "d[0][31..0]" (rect 1166 648 1256 662)(font "Arial" ))
+	(pt 1144 664)
+	(pt 1360 664)
+	(bus)
+)
+(connector
+	(text "d[0][31..0]" (rect 1575 832 1665 846)(font "Arial" ))
+	(pt 1696 848)
+	(pt 1736 848)
 	(bus)
 )

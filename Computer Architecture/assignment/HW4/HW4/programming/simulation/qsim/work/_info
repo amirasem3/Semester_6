@@ -169,13 +169,13 @@ R16
 !i113 1
 R10
 vPC
-Z17 !s110 1557680667
+Z17 !s110 1560852819
 !i10b 1
-!s100 0zFd;7OJUahBfE7>LjA^e3
-I[=ER_fMeN>IGSf3znTddC3
+!s100 OF8EBaiFZmfk5GAfBWzj>1
+I:Z2QC2^g7nOQz>CD<P?SN0
 R2
-R0
-w1557680665
+Z18 d//Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/simulation/qsim
+w1560852816
 R3
 R4
 R5
@@ -183,14 +183,14 @@ R6
 r1
 !s85 0
 31
-!s108 1557680666.000000
+Z19 !s108 1560852819.000000
 R8
 R9
 !i113 1
 R10
 n@p@c
 vpc_plus_4
-Z18 !s110 1557662707
+Z20 !s110 1557662707
 !i10b 1
 !s100 >C@L]>3NBoFbmhReG`=e52
 I`]NheGY3cgJjozmX9l7>n3
@@ -204,13 +204,13 @@ R6
 r1
 !s85 0
 31
-Z19 !s108 1557662707.000000
+Z21 !s108 1557662707.000000
 R8
 R9
 !i113 1
 R10
 vpc_plus_4_vlg_vec_tst
-R18
+R20
 !i10b 1
 !s100 enF?LKOSR1C]m1e:3TUg23
 ILL<BO:Lo;CVCWl[gkaD_60
@@ -224,7 +224,7 @@ R6
 r1
 !s85 0
 31
-R19
+R21
 !s107 pc_plus_4.vwf.vt|
 !s90 -work|work|pc_plus_4.vwf.vt|
 !i113 1
@@ -235,8 +235,8 @@ R17
 !s100 dUVMDdJkN[MNRhK_k9G4l1
 Iz]HbO3FEmQab0mkJ1]7Jl0
 R2
-R0
-w1557680661
+R18
+w1560852812
 8PC.vwf.vt
 FPC.vwf.vt
 R11
@@ -244,14 +244,14 @@ R6
 r1
 !s85 0
 31
-!s108 1557680667.000000
+R19
 !s107 PC.vwf.vt|
 !s90 -work|work|PC.vwf.vt|
 !i113 1
 R10
 n@p@c_vlg_vec_tst
 vreg_16bit
-Z20 !s110 1557654607
+Z22 !s110 1557654607
 !i10b 1
 !s100 zAfYg7Ml9?mCichgjQzZd2
 IZ=G1CigaBUg:M4[HP]I;M1
@@ -265,13 +265,13 @@ R6
 r1
 !s85 0
 31
-Z21 !s108 1557654607.000000
+Z23 !s108 1557654607.000000
 R8
 R9
 !i113 1
 R10
 vreg_16bit_vlg_vec_tst
-R20
+R22
 !i10b 1
 !s100 TEdAKIR=>:HXoZ@?[L;Se1
 IbL_YnfZ9VD5GH0kPL1Jc<0
@@ -285,7 +285,7 @@ R6
 r1
 !s85 0
 31
-R21
+R23
 !s107 reg_16bit.vwf.vt|
 !s90 -work|work|reg_16bit.vwf.vt|
 !i113 1
@@ -305,7 +305,7 @@ R6
 r1
 !s85 0
 31
-Z22 !s108 1557655018.000000
+Z24 !s108 1557655018.000000
 R8
 R9
 !i113 1
@@ -325,13 +325,13 @@ R6
 r1
 !s85 0
 31
-R22
+R24
 !s107 reg_32bit.vwf.vt|
 !s90 -work|work|reg_32bit.vwf.vt|
 !i113 1
 R10
 vreg_8bit
-Z23 !s110 1557654164
+Z25 !s110 1557654164
 !i10b 1
 !s100 RXWBhLG64aKNcO]]kmVTX2
 Io0EkXVGDF8c]fOVP[O]2l0
@@ -351,7 +351,7 @@ R9
 !i113 1
 R10
 vreg_8bit_vlg_vec_tst
-R23
+R25
 !i10b 1
 !s100 dobnDzQInGPHKBUYk6Hz32
 IXi6TkYO:eOCS9_S6?>ScV2
@@ -385,7 +385,7 @@ R6
 r1
 !s85 0
 31
-Z24 !s108 1557653291.000000
+Z26 !s108 1557653291.000000
 R8
 R9
 !i113 1
@@ -405,13 +405,13 @@ R6
 r1
 !s85 0
 31
-R24
+R26
 !s107 shift_reg_4bit.vwf.vt|
 !s90 -work|work|shift_reg_4bit.vwf.vt|
 !i113 1
 R10
 vSign_Extend
-Z25 !s110 1557634257
+Z27 !s110 1557634257
 !i10b 1
 !s100 HOBm?09IgHHfaY9YP84KE2
 IGN:d<bLXlUiHmXFZYPdkW3
@@ -425,14 +425,14 @@ R6
 r1
 !s85 0
 31
-Z26 !s108 1557634257.000000
+Z28 !s108 1557634257.000000
 R8
 R9
 !i113 1
 R10
 n@sign_@extend
 vSign_Extend_vlg_vec_tst
-R25
+R27
 !i10b 1
 !s100 R_F;cge6[?c3z7nV7cde63
 IANCW[UjR]`mefh?EV4boY0
@@ -446,7 +446,7 @@ R6
 r1
 !s85 0
 31
-R26
+R28
 !s107 sign_extend.vwf.vt|
 !s90 -work|work|sign_extend.vwf.vt|
 !i113 1

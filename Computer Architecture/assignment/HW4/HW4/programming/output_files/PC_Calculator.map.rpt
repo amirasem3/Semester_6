@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PC_Calculator
-Sun May 12 21:21:58 2019
+Tue Jun 18 14:41:49 2019
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Parameter Settings for User Entity Instance: LPM_MUX:inst1
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -43,13 +44,13 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun May 12 21:21:58 2019       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 18 14:41:49 2019       ;
 ; Quartus Prime Version           ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                   ; PC_Calculator                               ;
 ; Top-level Entity Name           ; PC                                          ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 32                                          ;
+; Total registers                 ; 0                                           ;
 ; Total pins                      ; 78                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -156,111 +157,112 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 1           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ; < 0.1%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                            ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                  ; Library ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
-; ../../HW3/Q1.bdf                 ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/Q1.bdf                               ;         ;
-; ../../HW3/FA.bdf                 ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/FA.bdf                               ;         ;
-; ../../HW3/adder_8bit.bdf         ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/adder_8bit.bdf                       ;         ;
-; ../../HW3/adder_4bit.bdf         ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/adder_4bit.bdf                       ;         ;
-; ../../HW3/Adder_32bit.bdf        ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/Adder_32bit.bdf                      ;         ;
-; Sign_Extend.bdf                  ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/Sign_Extend.bdf          ;         ;
-; shift_regitster_4bit.bdf         ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/shift_regitster_4bit.bdf ;         ;
-; reg_8bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/reg_8bit.bdf             ;         ;
-; reg_16bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/reg_16bit.bdf            ;         ;
-; reg_32bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/reg_32bit.bdf            ;         ;
-; pc_plus_4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/pc_plus_4.bdf            ;         ;
-; offset_shifter.bdf               ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/offset_shifter.bdf       ;         ;
-; jump_addr_shifter.bdf            ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/jump_addr_shifter.bdf    ;         ;
-; ../../HW3/mux2_1.bdf             ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW3/mux2_1.bdf                           ;         ;
-; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/PC.bdf                   ;         ;
-; mux4_1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/mux4_1.bdf               ;         ;
-+----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                        ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                              ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
+; ../../../HW3/mux2_1.bdf          ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW3/mux2_1.bdf                               ;         ;
+; ../../../HW3/Q1.bdf              ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW3/Q1.bdf                                   ;         ;
+; ../../../HW3/FA.bdf              ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW3/FA.bdf                                   ;         ;
+; ../../../HW3/Adder_32bit.bdf     ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW3/Adder_32bit.bdf                          ;         ;
+; ../../../HW3/adder_8bit.bdf      ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW3/adder_8bit.bdf                           ;         ;
+; ../../../HW3/adder_4bit.bdf      ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW3/adder_4bit.bdf                           ;         ;
+; Sign_Extend.bdf                  ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/Sign_Extend.bdf          ;         ;
+; shift_regitster_4bit.bdf         ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/shift_regitster_4bit.bdf ;         ;
+; reg_8bit.bdf                     ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/reg_8bit.bdf             ;         ;
+; reg_16bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/reg_16bit.bdf            ;         ;
+; reg_32bit.bdf                    ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/reg_32bit.bdf            ;         ;
+; pc_plus_4.bdf                    ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/pc_plus_4.bdf            ;         ;
+; offset_shifter.bdf               ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/offset_shifter.bdf       ;         ;
+; jump_addr_shifter.bdf            ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/jump_addr_shifter.bdf    ;         ;
+; PC.bdf                           ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/PC.bdf                   ;         ;
+; mux4_1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/mux4_1.bdf               ;         ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_mux.tdf                                           ;         ;
+; aglobal151.inc                   ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/aglobal151.inc                                        ;         ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/muxlut.inc                                            ;         ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/bypassff.inc                                          ;         ;
+; altshift.inc                     ; yes             ; Megafunction                       ; c:/altera_lite/15.1/quartus/libraries/megafunctions/altshift.inc                                          ;         ;
+; db/mux_dlc.tdf                   ; yes             ; Auto-Generated Megafunction        ; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/db/mux_dlc.tdf           ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 29        ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 35        ;
-;     -- 7 input functions                    ; 2         ;
-;     -- 6 input functions                    ; 18        ;
-;     -- 5 input functions                    ; 6         ;
-;     -- 4 input functions                    ; 8         ;
-;     -- <=3 input functions                  ; 1         ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 32        ;
-;                                             ;           ;
-; I/O pins                                    ; 78        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; CLK~input ;
-; Maximum fan-out                             ; 32        ;
-; Total fan-out                               ; 399       ;
-; Average fan-out                             ; 1.79      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimate of Logic utilization (ALMs needed) ; 28         ;
+;                                             ;            ;
+; Combinational ALUT usage for logic          ; 42         ;
+;     -- 7 input functions                    ; 3          ;
+;     -- 6 input functions                    ; 10         ;
+;     -- 5 input functions                    ; 22         ;
+;     -- 4 input functions                    ; 4          ;
+;     -- <=3 input functions                  ; 3          ;
+;                                             ;            ;
+; Dedicated logic registers                   ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 78         ;
+;                                             ;            ;
+; Total DSP Blocks                            ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; Jump~input ;
+; Maximum fan-out                             ; 29         ;
+; Total fan-out                               ; 324        ;
+; Average fan-out                             ; 1.64       ;
++---------------------------------------------+------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                               ;
-+------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node               ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                           ; Library Name ;
-+------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+--------------+
-; |PC                                      ; 35 (0)            ; 32 (0)       ; 0                 ; 0          ; 78   ; 0            ; |PC                                                                           ;              ;
-;    |Adder_32bit:inst5|                   ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5                                                         ; work         ;
-;       |adder_8bit:inst1|                 ; 4 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1                                        ; work         ;
-;          |adder_4bit:inst1|              ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst1                       ; work         ;
-;             |FA:Bit2|                    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2               ; work         ;
-;                |Q1:inst|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2|Q1:inst       ; work         ;
-;          |adder_4bit:inst|               ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst                        ; work         ;
-;             |FA:Bit0|                    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst|FA:Bit0                ; work         ;
-;                |Q1:inst|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst|FA:Bit0|Q1:inst        ; work         ;
-;             |FA:Bit2|                    ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst|FA:Bit2                ; work         ;
-;                |Q1:inst|                 ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst|FA:Bit2|Q1:inst        ; work         ;
-;       |adder_8bit:inst2|                 ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2                                        ; work         ;
-;          |adder_4bit:inst|               ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst                        ; work         ;
-;             |FA:Bit0|                    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst|FA:Bit0                ; work         ;
-;                |Q1:inst|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst|FA:Bit0|Q1:inst        ; work         ;
-;       |adder_8bit:inst3|                 ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3                                        ; work         ;
-;          |adder_4bit:inst|               ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3|adder_4bit:inst                        ; work         ;
-;             |FA:Bit1|                    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3|adder_4bit:inst|FA:Bit1                ; work         ;
-;                |Q1:inst|                 ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3|adder_4bit:inst|FA:Bit1|Q1:inst        ; work         ;
-;    |mux4_1:inst9|                        ; 29 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|mux4_1:inst9                                                              ; work         ;
-;       |mux2_1:inst1_1|                   ; 29 (29)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|mux4_1:inst9|mux2_1:inst1_1                                               ; work         ;
-;    |reg_32bit:inst6|                     ; 0 (0)             ; 32 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6                                                           ; work         ;
-;       |reg_16bit:inst1|                  ; 0 (0)             ; 16 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst1                                           ; work         ;
-;          |reg_8bit:inst1|                ; 0 (0)             ; 8 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst1|reg_8bit:inst1                            ; work         ;
-;             |shift_regitster_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst1|reg_8bit:inst1|shift_regitster_4bit:inst1 ; work         ;
-;             |shift_regitster_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst1|reg_8bit:inst1|shift_regitster_4bit:inst  ; work         ;
-;          |reg_8bit:inst|                 ; 0 (0)             ; 8 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst1|reg_8bit:inst                             ; work         ;
-;             |shift_regitster_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst1|reg_8bit:inst|shift_regitster_4bit:inst1  ; work         ;
-;             |shift_regitster_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst1|reg_8bit:inst|shift_regitster_4bit:inst   ; work         ;
-;       |reg_16bit:inst|                   ; 0 (0)             ; 16 (0)       ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst                                            ; work         ;
-;          |reg_8bit:inst1|                ; 0 (0)             ; 8 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst1                             ; work         ;
-;             |shift_regitster_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst1|shift_regitster_4bit:inst1  ; work         ;
-;             |shift_regitster_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst1|shift_regitster_4bit:inst   ; work         ;
-;          |reg_8bit:inst|                 ; 0 (0)             ; 8 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst                              ; work         ;
-;             |shift_regitster_4bit:inst1| ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst|shift_regitster_4bit:inst1   ; work         ;
-;             |shift_regitster_4bit:inst|  ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |PC|reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst|shift_regitster_4bit:inst    ; work         ;
-+------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
++--------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node     ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                     ; Library Name ;
++--------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+--------------+
+; |PC                            ; 42 (0)            ; 0 (0)        ; 0                 ; 0          ; 78   ; 0            ; |PC                                                                     ;              ;
+;    |Adder_32bit:inst5|         ; 10 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5                                                   ; work         ;
+;       |adder_8bit:inst1|       ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1                                  ; work         ;
+;          |adder_4bit:inst1|    ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst1                 ; work         ;
+;             |FA:Bit0|          ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0         ; work         ;
+;                |Q1:inst|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst1|FA:Bit0|Q1:inst ; work         ;
+;             |FA:Bit2|          ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                |Q1:inst|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;          |adder_4bit:inst|     ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst                  ; work         ;
+;             |FA:Bit0|          ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst|FA:Bit0          ; work         ;
+;                |Q1:inst|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst1|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;       |adder_8bit:inst2|       ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2                                  ; work         ;
+;          |adder_4bit:inst1|    ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst1                 ; work         ;
+;             |FA:Bit2|          ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2         ; work         ;
+;                |Q1:inst|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst1|FA:Bit2|Q1:inst ; work         ;
+;             |FA:Bit3|          ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3         ; work         ;
+;                |Q1:inst|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst1|FA:Bit3|Q1:inst ; work         ;
+;          |adder_4bit:inst|     ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst                  ; work         ;
+;             |FA:Bit0|          ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst|FA:Bit0          ; work         ;
+;                |Q1:inst|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst2|adder_4bit:inst|FA:Bit0|Q1:inst  ; work         ;
+;       |adder_8bit:inst3|       ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3                                  ; work         ;
+;          |adder_4bit:inst|     ; 3 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3|adder_4bit:inst                  ; work         ;
+;             |FA:Bit1|          ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3|adder_4bit:inst|FA:Bit1          ; work         ;
+;                |Q1:inst|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3|adder_4bit:inst|FA:Bit1|Q1:inst  ; work         ;
+;             |FA:Bit2|          ; 2 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3|adder_4bit:inst|FA:Bit2          ; work         ;
+;                |Q1:inst|       ; 2 (2)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst3|adder_4bit:inst|FA:Bit2|Q1:inst  ; work         ;
+;       |adder_8bit:inst|        ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst                                   ; work         ;
+;          |adder_4bit:inst1|    ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst|adder_4bit:inst1                  ; work         ;
+;             |FA:Bit3|          ; 1 (0)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst|adder_4bit:inst1|FA:Bit3          ; work         ;
+;                |Q1:inst|       ; 1 (1)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|Adder_32bit:inst5|adder_8bit:inst|adder_4bit:inst1|FA:Bit3|Q1:inst  ; work         ;
+;    |lpm_mux:inst1|             ; 32 (0)            ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|lpm_mux:inst1                                                       ; work         ;
+;       |mux_dlc:auto_generated| ; 32 (32)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |PC|lpm_mux:inst1|mux_dlc:auto_generated                                ; work         ;
++--------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -269,14 +271,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 32    ;
-; Number of registers using Synchronous Clear  ; 1     ;
-; Number of registers using Synchronous Load   ; 3     ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: LPM_MUX:inst1 ;
++------------------------+-----------+-----------------------+
+; Parameter Name         ; Value     ; Type                  ;
++------------------------+-----------+-----------------------+
+; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE        ;
+; LPM_WIDTH              ; 32        ; Untyped               ;
+; LPM_SIZE               ; 2         ; Untyped               ;
+; LPM_WIDTHS             ; 1         ; Untyped               ;
+; LPM_PIPELINE           ; 0         ; Untyped               ;
+; CBXI_PARAMETER         ; mux_dlc   ; Untyped               ;
+; DEVICE_FAMILY          ; Cyclone V ; Untyped               ;
++------------------------+-----------+-----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -284,22 +305,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 32                          ;
-;     ENA CLR           ; 28                          ;
-;     ENA CLR SCLR      ; 1                           ;
-;     ENA CLR SLD       ; 3                           ;
-; arriav_lcell_comb     ; 35                          ;
-;     extend            ; 2                           ;
-;         7 data inputs ; 2                           ;
-;     normal            ; 33                          ;
-;         2 data inputs ; 1                           ;
-;         4 data inputs ; 8                           ;
-;         5 data inputs ; 6                           ;
-;         6 data inputs ; 18                          ;
+; arriav_lcell_comb     ; 42                          ;
+;     extend            ; 3                           ;
+;         7 data inputs ; 3                           ;
+;     normal            ; 39                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 4                           ;
+;         5 data inputs ; 22                          ;
+;         6 data inputs ; 10                          ;
 ; boundary_port         ; 78                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 1.60                        ;
+; Average LUT depth     ; 2.41                        ;
 +-----------------------+-----------------------------+
 
 
@@ -318,19 +336,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Sun May 12 21:21:25 2019
+    Info: Processing started: Tue Jun 18 14:41:35 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PC_Calculator -c PC_Calculator
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /term6/semester_6/computer architecture/assignment/hw3/q1.bdf
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw3/mux8_1.bdf
+    Info (12023): Found entity 1: mux8_1
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw3/mux2_1.bdf
+    Info (12023): Found entity 1: mux2_1
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw3/q1.bdf
     Info (12023): Found entity 1: Q1
-Info (12021): Found 1 design units, including 1 entities, in source file /term6/semester_6/computer architecture/assignment/hw3/fa.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw3/fa.bdf
     Info (12023): Found entity 1: FA
-Info (12021): Found 1 design units, including 1 entities, in source file /term6/semester_6/computer architecture/assignment/hw3/adder_8bit.bdf
-    Info (12023): Found entity 1: adder_8bit
-Info (12021): Found 1 design units, including 1 entities, in source file /term6/semester_6/computer architecture/assignment/hw3/adder_4bit.bdf
-    Info (12023): Found entity 1: adder_4bit
-Info (12021): Found 1 design units, including 1 entities, in source file /term6/semester_6/computer architecture/assignment/hw3/adder_32bit.bdf
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw3/adder_32bit.bdf
     Info (12023): Found entity 1: Adder_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw3/adder_8bit.bdf
+    Info (12023): Found entity 1: adder_8bit
+Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw3/adder_4bit.bdf
+    Info (12023): Found entity 1: adder_4bit
+Warning (12019): Can't analyze file -- file ../../HW3/Q1.bdf is missing
+Warning (12019): Can't analyze file -- file ../../HW3/FA.bdf is missing
+Warning (12019): Can't analyze file -- file ../../HW3/adder_8bit.bdf is missing
+Warning (12019): Can't analyze file -- file ../../HW3/adder_4bit.bdf is missing
+Warning (12019): Can't analyze file -- file ../../HW3/Adder_32bit.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file sign_extend.bdf
     Info (12023): Found entity 1: Sign_Extend
 Info (12021): Found 1 design units, including 1 entities, in source file shift_regitster_4bit.bdf
@@ -347,18 +374,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file offset_
     Info (12023): Found entity 1: offset_shifter
 Info (12021): Found 1 design units, including 1 entities, in source file jump_addr_shifter.bdf
     Info (12023): Found entity 1: jump_addr_shifter
-Info (12021): Found 1 design units, including 1 entities, in source file /term6/semester_6/computer architecture/assignment/hw3/mux2_1.bdf
-    Info (12023): Found entity 1: mux2_1
+Warning (12019): Can't analyze file -- file ../../HW3/mux2_1.bdf is missing
 Info (12021): Found 1 design units, including 1 entities, in source file pc.bdf
     Info (12023): Found entity 1: PC
 Info (12021): Found 1 design units, including 1 entities, in source file mux4_1.bdf
     Info (12023): Found entity 1: mux4_1
 Info (12127): Elaborating entity "PC" for the top level hierarchy
-Info (12128): Elaborating entity "reg_32bit" for hierarchy "reg_32bit:inst6"
-Info (12128): Elaborating entity "reg_16bit" for hierarchy "reg_32bit:inst6|reg_16bit:inst"
-Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst"
-Info (12128): Elaborating entity "shift_regitster_4bit" for hierarchy "reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst|shift_regitster_4bit:inst"
-Warning (275008): Primitive "VCC" of instance "inst8" not used
+Info (12128): Elaborating entity "LPM_MUX" for hierarchy "LPM_MUX:inst1"
+Info (12130): Elaborated megafunction instantiation "LPM_MUX:inst1"
+Info (12133): Instantiated megafunction "LPM_MUX:inst1" with the following parameter:
+    Info (12134): Parameter "LPM_SIZE" = "2"
+    Info (12134): Parameter "LPM_WIDTH" = "32"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_dlc.tdf
+    Info (12023): Found entity 1: mux_dlc File: //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/db/mux_dlc.tdf Line: 23
+Info (12128): Elaborating entity "mux_dlc" for hierarchy "LPM_MUX:inst1|mux_dlc:auto_generated" File: c:/altera_lite/15.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 87
 Info (12128): Elaborating entity "mux4_1" for hierarchy "mux4_1:inst9"
 Info (12128): Elaborating entity "mux2_1" for hierarchy "mux4_1:inst9|mux2_1:inst1_1"
 Info (12128): Elaborating entity "Adder_32bit" for hierarchy "Adder_32bit:inst5"
@@ -370,17 +400,24 @@ Info (12128): Elaborating entity "offset_shifter" for hierarchy "offset_shifter:
 Info (12128): Elaborating entity "Sign_Extend" for hierarchy "Sign_Extend:inst_1"
 Info (12128): Elaborating entity "pc_plus_4" for hierarchy "pc_plus_4:inst2"
 Info (12128): Elaborating entity "jump_addr_shifter" for hierarchy "jump_addr_shifter:inst4"
+Info (12128): Elaborating entity "reg_32bit" for hierarchy "reg_32bit:inst6"
+Info (12128): Elaborating entity "reg_16bit" for hierarchy "reg_32bit:inst6|reg_16bit:inst"
+Info (12128): Elaborating entity "reg_8bit" for hierarchy "reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst"
+Info (12128): Elaborating entity "shift_regitster_4bit" for hierarchy "reg_32bit:inst6|reg_16bit:inst|reg_8bit:inst|shift_regitster_4bit:inst"
+Warning (275008): Primitive "VCC" of instance "inst8" not used
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 118 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "CLK"
+Info (21057): Implemented 120 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 46 input pins
     Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 40 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 5002 megabytes
-    Info: Processing ended: Sun May 12 21:21:58 2019
-    Info: Elapsed time: 00:00:33
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (21061): Implemented 42 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 5018 megabytes
+    Info: Processing ended: Tue Jun 18 14:41:49 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:25
 
 

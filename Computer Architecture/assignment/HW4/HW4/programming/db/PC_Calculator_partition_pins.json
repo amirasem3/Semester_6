@@ -132,7 +132,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "CLK",
+					"name" : "Branch",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
 					"strict" : false
 				},
 				{
@@ -201,14 +205,6 @@
 				},
 				{
 					"name" : "BranchOffset[0]",
-					"strict" : false
-				},
-				{
-					"name" : "Reset",
-					"strict" : false
-				},
-				{
-					"name" : "Branch",
 					"strict" : false
 				},
 				{

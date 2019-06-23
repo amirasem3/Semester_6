@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun May 12 21:21:58 2019
+Analysis & Synthesis Status : Successful - Tue Jun 18 14:41:49 2019
 Quartus Prime Version : 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 Revision Name : PC_Calculator
 Top-level Entity Name : PC
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 32
+Total registers : 0
 Total pins : 78
 Total virtual pins : 0
 Total block memory bits : 0

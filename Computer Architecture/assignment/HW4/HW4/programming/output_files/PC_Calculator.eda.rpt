@@ -1,5 +1,5 @@
 EDA Netlist Writer report for PC_Calculator
-Sun May 12 21:34:26 2019
+Tue Jun 18 14:43:36 2019
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun May 12 21:34:26 2019 ;
+; EDA Netlist Writer Status ; Successful - Tue Jun 18 14:43:36 2019 ;
 ; Revision Name             ; PC_Calculator                         ;
 ; Top-level Entity Name     ; PC                                    ;
 ; Family                    ; Cyclone V                             ;
@@ -66,13 +66,13 @@ agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                             ;
-+--------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                        ;
-+--------------------------------------------------------------------------------------------------------+
-; Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/simulation/qsim//PC_Calculator.vo ;
-+--------------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                         ;
++--------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                    ;
++--------------------------------------------------------------------------------------------------------------------+
+; //Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/simulation/qsim//PC_Calculator.vo ;
++--------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -95,13 +95,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: devices manufactured by Altera and sold by Altera or its 
     Info: authorized distributors.  Please refer to the applicable 
     Info: agreement for further details.
-    Info: Processing started: Sun May 12 21:34:24 2019
-Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory="Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/simulation/qsim/" PC_Calculator -c PC_Calculator
-Info (204019): Generated file PC_Calculator.vo in folder "Y:/Term6/Semester_6/Computer Architecture/assignment/HW4/programming/simulation/qsim//" for EDA simulation tool
+    Info: Processing started: Tue Jun 18 14:43:35 2019
+Info: Command: quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory="//Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/simulation/qsim/" PC_Calculator -c PC_Calculator
+Info (204019): Generated file PC_Calculator.vo in folder "//Mac/Home/Term6/Semester_6/Computer Architecture/assignment/HW4/HW4/programming/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4916 megabytes
-    Info: Processing ended: Sun May 12 21:34:26 2019
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4922 megabytes
+    Info: Processing ended: Tue Jun 18 14:43:36 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
