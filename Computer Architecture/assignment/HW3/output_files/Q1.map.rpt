@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Q1
-Mon Jun 17 14:01:35 2019
+Tue Jun 18 13:50:27 2019
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Jun 17 14:01:35 2019       ;
+; Analysis & Synthesis Status     ; Successful - Tue Jun 18 13:50:27 2019       ;
 ; Quartus Prime Version           ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name                   ; Q1                                          ;
 ; Top-level Entity Name           ; ALU                                         ;
@@ -158,8 +158,8 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -220,7 +220,7 @@ agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; OP[0]~input ;
 ; Maximum fan-out                             ; 79          ;
-; Total fan-out                               ; 2029        ;
+; Total fan-out                               ; 2030        ;
 ; Average fan-out                             ; 2.96        ;
 +---------------------------------------------+-------------+
 
@@ -723,7 +723,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -733,9 +733,9 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Mon Jun 17 14:01:11 2019
+    Info: Processing started: Tue Jun 18 13:50:10 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Q1 -c Q1
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw2/hw2_96110323/universal shift register/my21mux.bdf
     Info (12023): Found entity 1: my21mux
 Info (12021): Found 1 design units, including 1 entities, in source file q1.bdf
@@ -784,20 +784,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux8_1.
     Info (12023): Found entity 1: mux8_1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
 Warning (275043): Pin "ZERO" is missing source
-Warning (275043): Pin "SIGN" is missing source
 Warning (275043): Pin "OVERFLOW" is missing source
 Warning (275009): Pin "SHAMT" not connected
 Warning (275008): Primitive "GND" of instance "inst17" not used
 Warning (275008): Primitive "NOT" of instance "inst19" not used
 Warning (275008): Primitive "NOT" of instance "inst20" not used
-Info (12128): Elaborating entity "my21mux" for hierarchy "my21mux:inst16"
-Info (12128): Elaborating entity "cmp_32bit" for hierarchy "cmp_32bit:inst8"
-Info (12128): Elaborating entity "cmp_16bit" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1"
-Info (12128): Elaborating entity "cmp_8bit" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1"
-Info (12128): Elaborating entity "cmp_4bit" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1"
-Info (12128): Elaborating entity "CMP_1bit_alter" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst3"
-Info (12128): Elaborating entity "mux2_1" for hierarchy "mux2_1:inst21"
+Info (12128): Elaborating entity "my21mux" for hierarchy "my21mux:inst18"
 Info (12128): Elaborating entity "mux8_1" for hierarchy "mux8_1:inst24"
+Info (12128): Elaborating entity "mux2_1" for hierarchy "mux8_1:inst24|mux2_1:inst7"
 Info (12128): Elaborating entity "tw0_complement_32bit" for hierarchy "tw0_complement_32bit:inst6"
 Info (12128): Elaborating entity "Adder_32bit" for hierarchy "tw0_complement_32bit:inst6|Adder_32bit:inst"
 Info (12128): Elaborating entity "adder_8bit" for hierarchy "tw0_complement_32bit:inst6|Adder_32bit:inst|adder_8bit:inst"
@@ -810,9 +804,13 @@ Info (12128): Elaborating entity "FS_4bit" for hierarchy "FS_32bit:inst2|FS_8bit
 Info (12128): Elaborating entity "FS" for hierarchy "FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst"
 Info (12128): Elaborating entity "HS" for hierarchy "FS_32bit:inst2|FS_8bit:inst|FS_4bit:inst|FS:inst|HS:inst"
 Info (12128): Elaborating entity "Nand_32bit" for hierarchy "Nand_32bit:inst3"
+Info (12128): Elaborating entity "cmp_32bit" for hierarchy "cmp_32bit:inst8"
+Info (12128): Elaborating entity "cmp_16bit" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1"
+Info (12128): Elaborating entity "cmp_8bit" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1"
+Info (12128): Elaborating entity "cmp_4bit" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1"
+Info (12128): Elaborating entity "CMP_1bit_alter" for hierarchy "cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst3"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ZERO" is stuck at GND
-    Warning (13410): Pin "SIGN" is stuck at GND
     Warning (13410): Pin "OVERFLOW" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -827,10 +825,10 @@ Info (21057): Implemented 543 device resources after synthesis - the final resou
     Info (21058): Implemented 73 input pins
     Info (21059): Implemented 69 output pins
     Info (21061): Implemented 401 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 5003 megabytes
-    Info: Processing ended: Mon Jun 17 14:01:35 2019
-    Info: Elapsed time: 00:00:24
-    Info: Total CPU time (on all processors): 00:00:26
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 5028 megabytes
+    Info: Processing ended: Tue Jun 18 13:50:27 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:27
 
 

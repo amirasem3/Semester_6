@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Q2
-Mon Jun 17 15:47:37 2019
+Tue Jun 18 13:23:31 2019
 Quartus Prime Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Mon Jun 17 15:47:37 2019           ;
+; Analysis & Synthesis Status ; Failed - Tue Jun 18 13:23:31 2019           ;
 ; Quartus Prime Version       ; 15.1.1 Build 189 12/02/2015 SJ Lite Edition ;
 ; Revision Name               ; Q2                                          ;
 ; Top-level Entity Name       ; Register_File                               ;
@@ -146,8 +146,8 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -182,9 +182,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.1 Build 189 12/02/2015 SJ Lite Edition
-    Info: Processing started: Mon Jun 17 15:47:21 2019
+    Info: Processing started: Tue Jun 18 13:23:18 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Q2 -c Q2
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw3/mux2_1.bdf
     Info (12023): Found entity 1: mux2_1
 Info (12021): Found 1 design units, including 1 entities, in source file //mac/home/term6/semester_6/computer architecture/assignment/hw3/mux8_1.bdf
@@ -1260,9 +1260,9 @@ Error (12002): Port "D[7]" does not exist in macrofunction "inst33"
 Error (12002): Port "D[8]" does not exist in macrofunction "inst33"
 Error (12002): Port "D[9]" does not exist in macrofunction "inst33"
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1024 errors, 6 warnings
-    Error: Peak virtual memory: 4995 megabytes
-    Error: Processing ended: Mon Jun 17 15:47:38 2019
-    Error: Elapsed time: 00:00:17
-    Error: Total CPU time (on all processors): 00:00:20
+    Error: Peak virtual memory: 5000 megabytes
+    Error: Processing ended: Tue Jun 18 13:23:32 2019
+    Error: Elapsed time: 00:00:14
+    Error: Total CPU time (on all processors): 00:00:25
 
 

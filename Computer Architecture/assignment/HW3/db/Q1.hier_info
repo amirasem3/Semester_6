@@ -1,395 +1,360 @@
 |ALU
 ZERO <= <GND>
-SIGN <= <GND>
-OVERFLOW <= <GND>
-E <= eout.DB_MAX_OUTPUT_PORT_TYPE
-DATA1[0] => cmp_32bit:inst8.A[0]
+SIGN <= my21mux:inst18.OUT
+Cin => Adder_32bit:inst.Cin
+Cin => FS_32bit:inst2.Bin
 DATA1[0] => tw0_complement_32bit:inst4.A[0]
 DATA1[0] => Nand_32bit:inst3.A[0]
 DATA1[0] => mux8_1:inst24.IN3[0]
+DATA1[0] => cmp_32bit:inst8.A[0]
 DATA1[0] => mux2_1:inst11.I1[0]
 DATA1[0] => mux2_1:inst21.I1[0]
 DATA1[0] => mux8_1:inst1.IN3[0]
-DATA1[1] => cmp_32bit:inst8.A[1]
 DATA1[1] => tw0_complement_32bit:inst4.A[1]
 DATA1[1] => Nand_32bit:inst3.A[1]
 DATA1[1] => mux8_1:inst24.IN3[1]
+DATA1[1] => cmp_32bit:inst8.A[1]
 DATA1[1] => mux2_1:inst11.I1[1]
 DATA1[1] => mux2_1:inst21.I1[1]
 DATA1[1] => mux8_1:inst1.IN3[1]
-DATA1[2] => cmp_32bit:inst8.A[2]
 DATA1[2] => tw0_complement_32bit:inst4.A[2]
 DATA1[2] => Nand_32bit:inst3.A[2]
 DATA1[2] => mux8_1:inst24.IN3[2]
+DATA1[2] => cmp_32bit:inst8.A[2]
 DATA1[2] => mux2_1:inst11.I1[2]
 DATA1[2] => mux2_1:inst21.I1[2]
 DATA1[2] => mux8_1:inst1.IN3[2]
-DATA1[3] => cmp_32bit:inst8.A[3]
 DATA1[3] => tw0_complement_32bit:inst4.A[3]
 DATA1[3] => Nand_32bit:inst3.A[3]
 DATA1[3] => mux8_1:inst24.IN3[3]
+DATA1[3] => cmp_32bit:inst8.A[3]
 DATA1[3] => mux2_1:inst11.I1[3]
 DATA1[3] => mux2_1:inst21.I1[3]
 DATA1[3] => mux8_1:inst1.IN3[3]
-DATA1[4] => cmp_32bit:inst8.A[4]
 DATA1[4] => tw0_complement_32bit:inst4.A[4]
 DATA1[4] => Nand_32bit:inst3.A[4]
 DATA1[4] => mux8_1:inst24.IN3[4]
+DATA1[4] => cmp_32bit:inst8.A[4]
 DATA1[4] => mux2_1:inst11.I1[4]
 DATA1[4] => mux2_1:inst21.I1[4]
 DATA1[4] => mux8_1:inst1.IN3[4]
-DATA1[5] => cmp_32bit:inst8.A[5]
 DATA1[5] => tw0_complement_32bit:inst4.A[5]
 DATA1[5] => Nand_32bit:inst3.A[5]
 DATA1[5] => mux8_1:inst24.IN3[5]
+DATA1[5] => cmp_32bit:inst8.A[5]
 DATA1[5] => mux2_1:inst11.I1[5]
 DATA1[5] => mux2_1:inst21.I1[5]
 DATA1[5] => mux8_1:inst1.IN3[5]
-DATA1[6] => cmp_32bit:inst8.A[6]
 DATA1[6] => tw0_complement_32bit:inst4.A[6]
 DATA1[6] => Nand_32bit:inst3.A[6]
 DATA1[6] => mux8_1:inst24.IN3[6]
+DATA1[6] => cmp_32bit:inst8.A[6]
 DATA1[6] => mux2_1:inst11.I1[6]
 DATA1[6] => mux2_1:inst21.I1[6]
 DATA1[6] => mux8_1:inst1.IN3[6]
-DATA1[7] => cmp_32bit:inst8.A[7]
 DATA1[7] => tw0_complement_32bit:inst4.A[7]
 DATA1[7] => Nand_32bit:inst3.A[7]
 DATA1[7] => mux8_1:inst24.IN3[7]
+DATA1[7] => cmp_32bit:inst8.A[7]
 DATA1[7] => mux2_1:inst11.I1[7]
 DATA1[7] => mux2_1:inst21.I1[7]
 DATA1[7] => mux8_1:inst1.IN3[7]
-DATA1[8] => cmp_32bit:inst8.A[8]
 DATA1[8] => tw0_complement_32bit:inst4.A[8]
 DATA1[8] => Nand_32bit:inst3.A[8]
 DATA1[8] => mux8_1:inst24.IN3[8]
+DATA1[8] => cmp_32bit:inst8.A[8]
 DATA1[8] => mux2_1:inst11.I1[8]
 DATA1[8] => mux2_1:inst21.I1[8]
 DATA1[8] => mux8_1:inst1.IN3[8]
-DATA1[9] => cmp_32bit:inst8.A[9]
 DATA1[9] => tw0_complement_32bit:inst4.A[9]
 DATA1[9] => Nand_32bit:inst3.A[9]
 DATA1[9] => mux8_1:inst24.IN3[9]
+DATA1[9] => cmp_32bit:inst8.A[9]
 DATA1[9] => mux2_1:inst11.I1[9]
 DATA1[9] => mux2_1:inst21.I1[9]
 DATA1[9] => mux8_1:inst1.IN3[9]
-DATA1[10] => cmp_32bit:inst8.A[10]
 DATA1[10] => tw0_complement_32bit:inst4.A[10]
 DATA1[10] => Nand_32bit:inst3.A[10]
 DATA1[10] => mux8_1:inst24.IN3[10]
+DATA1[10] => cmp_32bit:inst8.A[10]
 DATA1[10] => mux2_1:inst11.I1[10]
 DATA1[10] => mux2_1:inst21.I1[10]
 DATA1[10] => mux8_1:inst1.IN3[10]
-DATA1[11] => cmp_32bit:inst8.A[11]
 DATA1[11] => tw0_complement_32bit:inst4.A[11]
 DATA1[11] => Nand_32bit:inst3.A[11]
 DATA1[11] => mux8_1:inst24.IN3[11]
+DATA1[11] => cmp_32bit:inst8.A[11]
 DATA1[11] => mux2_1:inst11.I1[11]
 DATA1[11] => mux2_1:inst21.I1[11]
 DATA1[11] => mux8_1:inst1.IN3[11]
-DATA1[12] => cmp_32bit:inst8.A[12]
 DATA1[12] => tw0_complement_32bit:inst4.A[12]
 DATA1[12] => Nand_32bit:inst3.A[12]
 DATA1[12] => mux8_1:inst24.IN3[12]
+DATA1[12] => cmp_32bit:inst8.A[12]
 DATA1[12] => mux2_1:inst11.I1[12]
 DATA1[12] => mux2_1:inst21.I1[12]
 DATA1[12] => mux8_1:inst1.IN3[12]
-DATA1[13] => cmp_32bit:inst8.A[13]
 DATA1[13] => tw0_complement_32bit:inst4.A[13]
 DATA1[13] => Nand_32bit:inst3.A[13]
 DATA1[13] => mux8_1:inst24.IN3[13]
+DATA1[13] => cmp_32bit:inst8.A[13]
 DATA1[13] => mux2_1:inst11.I1[13]
 DATA1[13] => mux2_1:inst21.I1[13]
 DATA1[13] => mux8_1:inst1.IN3[13]
-DATA1[14] => cmp_32bit:inst8.A[14]
 DATA1[14] => tw0_complement_32bit:inst4.A[14]
 DATA1[14] => Nand_32bit:inst3.A[14]
 DATA1[14] => mux8_1:inst24.IN3[14]
+DATA1[14] => cmp_32bit:inst8.A[14]
 DATA1[14] => mux2_1:inst11.I1[14]
 DATA1[14] => mux2_1:inst21.I1[14]
 DATA1[14] => mux8_1:inst1.IN3[14]
-DATA1[15] => cmp_32bit:inst8.A[15]
 DATA1[15] => tw0_complement_32bit:inst4.A[15]
 DATA1[15] => Nand_32bit:inst3.A[15]
 DATA1[15] => mux8_1:inst24.IN3[15]
+DATA1[15] => cmp_32bit:inst8.A[15]
 DATA1[15] => mux2_1:inst11.I1[15]
 DATA1[15] => mux2_1:inst21.I1[15]
 DATA1[15] => mux8_1:inst1.IN3[15]
-DATA1[16] => cmp_32bit:inst8.A[16]
 DATA1[16] => tw0_complement_32bit:inst4.A[16]
 DATA1[16] => Nand_32bit:inst3.A[16]
 DATA1[16] => mux8_1:inst24.IN3[16]
+DATA1[16] => cmp_32bit:inst8.A[16]
 DATA1[16] => mux2_1:inst11.I1[16]
 DATA1[16] => mux2_1:inst21.I1[16]
 DATA1[16] => mux8_1:inst1.IN3[16]
-DATA1[17] => cmp_32bit:inst8.A[17]
 DATA1[17] => tw0_complement_32bit:inst4.A[17]
 DATA1[17] => Nand_32bit:inst3.A[17]
 DATA1[17] => mux8_1:inst24.IN3[17]
+DATA1[17] => cmp_32bit:inst8.A[17]
 DATA1[17] => mux2_1:inst11.I1[17]
 DATA1[17] => mux2_1:inst21.I1[17]
 DATA1[17] => mux8_1:inst1.IN3[17]
-DATA1[18] => cmp_32bit:inst8.A[18]
 DATA1[18] => tw0_complement_32bit:inst4.A[18]
 DATA1[18] => Nand_32bit:inst3.A[18]
 DATA1[18] => mux8_1:inst24.IN3[18]
+DATA1[18] => cmp_32bit:inst8.A[18]
 DATA1[18] => mux2_1:inst11.I1[18]
 DATA1[18] => mux2_1:inst21.I1[18]
 DATA1[18] => mux8_1:inst1.IN3[18]
-DATA1[19] => cmp_32bit:inst8.A[19]
 DATA1[19] => tw0_complement_32bit:inst4.A[19]
 DATA1[19] => Nand_32bit:inst3.A[19]
 DATA1[19] => mux8_1:inst24.IN3[19]
+DATA1[19] => cmp_32bit:inst8.A[19]
 DATA1[19] => mux2_1:inst11.I1[19]
 DATA1[19] => mux2_1:inst21.I1[19]
 DATA1[19] => mux8_1:inst1.IN3[19]
-DATA1[20] => cmp_32bit:inst8.A[20]
 DATA1[20] => tw0_complement_32bit:inst4.A[20]
 DATA1[20] => Nand_32bit:inst3.A[20]
 DATA1[20] => mux8_1:inst24.IN3[20]
+DATA1[20] => cmp_32bit:inst8.A[20]
 DATA1[20] => mux2_1:inst11.I1[20]
 DATA1[20] => mux2_1:inst21.I1[20]
 DATA1[20] => mux8_1:inst1.IN3[20]
-DATA1[21] => cmp_32bit:inst8.A[21]
 DATA1[21] => tw0_complement_32bit:inst4.A[21]
 DATA1[21] => Nand_32bit:inst3.A[21]
 DATA1[21] => mux8_1:inst24.IN3[21]
+DATA1[21] => cmp_32bit:inst8.A[21]
 DATA1[21] => mux2_1:inst11.I1[21]
 DATA1[21] => mux2_1:inst21.I1[21]
 DATA1[21] => mux8_1:inst1.IN3[21]
-DATA1[22] => cmp_32bit:inst8.A[22]
 DATA1[22] => tw0_complement_32bit:inst4.A[22]
 DATA1[22] => Nand_32bit:inst3.A[22]
 DATA1[22] => mux8_1:inst24.IN3[22]
+DATA1[22] => cmp_32bit:inst8.A[22]
 DATA1[22] => mux2_1:inst11.I1[22]
 DATA1[22] => mux2_1:inst21.I1[22]
 DATA1[22] => mux8_1:inst1.IN3[22]
-DATA1[23] => cmp_32bit:inst8.A[23]
 DATA1[23] => tw0_complement_32bit:inst4.A[23]
 DATA1[23] => Nand_32bit:inst3.A[23]
 DATA1[23] => mux8_1:inst24.IN3[23]
+DATA1[23] => cmp_32bit:inst8.A[23]
 DATA1[23] => mux2_1:inst11.I1[23]
 DATA1[23] => mux2_1:inst21.I1[23]
 DATA1[23] => mux8_1:inst1.IN3[23]
-DATA1[24] => cmp_32bit:inst8.A[24]
 DATA1[24] => tw0_complement_32bit:inst4.A[24]
 DATA1[24] => Nand_32bit:inst3.A[24]
 DATA1[24] => mux8_1:inst24.IN3[24]
+DATA1[24] => cmp_32bit:inst8.A[24]
 DATA1[24] => mux2_1:inst11.I1[24]
 DATA1[24] => mux2_1:inst21.I1[24]
 DATA1[24] => mux8_1:inst1.IN3[24]
-DATA1[25] => cmp_32bit:inst8.A[25]
 DATA1[25] => tw0_complement_32bit:inst4.A[25]
 DATA1[25] => Nand_32bit:inst3.A[25]
 DATA1[25] => mux8_1:inst24.IN3[25]
+DATA1[25] => cmp_32bit:inst8.A[25]
 DATA1[25] => mux2_1:inst11.I1[25]
 DATA1[25] => mux2_1:inst21.I1[25]
 DATA1[25] => mux8_1:inst1.IN3[25]
-DATA1[26] => cmp_32bit:inst8.A[26]
 DATA1[26] => tw0_complement_32bit:inst4.A[26]
 DATA1[26] => Nand_32bit:inst3.A[26]
 DATA1[26] => mux8_1:inst24.IN3[26]
+DATA1[26] => cmp_32bit:inst8.A[26]
 DATA1[26] => mux2_1:inst11.I1[26]
 DATA1[26] => mux2_1:inst21.I1[26]
 DATA1[26] => mux8_1:inst1.IN3[26]
-DATA1[27] => cmp_32bit:inst8.A[27]
 DATA1[27] => tw0_complement_32bit:inst4.A[27]
 DATA1[27] => Nand_32bit:inst3.A[27]
 DATA1[27] => mux8_1:inst24.IN3[27]
+DATA1[27] => cmp_32bit:inst8.A[27]
 DATA1[27] => mux2_1:inst11.I1[27]
 DATA1[27] => mux2_1:inst21.I1[27]
 DATA1[27] => mux8_1:inst1.IN3[27]
-DATA1[28] => cmp_32bit:inst8.A[28]
 DATA1[28] => tw0_complement_32bit:inst4.A[28]
 DATA1[28] => Nand_32bit:inst3.A[28]
 DATA1[28] => mux8_1:inst24.IN3[28]
+DATA1[28] => cmp_32bit:inst8.A[28]
 DATA1[28] => mux2_1:inst11.I1[28]
 DATA1[28] => mux2_1:inst21.I1[28]
 DATA1[28] => mux8_1:inst1.IN3[28]
-DATA1[29] => cmp_32bit:inst8.A[29]
 DATA1[29] => tw0_complement_32bit:inst4.A[29]
 DATA1[29] => Nand_32bit:inst3.A[29]
 DATA1[29] => mux8_1:inst24.IN3[29]
+DATA1[29] => cmp_32bit:inst8.A[29]
 DATA1[29] => mux2_1:inst11.I1[29]
 DATA1[29] => mux2_1:inst21.I1[29]
 DATA1[29] => mux8_1:inst1.IN3[29]
-DATA1[30] => cmp_32bit:inst8.A[30]
 DATA1[30] => tw0_complement_32bit:inst4.A[30]
 DATA1[30] => Nand_32bit:inst3.A[30]
 DATA1[30] => mux8_1:inst24.IN3[30]
+DATA1[30] => cmp_32bit:inst8.A[30]
 DATA1[30] => mux2_1:inst11.I1[30]
 DATA1[30] => mux2_1:inst21.I1[30]
 DATA1[30] => mux8_1:inst1.IN3[30]
-DATA1[31] => cmp_32bit:inst8.A[31]
 DATA1[31] => tw0_complement_32bit:inst4.A[31]
 DATA1[31] => Nand_32bit:inst3.A[31]
 DATA1[31] => mux8_1:inst24.IN3[31]
+DATA1[31] => cmp_32bit:inst8.A[31]
 DATA1[31] => mux2_1:inst11.I1[31]
 DATA1[31] => mux2_1:inst21.I1[31]
 DATA1[31] => mux8_1:inst1.IN3[31]
-DATA2[0] => cmp_32bit:inst8.B[0]
 DATA2[0] => tw0_complement_32bit:inst5.A[0]
 DATA2[0] => Nand_32bit:inst3.B[0]
+DATA2[0] => cmp_32bit:inst8.B[0]
 DATA2[0] => mux2_1:inst11.I0[0]
-DATA2[1] => cmp_32bit:inst8.B[1]
 DATA2[1] => tw0_complement_32bit:inst5.A[1]
 DATA2[1] => Nand_32bit:inst3.B[1]
+DATA2[1] => cmp_32bit:inst8.B[1]
 DATA2[1] => mux2_1:inst11.I0[1]
-DATA2[2] => cmp_32bit:inst8.B[2]
 DATA2[2] => tw0_complement_32bit:inst5.A[2]
 DATA2[2] => Nand_32bit:inst3.B[2]
+DATA2[2] => cmp_32bit:inst8.B[2]
 DATA2[2] => mux2_1:inst11.I0[2]
-DATA2[3] => cmp_32bit:inst8.B[3]
 DATA2[3] => tw0_complement_32bit:inst5.A[3]
 DATA2[3] => Nand_32bit:inst3.B[3]
+DATA2[3] => cmp_32bit:inst8.B[3]
 DATA2[3] => mux2_1:inst11.I0[3]
-DATA2[4] => cmp_32bit:inst8.B[4]
 DATA2[4] => tw0_complement_32bit:inst5.A[4]
 DATA2[4] => Nand_32bit:inst3.B[4]
+DATA2[4] => cmp_32bit:inst8.B[4]
 DATA2[4] => mux2_1:inst11.I0[4]
-DATA2[5] => cmp_32bit:inst8.B[5]
 DATA2[5] => tw0_complement_32bit:inst5.A[5]
 DATA2[5] => Nand_32bit:inst3.B[5]
+DATA2[5] => cmp_32bit:inst8.B[5]
 DATA2[5] => mux2_1:inst11.I0[5]
-DATA2[6] => cmp_32bit:inst8.B[6]
 DATA2[6] => tw0_complement_32bit:inst5.A[6]
 DATA2[6] => Nand_32bit:inst3.B[6]
+DATA2[6] => cmp_32bit:inst8.B[6]
 DATA2[6] => mux2_1:inst11.I0[6]
-DATA2[7] => cmp_32bit:inst8.B[7]
 DATA2[7] => tw0_complement_32bit:inst5.A[7]
 DATA2[7] => Nand_32bit:inst3.B[7]
+DATA2[7] => cmp_32bit:inst8.B[7]
 DATA2[7] => mux2_1:inst11.I0[7]
-DATA2[8] => cmp_32bit:inst8.B[8]
 DATA2[8] => tw0_complement_32bit:inst5.A[8]
 DATA2[8] => Nand_32bit:inst3.B[8]
+DATA2[8] => cmp_32bit:inst8.B[8]
 DATA2[8] => mux2_1:inst11.I0[8]
-DATA2[9] => cmp_32bit:inst8.B[9]
 DATA2[9] => tw0_complement_32bit:inst5.A[9]
 DATA2[9] => Nand_32bit:inst3.B[9]
+DATA2[9] => cmp_32bit:inst8.B[9]
 DATA2[9] => mux2_1:inst11.I0[9]
-DATA2[10] => cmp_32bit:inst8.B[10]
 DATA2[10] => tw0_complement_32bit:inst5.A[10]
 DATA2[10] => Nand_32bit:inst3.B[10]
+DATA2[10] => cmp_32bit:inst8.B[10]
 DATA2[10] => mux2_1:inst11.I0[10]
-DATA2[11] => cmp_32bit:inst8.B[11]
 DATA2[11] => tw0_complement_32bit:inst5.A[11]
 DATA2[11] => Nand_32bit:inst3.B[11]
+DATA2[11] => cmp_32bit:inst8.B[11]
 DATA2[11] => mux2_1:inst11.I0[11]
-DATA2[12] => cmp_32bit:inst8.B[12]
 DATA2[12] => tw0_complement_32bit:inst5.A[12]
 DATA2[12] => Nand_32bit:inst3.B[12]
+DATA2[12] => cmp_32bit:inst8.B[12]
 DATA2[12] => mux2_1:inst11.I0[12]
-DATA2[13] => cmp_32bit:inst8.B[13]
 DATA2[13] => tw0_complement_32bit:inst5.A[13]
 DATA2[13] => Nand_32bit:inst3.B[13]
+DATA2[13] => cmp_32bit:inst8.B[13]
 DATA2[13] => mux2_1:inst11.I0[13]
-DATA2[14] => cmp_32bit:inst8.B[14]
 DATA2[14] => tw0_complement_32bit:inst5.A[14]
 DATA2[14] => Nand_32bit:inst3.B[14]
+DATA2[14] => cmp_32bit:inst8.B[14]
 DATA2[14] => mux2_1:inst11.I0[14]
-DATA2[15] => cmp_32bit:inst8.B[15]
 DATA2[15] => tw0_complement_32bit:inst5.A[15]
 DATA2[15] => Nand_32bit:inst3.B[15]
+DATA2[15] => cmp_32bit:inst8.B[15]
 DATA2[15] => mux2_1:inst11.I0[15]
-DATA2[16] => cmp_32bit:inst8.B[16]
 DATA2[16] => tw0_complement_32bit:inst5.A[16]
 DATA2[16] => Nand_32bit:inst3.B[16]
+DATA2[16] => cmp_32bit:inst8.B[16]
 DATA2[16] => mux2_1:inst11.I0[16]
-DATA2[17] => cmp_32bit:inst8.B[17]
 DATA2[17] => tw0_complement_32bit:inst5.A[17]
 DATA2[17] => Nand_32bit:inst3.B[17]
+DATA2[17] => cmp_32bit:inst8.B[17]
 DATA2[17] => mux2_1:inst11.I0[17]
-DATA2[18] => cmp_32bit:inst8.B[18]
 DATA2[18] => tw0_complement_32bit:inst5.A[18]
 DATA2[18] => Nand_32bit:inst3.B[18]
+DATA2[18] => cmp_32bit:inst8.B[18]
 DATA2[18] => mux2_1:inst11.I0[18]
-DATA2[19] => cmp_32bit:inst8.B[19]
 DATA2[19] => tw0_complement_32bit:inst5.A[19]
 DATA2[19] => Nand_32bit:inst3.B[19]
+DATA2[19] => cmp_32bit:inst8.B[19]
 DATA2[19] => mux2_1:inst11.I0[19]
-DATA2[20] => cmp_32bit:inst8.B[20]
 DATA2[20] => tw0_complement_32bit:inst5.A[20]
 DATA2[20] => Nand_32bit:inst3.B[20]
+DATA2[20] => cmp_32bit:inst8.B[20]
 DATA2[20] => mux2_1:inst11.I0[20]
-DATA2[21] => cmp_32bit:inst8.B[21]
 DATA2[21] => tw0_complement_32bit:inst5.A[21]
 DATA2[21] => Nand_32bit:inst3.B[21]
+DATA2[21] => cmp_32bit:inst8.B[21]
 DATA2[21] => mux2_1:inst11.I0[21]
-DATA2[22] => cmp_32bit:inst8.B[22]
 DATA2[22] => tw0_complement_32bit:inst5.A[22]
 DATA2[22] => Nand_32bit:inst3.B[22]
+DATA2[22] => cmp_32bit:inst8.B[22]
 DATA2[22] => mux2_1:inst11.I0[22]
-DATA2[23] => cmp_32bit:inst8.B[23]
 DATA2[23] => tw0_complement_32bit:inst5.A[23]
 DATA2[23] => Nand_32bit:inst3.B[23]
+DATA2[23] => cmp_32bit:inst8.B[23]
 DATA2[23] => mux2_1:inst11.I0[23]
-DATA2[24] => cmp_32bit:inst8.B[24]
 DATA2[24] => tw0_complement_32bit:inst5.A[24]
 DATA2[24] => Nand_32bit:inst3.B[24]
+DATA2[24] => cmp_32bit:inst8.B[24]
 DATA2[24] => mux2_1:inst11.I0[24]
-DATA2[25] => cmp_32bit:inst8.B[25]
 DATA2[25] => tw0_complement_32bit:inst5.A[25]
 DATA2[25] => Nand_32bit:inst3.B[25]
+DATA2[25] => cmp_32bit:inst8.B[25]
 DATA2[25] => mux2_1:inst11.I0[25]
-DATA2[26] => cmp_32bit:inst8.B[26]
 DATA2[26] => tw0_complement_32bit:inst5.A[26]
 DATA2[26] => Nand_32bit:inst3.B[26]
+DATA2[26] => cmp_32bit:inst8.B[26]
 DATA2[26] => mux2_1:inst11.I0[26]
-DATA2[27] => cmp_32bit:inst8.B[27]
 DATA2[27] => tw0_complement_32bit:inst5.A[27]
 DATA2[27] => Nand_32bit:inst3.B[27]
+DATA2[27] => cmp_32bit:inst8.B[27]
 DATA2[27] => mux2_1:inst11.I0[27]
-DATA2[28] => cmp_32bit:inst8.B[28]
 DATA2[28] => tw0_complement_32bit:inst5.A[28]
 DATA2[28] => Nand_32bit:inst3.B[28]
+DATA2[28] => cmp_32bit:inst8.B[28]
 DATA2[28] => mux2_1:inst11.I0[28]
-DATA2[29] => cmp_32bit:inst8.B[29]
 DATA2[29] => tw0_complement_32bit:inst5.A[29]
 DATA2[29] => Nand_32bit:inst3.B[29]
+DATA2[29] => cmp_32bit:inst8.B[29]
 DATA2[29] => mux2_1:inst11.I0[29]
-DATA2[30] => cmp_32bit:inst8.B[30]
 DATA2[30] => tw0_complement_32bit:inst5.A[30]
 DATA2[30] => Nand_32bit:inst3.B[30]
+DATA2[30] => cmp_32bit:inst8.B[30]
 DATA2[30] => mux2_1:inst11.I0[30]
-DATA2[31] => cmp_32bit:inst8.B[31]
 DATA2[31] => tw0_complement_32bit:inst5.A[31]
 DATA2[31] => Nand_32bit:inst3.B[31]
+DATA2[31] => cmp_32bit:inst8.B[31]
 DATA2[31] => mux2_1:inst11.I0[31]
-cmpout <= gt.DB_MAX_OUTPUT_PORT_TYPE
-equals[0] <= isequal[0].DB_MAX_OUTPUT_PORT_TYPE
-equals[1] <= isequal[1].DB_MAX_OUTPUT_PORT_TYPE
-equals[2] <= isequal[2].DB_MAX_OUTPUT_PORT_TYPE
-equals[3] <= isequal[3].DB_MAX_OUTPUT_PORT_TYPE
-equals[4] <= isequal[4].DB_MAX_OUTPUT_PORT_TYPE
-equals[5] <= isequal[5].DB_MAX_OUTPUT_PORT_TYPE
-equals[6] <= isequal[6].DB_MAX_OUTPUT_PORT_TYPE
-equals[7] <= isequal[7].DB_MAX_OUTPUT_PORT_TYPE
-equals[8] <= isequal[8].DB_MAX_OUTPUT_PORT_TYPE
-equals[9] <= isequal[9].DB_MAX_OUTPUT_PORT_TYPE
-equals[10] <= isequal[10].DB_MAX_OUTPUT_PORT_TYPE
-equals[11] <= isequal[11].DB_MAX_OUTPUT_PORT_TYPE
-equals[12] <= isequal[12].DB_MAX_OUTPUT_PORT_TYPE
-equals[13] <= isequal[13].DB_MAX_OUTPUT_PORT_TYPE
-equals[14] <= isequal[14].DB_MAX_OUTPUT_PORT_TYPE
-equals[15] <= isequal[15].DB_MAX_OUTPUT_PORT_TYPE
-equals[16] <= isequal[16].DB_MAX_OUTPUT_PORT_TYPE
-equals[17] <= isequal[17].DB_MAX_OUTPUT_PORT_TYPE
-equals[18] <= isequal[18].DB_MAX_OUTPUT_PORT_TYPE
-equals[19] <= isequal[19].DB_MAX_OUTPUT_PORT_TYPE
-equals[20] <= isequal[20].DB_MAX_OUTPUT_PORT_TYPE
-equals[21] <= isequal[21].DB_MAX_OUTPUT_PORT_TYPE
-equals[22] <= isequal[22].DB_MAX_OUTPUT_PORT_TYPE
-equals[23] <= isequal[23].DB_MAX_OUTPUT_PORT_TYPE
-equals[24] <= isequal[24].DB_MAX_OUTPUT_PORT_TYPE
-equals[25] <= isequal[25].DB_MAX_OUTPUT_PORT_TYPE
-equals[26] <= isequal[26].DB_MAX_OUTPUT_PORT_TYPE
-equals[27] <= isequal[27].DB_MAX_OUTPUT_PORT_TYPE
-equals[28] <= isequal[28].DB_MAX_OUTPUT_PORT_TYPE
-equals[29] <= isequal[29].DB_MAX_OUTPUT_PORT_TYPE
-equals[30] <= isequal[30].DB_MAX_OUTPUT_PORT_TYPE
-equals[31] <= isequal[31].DB_MAX_OUTPUT_PORT_TYPE
-Cin => Adder_32bit:inst.Cin
-Cin => FS_32bit:inst2.Bin
 OUTPUT[0] <= out_two[0].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[1] <= out_two[1].DB_MAX_OUTPUT_PORT_TYPE
 OUTPUT[2] <= out_two[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -428,6 +393,41 @@ OP[1] => mux8_1:inst24.Select[1]
 OP[1] => mux8_1:inst1.Select[1]
 OP[2] => mux8_1:inst24.Select[2]
 OP[2] => mux8_1:inst1.Select[2]
+OVERFLOW <= <GND>
+E <= eout.DB_MAX_OUTPUT_PORT_TYPE
+cmpout <= gt.DB_MAX_OUTPUT_PORT_TYPE
+equals[0] <= isequal[0].DB_MAX_OUTPUT_PORT_TYPE
+equals[1] <= isequal[1].DB_MAX_OUTPUT_PORT_TYPE
+equals[2] <= isequal[2].DB_MAX_OUTPUT_PORT_TYPE
+equals[3] <= isequal[3].DB_MAX_OUTPUT_PORT_TYPE
+equals[4] <= isequal[4].DB_MAX_OUTPUT_PORT_TYPE
+equals[5] <= isequal[5].DB_MAX_OUTPUT_PORT_TYPE
+equals[6] <= isequal[6].DB_MAX_OUTPUT_PORT_TYPE
+equals[7] <= isequal[7].DB_MAX_OUTPUT_PORT_TYPE
+equals[8] <= isequal[8].DB_MAX_OUTPUT_PORT_TYPE
+equals[9] <= isequal[9].DB_MAX_OUTPUT_PORT_TYPE
+equals[10] <= isequal[10].DB_MAX_OUTPUT_PORT_TYPE
+equals[11] <= isequal[11].DB_MAX_OUTPUT_PORT_TYPE
+equals[12] <= isequal[12].DB_MAX_OUTPUT_PORT_TYPE
+equals[13] <= isequal[13].DB_MAX_OUTPUT_PORT_TYPE
+equals[14] <= isequal[14].DB_MAX_OUTPUT_PORT_TYPE
+equals[15] <= isequal[15].DB_MAX_OUTPUT_PORT_TYPE
+equals[16] <= isequal[16].DB_MAX_OUTPUT_PORT_TYPE
+equals[17] <= isequal[17].DB_MAX_OUTPUT_PORT_TYPE
+equals[18] <= isequal[18].DB_MAX_OUTPUT_PORT_TYPE
+equals[19] <= isequal[19].DB_MAX_OUTPUT_PORT_TYPE
+equals[20] <= isequal[20].DB_MAX_OUTPUT_PORT_TYPE
+equals[21] <= isequal[21].DB_MAX_OUTPUT_PORT_TYPE
+equals[22] <= isequal[22].DB_MAX_OUTPUT_PORT_TYPE
+equals[23] <= isequal[23].DB_MAX_OUTPUT_PORT_TYPE
+equals[24] <= isequal[24].DB_MAX_OUTPUT_PORT_TYPE
+equals[25] <= isequal[25].DB_MAX_OUTPUT_PORT_TYPE
+equals[26] <= isequal[26].DB_MAX_OUTPUT_PORT_TYPE
+equals[27] <= isequal[27].DB_MAX_OUTPUT_PORT_TYPE
+equals[28] <= isequal[28].DB_MAX_OUTPUT_PORT_TYPE
+equals[29] <= isequal[29].DB_MAX_OUTPUT_PORT_TYPE
+equals[30] <= isequal[30].DB_MAX_OUTPUT_PORT_TYPE
+equals[31] <= isequal[31].DB_MAX_OUTPUT_PORT_TYPE
 SHAMT[0] => ~NO_FANOUT~
 SHAMT[1] => ~NO_FANOUT~
 SHAMT[2] => ~NO_FANOUT~
@@ -435,1079 +435,12 @@ SHAMT[3] => ~NO_FANOUT~
 SHAMT[4] => ~NO_FANOUT~
 
 
-|ALU|my21mux:inst16
+|ALU|my21mux:inst18
 OUT <= O1.DB_MAX_OUTPUT_PORT_TYPE
 Select => A2.IN0
 Select => inst.IN0
 I1 => A2.IN1
 I0 => A1.IN0
-
-
-|ALU|cmp_32bit:inst8
-GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => cmp_16bit:inst.GT_IN
-EQ_IN => cmp_16bit:inst.EQ_IN
-LT_IN => cmp_16bit:inst.LT_IN
-A[0] => cmp_16bit:inst.A[0]
-A[1] => cmp_16bit:inst.A[1]
-A[2] => cmp_16bit:inst.A[2]
-A[3] => cmp_16bit:inst.A[3]
-A[4] => cmp_16bit:inst.A[4]
-A[5] => cmp_16bit:inst.A[5]
-A[6] => cmp_16bit:inst.A[6]
-A[7] => cmp_16bit:inst.A[7]
-A[8] => cmp_16bit:inst.A[8]
-A[9] => cmp_16bit:inst.A[9]
-A[10] => cmp_16bit:inst.A[10]
-A[11] => cmp_16bit:inst.A[11]
-A[12] => cmp_16bit:inst.A[12]
-A[13] => cmp_16bit:inst.A[13]
-A[14] => cmp_16bit:inst.A[14]
-A[15] => cmp_16bit:inst.A[15]
-A[16] => cmp_16bit:inst1.A[0]
-A[17] => cmp_16bit:inst1.A[1]
-A[18] => cmp_16bit:inst1.A[2]
-A[19] => cmp_16bit:inst1.A[3]
-A[20] => cmp_16bit:inst1.A[4]
-A[21] => cmp_16bit:inst1.A[5]
-A[22] => cmp_16bit:inst1.A[6]
-A[23] => cmp_16bit:inst1.A[7]
-A[24] => cmp_16bit:inst1.A[8]
-A[25] => cmp_16bit:inst1.A[9]
-A[26] => cmp_16bit:inst1.A[10]
-A[27] => cmp_16bit:inst1.A[11]
-A[28] => cmp_16bit:inst1.A[12]
-A[29] => cmp_16bit:inst1.A[13]
-A[30] => cmp_16bit:inst1.A[14]
-A[31] => cmp_16bit:inst1.A[15]
-B[0] => cmp_16bit:inst.B[0]
-B[1] => cmp_16bit:inst.B[1]
-B[2] => cmp_16bit:inst.B[2]
-B[3] => cmp_16bit:inst.B[3]
-B[4] => cmp_16bit:inst.B[4]
-B[5] => cmp_16bit:inst.B[5]
-B[6] => cmp_16bit:inst.B[6]
-B[7] => cmp_16bit:inst.B[7]
-B[8] => cmp_16bit:inst.B[8]
-B[9] => cmp_16bit:inst.B[9]
-B[10] => cmp_16bit:inst.B[10]
-B[11] => cmp_16bit:inst.B[11]
-B[12] => cmp_16bit:inst.B[12]
-B[13] => cmp_16bit:inst.B[13]
-B[14] => cmp_16bit:inst.B[14]
-B[15] => cmp_16bit:inst.B[15]
-B[16] => cmp_16bit:inst1.B[0]
-B[17] => cmp_16bit:inst1.B[1]
-B[18] => cmp_16bit:inst1.B[2]
-B[19] => cmp_16bit:inst1.B[3]
-B[20] => cmp_16bit:inst1.B[4]
-B[21] => cmp_16bit:inst1.B[5]
-B[22] => cmp_16bit:inst1.B[6]
-B[23] => cmp_16bit:inst1.B[7]
-B[24] => cmp_16bit:inst1.B[8]
-B[25] => cmp_16bit:inst1.B[9]
-B[26] => cmp_16bit:inst1.B[10]
-B[27] => cmp_16bit:inst1.B[11]
-B[28] => cmp_16bit:inst1.B[12]
-B[29] => cmp_16bit:inst1.B[13]
-B[30] => cmp_16bit:inst1.B[14]
-B[31] => cmp_16bit:inst1.B[15]
-EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1
-GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => cmp_8bit:inst.GT_IN
-EQ_IN => cmp_8bit:inst.EQ_IN
-LT_IN => cmp_8bit:inst.LT_IN
-A[0] => cmp_8bit:inst.A[0]
-A[1] => cmp_8bit:inst.A[1]
-A[2] => cmp_8bit:inst.A[2]
-A[3] => cmp_8bit:inst.A[3]
-A[4] => cmp_8bit:inst.A[4]
-A[5] => cmp_8bit:inst.A[5]
-A[6] => cmp_8bit:inst.A[6]
-A[7] => cmp_8bit:inst.A[7]
-A[8] => cmp_8bit:inst1.A[0]
-A[9] => cmp_8bit:inst1.A[1]
-A[10] => cmp_8bit:inst1.A[2]
-A[11] => cmp_8bit:inst1.A[3]
-A[12] => cmp_8bit:inst1.A[4]
-A[13] => cmp_8bit:inst1.A[5]
-A[14] => cmp_8bit:inst1.A[6]
-A[15] => cmp_8bit:inst1.A[7]
-B[0] => cmp_8bit:inst.B[0]
-B[1] => cmp_8bit:inst.B[1]
-B[2] => cmp_8bit:inst.B[2]
-B[3] => cmp_8bit:inst.B[3]
-B[4] => cmp_8bit:inst.B[4]
-B[5] => cmp_8bit:inst.B[5]
-B[6] => cmp_8bit:inst.B[6]
-B[7] => cmp_8bit:inst.B[7]
-B[8] => cmp_8bit:inst1.B[0]
-B[9] => cmp_8bit:inst1.B[1]
-B[10] => cmp_8bit:inst1.B[2]
-B[11] => cmp_8bit:inst1.B[3]
-B[12] => cmp_8bit:inst1.B[4]
-B[13] => cmp_8bit:inst1.B[5]
-B[14] => cmp_8bit:inst1.B[6]
-B[15] => cmp_8bit:inst1.B[7]
-EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1
-GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => cmp_4bit:inst.GT_IN
-EQ_IN => cmp_4bit:inst.EQ_IN
-LT_IN => cmp_4bit:inst.LT_IN
-A[0] => cmp_4bit:inst.A[0]
-A[1] => cmp_4bit:inst.A[1]
-A[2] => cmp_4bit:inst.A[2]
-A[3] => cmp_4bit:inst.A[3]
-A[4] => cmp_4bit:inst1.A[0]
-A[5] => cmp_4bit:inst1.A[1]
-A[6] => cmp_4bit:inst1.A[2]
-A[7] => cmp_4bit:inst1.A[3]
-B[0] => cmp_4bit:inst.B[0]
-B[1] => cmp_4bit:inst.B[1]
-B[2] => cmp_4bit:inst.B[2]
-B[3] => cmp_4bit:inst.B[3]
-B[4] => cmp_4bit:inst1.B[0]
-B[5] => cmp_4bit:inst1.B[1]
-B[6] => cmp_4bit:inst1.B[2]
-B[7] => cmp_4bit:inst1.B[3]
-EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1
-GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => CMP_1bit_alter:inst.A
-A[1] => CMP_1bit_alter:inst1.A
-A[2] => CMP_1bit_alter:inst2.A
-A[3] => CMP_1bit_alter:inst3.A
-B[0] => CMP_1bit_alter:inst.B
-B[1] => CMP_1bit_alter:inst1.B
-B[2] => CMP_1bit_alter:inst2.B
-B[3] => CMP_1bit_alter:inst3.B
-GT_IN => CMP_1bit_alter:inst.GT_IN
-EQ_IN => CMP_1bit_alter:inst.EQ_IN
-LT_IN => CMP_1bit_alter:inst.LT_IN
-EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst3
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst2
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst1
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst
-GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => CMP_1bit_alter:inst.A
-A[1] => CMP_1bit_alter:inst1.A
-A[2] => CMP_1bit_alter:inst2.A
-A[3] => CMP_1bit_alter:inst3.A
-B[0] => CMP_1bit_alter:inst.B
-B[1] => CMP_1bit_alter:inst1.B
-B[2] => CMP_1bit_alter:inst2.B
-B[3] => CMP_1bit_alter:inst3.B
-GT_IN => CMP_1bit_alter:inst.GT_IN
-EQ_IN => CMP_1bit_alter:inst.EQ_IN
-LT_IN => CMP_1bit_alter:inst.LT_IN
-EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst3
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst2
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst1
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst
-GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => cmp_4bit:inst.GT_IN
-EQ_IN => cmp_4bit:inst.EQ_IN
-LT_IN => cmp_4bit:inst.LT_IN
-A[0] => cmp_4bit:inst.A[0]
-A[1] => cmp_4bit:inst.A[1]
-A[2] => cmp_4bit:inst.A[2]
-A[3] => cmp_4bit:inst.A[3]
-A[4] => cmp_4bit:inst1.A[0]
-A[5] => cmp_4bit:inst1.A[1]
-A[6] => cmp_4bit:inst1.A[2]
-A[7] => cmp_4bit:inst1.A[3]
-B[0] => cmp_4bit:inst.B[0]
-B[1] => cmp_4bit:inst.B[1]
-B[2] => cmp_4bit:inst.B[2]
-B[3] => cmp_4bit:inst.B[3]
-B[4] => cmp_4bit:inst1.B[0]
-B[5] => cmp_4bit:inst1.B[1]
-B[6] => cmp_4bit:inst1.B[2]
-B[7] => cmp_4bit:inst1.B[3]
-EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1
-GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => CMP_1bit_alter:inst.A
-A[1] => CMP_1bit_alter:inst1.A
-A[2] => CMP_1bit_alter:inst2.A
-A[3] => CMP_1bit_alter:inst3.A
-B[0] => CMP_1bit_alter:inst.B
-B[1] => CMP_1bit_alter:inst1.B
-B[2] => CMP_1bit_alter:inst2.B
-B[3] => CMP_1bit_alter:inst3.B
-GT_IN => CMP_1bit_alter:inst.GT_IN
-EQ_IN => CMP_1bit_alter:inst.EQ_IN
-LT_IN => CMP_1bit_alter:inst.LT_IN
-EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst3
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst2
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst1
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst
-GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => CMP_1bit_alter:inst.A
-A[1] => CMP_1bit_alter:inst1.A
-A[2] => CMP_1bit_alter:inst2.A
-A[3] => CMP_1bit_alter:inst3.A
-B[0] => CMP_1bit_alter:inst.B
-B[1] => CMP_1bit_alter:inst1.B
-B[2] => CMP_1bit_alter:inst2.B
-B[3] => CMP_1bit_alter:inst3.B
-GT_IN => CMP_1bit_alter:inst.GT_IN
-EQ_IN => CMP_1bit_alter:inst.EQ_IN
-LT_IN => CMP_1bit_alter:inst.LT_IN
-EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst3
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst2
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst1
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst
-GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => cmp_8bit:inst.GT_IN
-EQ_IN => cmp_8bit:inst.EQ_IN
-LT_IN => cmp_8bit:inst.LT_IN
-A[0] => cmp_8bit:inst.A[0]
-A[1] => cmp_8bit:inst.A[1]
-A[2] => cmp_8bit:inst.A[2]
-A[3] => cmp_8bit:inst.A[3]
-A[4] => cmp_8bit:inst.A[4]
-A[5] => cmp_8bit:inst.A[5]
-A[6] => cmp_8bit:inst.A[6]
-A[7] => cmp_8bit:inst.A[7]
-A[8] => cmp_8bit:inst1.A[0]
-A[9] => cmp_8bit:inst1.A[1]
-A[10] => cmp_8bit:inst1.A[2]
-A[11] => cmp_8bit:inst1.A[3]
-A[12] => cmp_8bit:inst1.A[4]
-A[13] => cmp_8bit:inst1.A[5]
-A[14] => cmp_8bit:inst1.A[6]
-A[15] => cmp_8bit:inst1.A[7]
-B[0] => cmp_8bit:inst.B[0]
-B[1] => cmp_8bit:inst.B[1]
-B[2] => cmp_8bit:inst.B[2]
-B[3] => cmp_8bit:inst.B[3]
-B[4] => cmp_8bit:inst.B[4]
-B[5] => cmp_8bit:inst.B[5]
-B[6] => cmp_8bit:inst.B[6]
-B[7] => cmp_8bit:inst.B[7]
-B[8] => cmp_8bit:inst1.B[0]
-B[9] => cmp_8bit:inst1.B[1]
-B[10] => cmp_8bit:inst1.B[2]
-B[11] => cmp_8bit:inst1.B[3]
-B[12] => cmp_8bit:inst1.B[4]
-B[13] => cmp_8bit:inst1.B[5]
-B[14] => cmp_8bit:inst1.B[6]
-B[15] => cmp_8bit:inst1.B[7]
-EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1
-GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => cmp_4bit:inst.GT_IN
-EQ_IN => cmp_4bit:inst.EQ_IN
-LT_IN => cmp_4bit:inst.LT_IN
-A[0] => cmp_4bit:inst.A[0]
-A[1] => cmp_4bit:inst.A[1]
-A[2] => cmp_4bit:inst.A[2]
-A[3] => cmp_4bit:inst.A[3]
-A[4] => cmp_4bit:inst1.A[0]
-A[5] => cmp_4bit:inst1.A[1]
-A[6] => cmp_4bit:inst1.A[2]
-A[7] => cmp_4bit:inst1.A[3]
-B[0] => cmp_4bit:inst.B[0]
-B[1] => cmp_4bit:inst.B[1]
-B[2] => cmp_4bit:inst.B[2]
-B[3] => cmp_4bit:inst.B[3]
-B[4] => cmp_4bit:inst1.B[0]
-B[5] => cmp_4bit:inst1.B[1]
-B[6] => cmp_4bit:inst1.B[2]
-B[7] => cmp_4bit:inst1.B[3]
-EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1
-GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => CMP_1bit_alter:inst.A
-A[1] => CMP_1bit_alter:inst1.A
-A[2] => CMP_1bit_alter:inst2.A
-A[3] => CMP_1bit_alter:inst3.A
-B[0] => CMP_1bit_alter:inst.B
-B[1] => CMP_1bit_alter:inst1.B
-B[2] => CMP_1bit_alter:inst2.B
-B[3] => CMP_1bit_alter:inst3.B
-GT_IN => CMP_1bit_alter:inst.GT_IN
-EQ_IN => CMP_1bit_alter:inst.EQ_IN
-LT_IN => CMP_1bit_alter:inst.LT_IN
-EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst3
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst2
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst1
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst
-GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => CMP_1bit_alter:inst.A
-A[1] => CMP_1bit_alter:inst1.A
-A[2] => CMP_1bit_alter:inst2.A
-A[3] => CMP_1bit_alter:inst3.A
-B[0] => CMP_1bit_alter:inst.B
-B[1] => CMP_1bit_alter:inst1.B
-B[2] => CMP_1bit_alter:inst2.B
-B[3] => CMP_1bit_alter:inst3.B
-GT_IN => CMP_1bit_alter:inst.GT_IN
-EQ_IN => CMP_1bit_alter:inst.EQ_IN
-LT_IN => CMP_1bit_alter:inst.LT_IN
-EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst3
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst2
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst1
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst
-GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => cmp_4bit:inst.GT_IN
-EQ_IN => cmp_4bit:inst.EQ_IN
-LT_IN => cmp_4bit:inst.LT_IN
-A[0] => cmp_4bit:inst.A[0]
-A[1] => cmp_4bit:inst.A[1]
-A[2] => cmp_4bit:inst.A[2]
-A[3] => cmp_4bit:inst.A[3]
-A[4] => cmp_4bit:inst1.A[0]
-A[5] => cmp_4bit:inst1.A[1]
-A[6] => cmp_4bit:inst1.A[2]
-A[7] => cmp_4bit:inst1.A[3]
-B[0] => cmp_4bit:inst.B[0]
-B[1] => cmp_4bit:inst.B[1]
-B[2] => cmp_4bit:inst.B[2]
-B[3] => cmp_4bit:inst.B[3]
-B[4] => cmp_4bit:inst1.B[0]
-B[5] => cmp_4bit:inst1.B[1]
-B[6] => cmp_4bit:inst1.B[2]
-B[7] => cmp_4bit:inst1.B[3]
-EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1
-GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => CMP_1bit_alter:inst.A
-A[1] => CMP_1bit_alter:inst1.A
-A[2] => CMP_1bit_alter:inst2.A
-A[3] => CMP_1bit_alter:inst3.A
-B[0] => CMP_1bit_alter:inst.B
-B[1] => CMP_1bit_alter:inst1.B
-B[2] => CMP_1bit_alter:inst2.B
-B[3] => CMP_1bit_alter:inst3.B
-GT_IN => CMP_1bit_alter:inst.GT_IN
-EQ_IN => CMP_1bit_alter:inst.EQ_IN
-LT_IN => CMP_1bit_alter:inst.LT_IN
-EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst3
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst2
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst1
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst
-GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
-A[0] => CMP_1bit_alter:inst.A
-A[1] => CMP_1bit_alter:inst1.A
-A[2] => CMP_1bit_alter:inst2.A
-A[3] => CMP_1bit_alter:inst3.A
-B[0] => CMP_1bit_alter:inst.B
-B[1] => CMP_1bit_alter:inst1.B
-B[2] => CMP_1bit_alter:inst2.B
-B[3] => CMP_1bit_alter:inst3.B
-GT_IN => CMP_1bit_alter:inst.GT_IN
-EQ_IN => CMP_1bit_alter:inst.EQ_IN
-LT_IN => CMP_1bit_alter:inst.LT_IN
-EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
-LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst3
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst2
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst1
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst
-GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
-GT_IN => inst6.IN0
-B => inst3.IN0
-B => inst5.IN1
-B => inst1.IN1
-A => inst.IN1
-A => inst5.IN0
-A => inst2.IN0
-EQ_IN => inst.IN2
-EQ_IN => inst4.IN1
-EQ_IN => inst1.IN2
-EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
-LT_IN => inst7.IN0
-
-
-|ALU|mux2_1:inst21
-OUT[0] <= O1[0].DB_MAX_OUTPUT_PORT_TYPE
-OUT[1] <= O1[1].DB_MAX_OUTPUT_PORT_TYPE
-OUT[2] <= O1[2].DB_MAX_OUTPUT_PORT_TYPE
-OUT[3] <= O1[3].DB_MAX_OUTPUT_PORT_TYPE
-OUT[4] <= O1[4].DB_MAX_OUTPUT_PORT_TYPE
-OUT[5] <= O1[5].DB_MAX_OUTPUT_PORT_TYPE
-OUT[6] <= O1[6].DB_MAX_OUTPUT_PORT_TYPE
-OUT[7] <= O1[7].DB_MAX_OUTPUT_PORT_TYPE
-OUT[8] <= O1[8].DB_MAX_OUTPUT_PORT_TYPE
-OUT[9] <= O1[9].DB_MAX_OUTPUT_PORT_TYPE
-OUT[10] <= O1[10].DB_MAX_OUTPUT_PORT_TYPE
-OUT[11] <= O1[11].DB_MAX_OUTPUT_PORT_TYPE
-OUT[12] <= O1[12].DB_MAX_OUTPUT_PORT_TYPE
-OUT[13] <= O1[13].DB_MAX_OUTPUT_PORT_TYPE
-OUT[14] <= O1[14].DB_MAX_OUTPUT_PORT_TYPE
-OUT[15] <= O1[15].DB_MAX_OUTPUT_PORT_TYPE
-OUT[16] <= O1[16].DB_MAX_OUTPUT_PORT_TYPE
-OUT[17] <= O1[17].DB_MAX_OUTPUT_PORT_TYPE
-OUT[18] <= O1[18].DB_MAX_OUTPUT_PORT_TYPE
-OUT[19] <= O1[19].DB_MAX_OUTPUT_PORT_TYPE
-OUT[20] <= O1[20].DB_MAX_OUTPUT_PORT_TYPE
-OUT[21] <= O1[21].DB_MAX_OUTPUT_PORT_TYPE
-OUT[22] <= O1[22].DB_MAX_OUTPUT_PORT_TYPE
-OUT[23] <= O1[23].DB_MAX_OUTPUT_PORT_TYPE
-OUT[24] <= O1[24].DB_MAX_OUTPUT_PORT_TYPE
-OUT[25] <= O1[25].DB_MAX_OUTPUT_PORT_TYPE
-OUT[26] <= O1[26].DB_MAX_OUTPUT_PORT_TYPE
-OUT[27] <= O1[27].DB_MAX_OUTPUT_PORT_TYPE
-OUT[28] <= O1[28].DB_MAX_OUTPUT_PORT_TYPE
-OUT[29] <= O1[29].DB_MAX_OUTPUT_PORT_TYPE
-OUT[30] <= O1[30].DB_MAX_OUTPUT_PORT_TYPE
-OUT[31] <= O1[31].DB_MAX_OUTPUT_PORT_TYPE
-Select => A2[31].IN0
-Select => A2[30].IN0
-Select => A2[29].IN0
-Select => A2[28].IN0
-Select => A2[27].IN0
-Select => A2[26].IN0
-Select => A2[25].IN0
-Select => A2[24].IN0
-Select => A2[23].IN0
-Select => A2[22].IN0
-Select => A2[21].IN0
-Select => A2[20].IN0
-Select => A2[19].IN0
-Select => A2[18].IN0
-Select => A2[17].IN0
-Select => A2[16].IN0
-Select => A2[15].IN0
-Select => A2[14].IN0
-Select => A2[13].IN0
-Select => A2[12].IN0
-Select => A2[11].IN0
-Select => A2[10].IN0
-Select => A2[9].IN0
-Select => A2[8].IN0
-Select => A2[7].IN0
-Select => A2[6].IN0
-Select => A2[5].IN0
-Select => A2[4].IN0
-Select => A2[3].IN0
-Select => A2[2].IN0
-Select => A2[1].IN0
-Select => A2[0].IN0
-Select => inst.IN0
-I1[0] => A2[0].IN1
-I1[1] => A2[1].IN1
-I1[2] => A2[2].IN1
-I1[3] => A2[3].IN1
-I1[4] => A2[4].IN1
-I1[5] => A2[5].IN1
-I1[6] => A2[6].IN1
-I1[7] => A2[7].IN1
-I1[8] => A2[8].IN1
-I1[9] => A2[9].IN1
-I1[10] => A2[10].IN1
-I1[11] => A2[11].IN1
-I1[12] => A2[12].IN1
-I1[13] => A2[13].IN1
-I1[14] => A2[14].IN1
-I1[15] => A2[15].IN1
-I1[16] => A2[16].IN1
-I1[17] => A2[17].IN1
-I1[18] => A2[18].IN1
-I1[19] => A2[19].IN1
-I1[20] => A2[20].IN1
-I1[21] => A2[21].IN1
-I1[22] => A2[22].IN1
-I1[23] => A2[23].IN1
-I1[24] => A2[24].IN1
-I1[25] => A2[25].IN1
-I1[26] => A2[26].IN1
-I1[27] => A2[27].IN1
-I1[28] => A2[28].IN1
-I1[29] => A2[29].IN1
-I1[30] => A2[30].IN1
-I1[31] => A2[31].IN1
-I0[0] => A1[0].IN0
-I0[1] => A1[1].IN0
-I0[2] => A1[2].IN0
-I0[3] => A1[3].IN0
-I0[4] => A1[4].IN0
-I0[5] => A1[5].IN0
-I0[6] => A1[6].IN0
-I0[7] => A1[7].IN0
-I0[8] => A1[8].IN0
-I0[9] => A1[9].IN0
-I0[10] => A1[10].IN0
-I0[11] => A1[11].IN0
-I0[12] => A1[12].IN0
-I0[13] => A1[13].IN0
-I0[14] => A1[14].IN0
-I0[15] => A1[15].IN0
-I0[16] => A1[16].IN0
-I0[17] => A1[17].IN0
-I0[18] => A1[18].IN0
-I0[19] => A1[19].IN0
-I0[20] => A1[20].IN0
-I0[21] => A1[21].IN0
-I0[22] => A1[22].IN0
-I0[23] => A1[23].IN0
-I0[24] => A1[24].IN0
-I0[25] => A1[25].IN0
-I0[26] => A1[26].IN0
-I0[27] => A1[27].IN0
-I0[28] => A1[28].IN0
-I0[29] => A1[29].IN0
-I0[30] => A1[30].IN0
-I0[31] => A1[31].IN0
 
 
 |ALU|mux8_1:inst24
@@ -10210,6 +9143,1081 @@ A[31] => inst[31].IN1
 
 
 |ALU|mux2_1:inst11
+OUT[0] <= O1[0].DB_MAX_OUTPUT_PORT_TYPE
+OUT[1] <= O1[1].DB_MAX_OUTPUT_PORT_TYPE
+OUT[2] <= O1[2].DB_MAX_OUTPUT_PORT_TYPE
+OUT[3] <= O1[3].DB_MAX_OUTPUT_PORT_TYPE
+OUT[4] <= O1[4].DB_MAX_OUTPUT_PORT_TYPE
+OUT[5] <= O1[5].DB_MAX_OUTPUT_PORT_TYPE
+OUT[6] <= O1[6].DB_MAX_OUTPUT_PORT_TYPE
+OUT[7] <= O1[7].DB_MAX_OUTPUT_PORT_TYPE
+OUT[8] <= O1[8].DB_MAX_OUTPUT_PORT_TYPE
+OUT[9] <= O1[9].DB_MAX_OUTPUT_PORT_TYPE
+OUT[10] <= O1[10].DB_MAX_OUTPUT_PORT_TYPE
+OUT[11] <= O1[11].DB_MAX_OUTPUT_PORT_TYPE
+OUT[12] <= O1[12].DB_MAX_OUTPUT_PORT_TYPE
+OUT[13] <= O1[13].DB_MAX_OUTPUT_PORT_TYPE
+OUT[14] <= O1[14].DB_MAX_OUTPUT_PORT_TYPE
+OUT[15] <= O1[15].DB_MAX_OUTPUT_PORT_TYPE
+OUT[16] <= O1[16].DB_MAX_OUTPUT_PORT_TYPE
+OUT[17] <= O1[17].DB_MAX_OUTPUT_PORT_TYPE
+OUT[18] <= O1[18].DB_MAX_OUTPUT_PORT_TYPE
+OUT[19] <= O1[19].DB_MAX_OUTPUT_PORT_TYPE
+OUT[20] <= O1[20].DB_MAX_OUTPUT_PORT_TYPE
+OUT[21] <= O1[21].DB_MAX_OUTPUT_PORT_TYPE
+OUT[22] <= O1[22].DB_MAX_OUTPUT_PORT_TYPE
+OUT[23] <= O1[23].DB_MAX_OUTPUT_PORT_TYPE
+OUT[24] <= O1[24].DB_MAX_OUTPUT_PORT_TYPE
+OUT[25] <= O1[25].DB_MAX_OUTPUT_PORT_TYPE
+OUT[26] <= O1[26].DB_MAX_OUTPUT_PORT_TYPE
+OUT[27] <= O1[27].DB_MAX_OUTPUT_PORT_TYPE
+OUT[28] <= O1[28].DB_MAX_OUTPUT_PORT_TYPE
+OUT[29] <= O1[29].DB_MAX_OUTPUT_PORT_TYPE
+OUT[30] <= O1[30].DB_MAX_OUTPUT_PORT_TYPE
+OUT[31] <= O1[31].DB_MAX_OUTPUT_PORT_TYPE
+Select => A2[31].IN0
+Select => A2[30].IN0
+Select => A2[29].IN0
+Select => A2[28].IN0
+Select => A2[27].IN0
+Select => A2[26].IN0
+Select => A2[25].IN0
+Select => A2[24].IN0
+Select => A2[23].IN0
+Select => A2[22].IN0
+Select => A2[21].IN0
+Select => A2[20].IN0
+Select => A2[19].IN0
+Select => A2[18].IN0
+Select => A2[17].IN0
+Select => A2[16].IN0
+Select => A2[15].IN0
+Select => A2[14].IN0
+Select => A2[13].IN0
+Select => A2[12].IN0
+Select => A2[11].IN0
+Select => A2[10].IN0
+Select => A2[9].IN0
+Select => A2[8].IN0
+Select => A2[7].IN0
+Select => A2[6].IN0
+Select => A2[5].IN0
+Select => A2[4].IN0
+Select => A2[3].IN0
+Select => A2[2].IN0
+Select => A2[1].IN0
+Select => A2[0].IN0
+Select => inst.IN0
+I1[0] => A2[0].IN1
+I1[1] => A2[1].IN1
+I1[2] => A2[2].IN1
+I1[3] => A2[3].IN1
+I1[4] => A2[4].IN1
+I1[5] => A2[5].IN1
+I1[6] => A2[6].IN1
+I1[7] => A2[7].IN1
+I1[8] => A2[8].IN1
+I1[9] => A2[9].IN1
+I1[10] => A2[10].IN1
+I1[11] => A2[11].IN1
+I1[12] => A2[12].IN1
+I1[13] => A2[13].IN1
+I1[14] => A2[14].IN1
+I1[15] => A2[15].IN1
+I1[16] => A2[16].IN1
+I1[17] => A2[17].IN1
+I1[18] => A2[18].IN1
+I1[19] => A2[19].IN1
+I1[20] => A2[20].IN1
+I1[21] => A2[21].IN1
+I1[22] => A2[22].IN1
+I1[23] => A2[23].IN1
+I1[24] => A2[24].IN1
+I1[25] => A2[25].IN1
+I1[26] => A2[26].IN1
+I1[27] => A2[27].IN1
+I1[28] => A2[28].IN1
+I1[29] => A2[29].IN1
+I1[30] => A2[30].IN1
+I1[31] => A2[31].IN1
+I0[0] => A1[0].IN0
+I0[1] => A1[1].IN0
+I0[2] => A1[2].IN0
+I0[3] => A1[3].IN0
+I0[4] => A1[4].IN0
+I0[5] => A1[5].IN0
+I0[6] => A1[6].IN0
+I0[7] => A1[7].IN0
+I0[8] => A1[8].IN0
+I0[9] => A1[9].IN0
+I0[10] => A1[10].IN0
+I0[11] => A1[11].IN0
+I0[12] => A1[12].IN0
+I0[13] => A1[13].IN0
+I0[14] => A1[14].IN0
+I0[15] => A1[15].IN0
+I0[16] => A1[16].IN0
+I0[17] => A1[17].IN0
+I0[18] => A1[18].IN0
+I0[19] => A1[19].IN0
+I0[20] => A1[20].IN0
+I0[21] => A1[21].IN0
+I0[22] => A1[22].IN0
+I0[23] => A1[23].IN0
+I0[24] => A1[24].IN0
+I0[25] => A1[25].IN0
+I0[26] => A1[26].IN0
+I0[27] => A1[27].IN0
+I0[28] => A1[28].IN0
+I0[29] => A1[29].IN0
+I0[30] => A1[30].IN0
+I0[31] => A1[31].IN0
+
+
+|ALU|cmp_32bit:inst8
+GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => cmp_16bit:inst.GT_IN
+EQ_IN => cmp_16bit:inst.EQ_IN
+LT_IN => cmp_16bit:inst.LT_IN
+A[0] => cmp_16bit:inst.A[0]
+A[1] => cmp_16bit:inst.A[1]
+A[2] => cmp_16bit:inst.A[2]
+A[3] => cmp_16bit:inst.A[3]
+A[4] => cmp_16bit:inst.A[4]
+A[5] => cmp_16bit:inst.A[5]
+A[6] => cmp_16bit:inst.A[6]
+A[7] => cmp_16bit:inst.A[7]
+A[8] => cmp_16bit:inst.A[8]
+A[9] => cmp_16bit:inst.A[9]
+A[10] => cmp_16bit:inst.A[10]
+A[11] => cmp_16bit:inst.A[11]
+A[12] => cmp_16bit:inst.A[12]
+A[13] => cmp_16bit:inst.A[13]
+A[14] => cmp_16bit:inst.A[14]
+A[15] => cmp_16bit:inst.A[15]
+A[16] => cmp_16bit:inst1.A[0]
+A[17] => cmp_16bit:inst1.A[1]
+A[18] => cmp_16bit:inst1.A[2]
+A[19] => cmp_16bit:inst1.A[3]
+A[20] => cmp_16bit:inst1.A[4]
+A[21] => cmp_16bit:inst1.A[5]
+A[22] => cmp_16bit:inst1.A[6]
+A[23] => cmp_16bit:inst1.A[7]
+A[24] => cmp_16bit:inst1.A[8]
+A[25] => cmp_16bit:inst1.A[9]
+A[26] => cmp_16bit:inst1.A[10]
+A[27] => cmp_16bit:inst1.A[11]
+A[28] => cmp_16bit:inst1.A[12]
+A[29] => cmp_16bit:inst1.A[13]
+A[30] => cmp_16bit:inst1.A[14]
+A[31] => cmp_16bit:inst1.A[15]
+B[0] => cmp_16bit:inst.B[0]
+B[1] => cmp_16bit:inst.B[1]
+B[2] => cmp_16bit:inst.B[2]
+B[3] => cmp_16bit:inst.B[3]
+B[4] => cmp_16bit:inst.B[4]
+B[5] => cmp_16bit:inst.B[5]
+B[6] => cmp_16bit:inst.B[6]
+B[7] => cmp_16bit:inst.B[7]
+B[8] => cmp_16bit:inst.B[8]
+B[9] => cmp_16bit:inst.B[9]
+B[10] => cmp_16bit:inst.B[10]
+B[11] => cmp_16bit:inst.B[11]
+B[12] => cmp_16bit:inst.B[12]
+B[13] => cmp_16bit:inst.B[13]
+B[14] => cmp_16bit:inst.B[14]
+B[15] => cmp_16bit:inst.B[15]
+B[16] => cmp_16bit:inst1.B[0]
+B[17] => cmp_16bit:inst1.B[1]
+B[18] => cmp_16bit:inst1.B[2]
+B[19] => cmp_16bit:inst1.B[3]
+B[20] => cmp_16bit:inst1.B[4]
+B[21] => cmp_16bit:inst1.B[5]
+B[22] => cmp_16bit:inst1.B[6]
+B[23] => cmp_16bit:inst1.B[7]
+B[24] => cmp_16bit:inst1.B[8]
+B[25] => cmp_16bit:inst1.B[9]
+B[26] => cmp_16bit:inst1.B[10]
+B[27] => cmp_16bit:inst1.B[11]
+B[28] => cmp_16bit:inst1.B[12]
+B[29] => cmp_16bit:inst1.B[13]
+B[30] => cmp_16bit:inst1.B[14]
+B[31] => cmp_16bit:inst1.B[15]
+EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1
+GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => cmp_8bit:inst.GT_IN
+EQ_IN => cmp_8bit:inst.EQ_IN
+LT_IN => cmp_8bit:inst.LT_IN
+A[0] => cmp_8bit:inst.A[0]
+A[1] => cmp_8bit:inst.A[1]
+A[2] => cmp_8bit:inst.A[2]
+A[3] => cmp_8bit:inst.A[3]
+A[4] => cmp_8bit:inst.A[4]
+A[5] => cmp_8bit:inst.A[5]
+A[6] => cmp_8bit:inst.A[6]
+A[7] => cmp_8bit:inst.A[7]
+A[8] => cmp_8bit:inst1.A[0]
+A[9] => cmp_8bit:inst1.A[1]
+A[10] => cmp_8bit:inst1.A[2]
+A[11] => cmp_8bit:inst1.A[3]
+A[12] => cmp_8bit:inst1.A[4]
+A[13] => cmp_8bit:inst1.A[5]
+A[14] => cmp_8bit:inst1.A[6]
+A[15] => cmp_8bit:inst1.A[7]
+B[0] => cmp_8bit:inst.B[0]
+B[1] => cmp_8bit:inst.B[1]
+B[2] => cmp_8bit:inst.B[2]
+B[3] => cmp_8bit:inst.B[3]
+B[4] => cmp_8bit:inst.B[4]
+B[5] => cmp_8bit:inst.B[5]
+B[6] => cmp_8bit:inst.B[6]
+B[7] => cmp_8bit:inst.B[7]
+B[8] => cmp_8bit:inst1.B[0]
+B[9] => cmp_8bit:inst1.B[1]
+B[10] => cmp_8bit:inst1.B[2]
+B[11] => cmp_8bit:inst1.B[3]
+B[12] => cmp_8bit:inst1.B[4]
+B[13] => cmp_8bit:inst1.B[5]
+B[14] => cmp_8bit:inst1.B[6]
+B[15] => cmp_8bit:inst1.B[7]
+EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1
+GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => cmp_4bit:inst.GT_IN
+EQ_IN => cmp_4bit:inst.EQ_IN
+LT_IN => cmp_4bit:inst.LT_IN
+A[0] => cmp_4bit:inst.A[0]
+A[1] => cmp_4bit:inst.A[1]
+A[2] => cmp_4bit:inst.A[2]
+A[3] => cmp_4bit:inst.A[3]
+A[4] => cmp_4bit:inst1.A[0]
+A[5] => cmp_4bit:inst1.A[1]
+A[6] => cmp_4bit:inst1.A[2]
+A[7] => cmp_4bit:inst1.A[3]
+B[0] => cmp_4bit:inst.B[0]
+B[1] => cmp_4bit:inst.B[1]
+B[2] => cmp_4bit:inst.B[2]
+B[3] => cmp_4bit:inst.B[3]
+B[4] => cmp_4bit:inst1.B[0]
+B[5] => cmp_4bit:inst1.B[1]
+B[6] => cmp_4bit:inst1.B[2]
+B[7] => cmp_4bit:inst1.B[3]
+EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1
+GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => CMP_1bit_alter:inst.A
+A[1] => CMP_1bit_alter:inst1.A
+A[2] => CMP_1bit_alter:inst2.A
+A[3] => CMP_1bit_alter:inst3.A
+B[0] => CMP_1bit_alter:inst.B
+B[1] => CMP_1bit_alter:inst1.B
+B[2] => CMP_1bit_alter:inst2.B
+B[3] => CMP_1bit_alter:inst3.B
+GT_IN => CMP_1bit_alter:inst.GT_IN
+EQ_IN => CMP_1bit_alter:inst.EQ_IN
+LT_IN => CMP_1bit_alter:inst.LT_IN
+EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst3
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst2
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst1
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst
+GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => CMP_1bit_alter:inst.A
+A[1] => CMP_1bit_alter:inst1.A
+A[2] => CMP_1bit_alter:inst2.A
+A[3] => CMP_1bit_alter:inst3.A
+B[0] => CMP_1bit_alter:inst.B
+B[1] => CMP_1bit_alter:inst1.B
+B[2] => CMP_1bit_alter:inst2.B
+B[3] => CMP_1bit_alter:inst3.B
+GT_IN => CMP_1bit_alter:inst.GT_IN
+EQ_IN => CMP_1bit_alter:inst.EQ_IN
+LT_IN => CMP_1bit_alter:inst.LT_IN
+EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst3
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst2
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst1
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst
+GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => cmp_4bit:inst.GT_IN
+EQ_IN => cmp_4bit:inst.EQ_IN
+LT_IN => cmp_4bit:inst.LT_IN
+A[0] => cmp_4bit:inst.A[0]
+A[1] => cmp_4bit:inst.A[1]
+A[2] => cmp_4bit:inst.A[2]
+A[3] => cmp_4bit:inst.A[3]
+A[4] => cmp_4bit:inst1.A[0]
+A[5] => cmp_4bit:inst1.A[1]
+A[6] => cmp_4bit:inst1.A[2]
+A[7] => cmp_4bit:inst1.A[3]
+B[0] => cmp_4bit:inst.B[0]
+B[1] => cmp_4bit:inst.B[1]
+B[2] => cmp_4bit:inst.B[2]
+B[3] => cmp_4bit:inst.B[3]
+B[4] => cmp_4bit:inst1.B[0]
+B[5] => cmp_4bit:inst1.B[1]
+B[6] => cmp_4bit:inst1.B[2]
+B[7] => cmp_4bit:inst1.B[3]
+EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1
+GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => CMP_1bit_alter:inst.A
+A[1] => CMP_1bit_alter:inst1.A
+A[2] => CMP_1bit_alter:inst2.A
+A[3] => CMP_1bit_alter:inst3.A
+B[0] => CMP_1bit_alter:inst.B
+B[1] => CMP_1bit_alter:inst1.B
+B[2] => CMP_1bit_alter:inst2.B
+B[3] => CMP_1bit_alter:inst3.B
+GT_IN => CMP_1bit_alter:inst.GT_IN
+EQ_IN => CMP_1bit_alter:inst.EQ_IN
+LT_IN => CMP_1bit_alter:inst.LT_IN
+EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst3
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst2
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst1
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst
+GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => CMP_1bit_alter:inst.A
+A[1] => CMP_1bit_alter:inst1.A
+A[2] => CMP_1bit_alter:inst2.A
+A[3] => CMP_1bit_alter:inst3.A
+B[0] => CMP_1bit_alter:inst.B
+B[1] => CMP_1bit_alter:inst1.B
+B[2] => CMP_1bit_alter:inst2.B
+B[3] => CMP_1bit_alter:inst3.B
+GT_IN => CMP_1bit_alter:inst.GT_IN
+EQ_IN => CMP_1bit_alter:inst.EQ_IN
+LT_IN => CMP_1bit_alter:inst.LT_IN
+EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst3
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst2
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst1
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst1|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst
+GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => cmp_8bit:inst.GT_IN
+EQ_IN => cmp_8bit:inst.EQ_IN
+LT_IN => cmp_8bit:inst.LT_IN
+A[0] => cmp_8bit:inst.A[0]
+A[1] => cmp_8bit:inst.A[1]
+A[2] => cmp_8bit:inst.A[2]
+A[3] => cmp_8bit:inst.A[3]
+A[4] => cmp_8bit:inst.A[4]
+A[5] => cmp_8bit:inst.A[5]
+A[6] => cmp_8bit:inst.A[6]
+A[7] => cmp_8bit:inst.A[7]
+A[8] => cmp_8bit:inst1.A[0]
+A[9] => cmp_8bit:inst1.A[1]
+A[10] => cmp_8bit:inst1.A[2]
+A[11] => cmp_8bit:inst1.A[3]
+A[12] => cmp_8bit:inst1.A[4]
+A[13] => cmp_8bit:inst1.A[5]
+A[14] => cmp_8bit:inst1.A[6]
+A[15] => cmp_8bit:inst1.A[7]
+B[0] => cmp_8bit:inst.B[0]
+B[1] => cmp_8bit:inst.B[1]
+B[2] => cmp_8bit:inst.B[2]
+B[3] => cmp_8bit:inst.B[3]
+B[4] => cmp_8bit:inst.B[4]
+B[5] => cmp_8bit:inst.B[5]
+B[6] => cmp_8bit:inst.B[6]
+B[7] => cmp_8bit:inst.B[7]
+B[8] => cmp_8bit:inst1.B[0]
+B[9] => cmp_8bit:inst1.B[1]
+B[10] => cmp_8bit:inst1.B[2]
+B[11] => cmp_8bit:inst1.B[3]
+B[12] => cmp_8bit:inst1.B[4]
+B[13] => cmp_8bit:inst1.B[5]
+B[14] => cmp_8bit:inst1.B[6]
+B[15] => cmp_8bit:inst1.B[7]
+EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1
+GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => cmp_4bit:inst.GT_IN
+EQ_IN => cmp_4bit:inst.EQ_IN
+LT_IN => cmp_4bit:inst.LT_IN
+A[0] => cmp_4bit:inst.A[0]
+A[1] => cmp_4bit:inst.A[1]
+A[2] => cmp_4bit:inst.A[2]
+A[3] => cmp_4bit:inst.A[3]
+A[4] => cmp_4bit:inst1.A[0]
+A[5] => cmp_4bit:inst1.A[1]
+A[6] => cmp_4bit:inst1.A[2]
+A[7] => cmp_4bit:inst1.A[3]
+B[0] => cmp_4bit:inst.B[0]
+B[1] => cmp_4bit:inst.B[1]
+B[2] => cmp_4bit:inst.B[2]
+B[3] => cmp_4bit:inst.B[3]
+B[4] => cmp_4bit:inst1.B[0]
+B[5] => cmp_4bit:inst1.B[1]
+B[6] => cmp_4bit:inst1.B[2]
+B[7] => cmp_4bit:inst1.B[3]
+EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1
+GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => CMP_1bit_alter:inst.A
+A[1] => CMP_1bit_alter:inst1.A
+A[2] => CMP_1bit_alter:inst2.A
+A[3] => CMP_1bit_alter:inst3.A
+B[0] => CMP_1bit_alter:inst.B
+B[1] => CMP_1bit_alter:inst1.B
+B[2] => CMP_1bit_alter:inst2.B
+B[3] => CMP_1bit_alter:inst3.B
+GT_IN => CMP_1bit_alter:inst.GT_IN
+EQ_IN => CMP_1bit_alter:inst.EQ_IN
+LT_IN => CMP_1bit_alter:inst.LT_IN
+EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst3
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst2
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst1
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst1|CMP_1bit_alter:inst
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst
+GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => CMP_1bit_alter:inst.A
+A[1] => CMP_1bit_alter:inst1.A
+A[2] => CMP_1bit_alter:inst2.A
+A[3] => CMP_1bit_alter:inst3.A
+B[0] => CMP_1bit_alter:inst.B
+B[1] => CMP_1bit_alter:inst1.B
+B[2] => CMP_1bit_alter:inst2.B
+B[3] => CMP_1bit_alter:inst3.B
+GT_IN => CMP_1bit_alter:inst.GT_IN
+EQ_IN => CMP_1bit_alter:inst.EQ_IN
+LT_IN => CMP_1bit_alter:inst.LT_IN
+EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst3
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst2
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst1
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst1|cmp_4bit:inst|CMP_1bit_alter:inst
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst
+GT <= g1.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => cmp_4bit:inst.GT_IN
+EQ_IN => cmp_4bit:inst.EQ_IN
+LT_IN => cmp_4bit:inst.LT_IN
+A[0] => cmp_4bit:inst.A[0]
+A[1] => cmp_4bit:inst.A[1]
+A[2] => cmp_4bit:inst.A[2]
+A[3] => cmp_4bit:inst.A[3]
+A[4] => cmp_4bit:inst1.A[0]
+A[5] => cmp_4bit:inst1.A[1]
+A[6] => cmp_4bit:inst1.A[2]
+A[7] => cmp_4bit:inst1.A[3]
+B[0] => cmp_4bit:inst.B[0]
+B[1] => cmp_4bit:inst.B[1]
+B[2] => cmp_4bit:inst.B[2]
+B[3] => cmp_4bit:inst.B[3]
+B[4] => cmp_4bit:inst1.B[0]
+B[5] => cmp_4bit:inst1.B[1]
+B[6] => cmp_4bit:inst1.B[2]
+B[7] => cmp_4bit:inst1.B[3]
+EQ <= e1.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1
+GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => CMP_1bit_alter:inst.A
+A[1] => CMP_1bit_alter:inst1.A
+A[2] => CMP_1bit_alter:inst2.A
+A[3] => CMP_1bit_alter:inst3.A
+B[0] => CMP_1bit_alter:inst.B
+B[1] => CMP_1bit_alter:inst1.B
+B[2] => CMP_1bit_alter:inst2.B
+B[3] => CMP_1bit_alter:inst3.B
+GT_IN => CMP_1bit_alter:inst.GT_IN
+EQ_IN => CMP_1bit_alter:inst.EQ_IN
+LT_IN => CMP_1bit_alter:inst.LT_IN
+EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst3
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst2
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst1
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst1|CMP_1bit_alter:inst
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst
+GT <= g3.DB_MAX_OUTPUT_PORT_TYPE
+A[0] => CMP_1bit_alter:inst.A
+A[1] => CMP_1bit_alter:inst1.A
+A[2] => CMP_1bit_alter:inst2.A
+A[3] => CMP_1bit_alter:inst3.A
+B[0] => CMP_1bit_alter:inst.B
+B[1] => CMP_1bit_alter:inst1.B
+B[2] => CMP_1bit_alter:inst2.B
+B[3] => CMP_1bit_alter:inst3.B
+GT_IN => CMP_1bit_alter:inst.GT_IN
+EQ_IN => CMP_1bit_alter:inst.EQ_IN
+LT_IN => CMP_1bit_alter:inst.LT_IN
+EQ <= e3.DB_MAX_OUTPUT_PORT_TYPE
+LT <= l3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst3
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst2
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst1
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|cmp_32bit:inst8|cmp_16bit:inst|cmp_8bit:inst|cmp_4bit:inst|CMP_1bit_alter:inst
+GT <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+GT_IN => inst6.IN0
+B => inst3.IN0
+B => inst5.IN1
+B => inst1.IN1
+A => inst.IN1
+A => inst5.IN0
+A => inst2.IN0
+EQ_IN => inst.IN2
+EQ_IN => inst4.IN1
+EQ_IN => inst1.IN2
+EQ <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LT <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+LT_IN => inst7.IN0
+
+
+|ALU|my21mux:inst16
+OUT <= O1.DB_MAX_OUTPUT_PORT_TYPE
+Select => A2.IN0
+Select => inst.IN0
+I1 => A2.IN1
+I0 => A1.IN0
+
+
+|ALU|mux2_1:inst21
 OUT[0] <= O1[0].DB_MAX_OUTPUT_PORT_TYPE
 OUT[1] <= O1[1].DB_MAX_OUTPUT_PORT_TYPE
 OUT[2] <= O1[2].DB_MAX_OUTPUT_PORT_TYPE
